@@ -41,6 +41,7 @@ Here are some sample prompts you can use to manage this repository:
 
 ### Root Files
 - `history.md`: History subject notes
+- `chemistry.md`: Chemistry subject notes
 - `CLAUDE.md`: This documentation file
 
 ## Workflow
