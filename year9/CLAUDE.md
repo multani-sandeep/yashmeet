@@ -1,7 +1,7 @@
 # Year 9 Study Notes Repository
 
 ## Purpose
-This repository is designed to organize and process study materials for Year 9 subjects. It handles various input formats including images, text files, and PDFs, processing them into structured notes.
+This repository is designed to organize and process study materials for Year 9 subjects. It handles various input formats including images, text files, and PDFs, processing them into structured notes. Each subject has notes grouped into topics.
 
 ## Usage
 
@@ -42,6 +42,7 @@ Here are some sample prompts you can use to manage this repository:
 ### Root Files
 - `history.md`: History subject notes
 - `chemistry.md`: Chemistry subject notes
+- `physics.md`: Physics subject notes
 - `CLAUDE.md`: This documentation file
 
 ## Workflow
