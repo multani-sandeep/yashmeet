@@ -1,7 +1,11 @@
 # Year 9 Study Notes Repository
 
 ## Purpose
-This repository is designed to organize and process study materials for Year 9 subjects. It handles various input formats including images, text files, and PDFs, processing them into structured notes. Each subject has notes grouped into topics. Notes are always created in MD format
+This repository is designed to organize and process study materials for Year 9 subjects. It handles various input formats including images, text files, and PDFs, processing them into structured notes. Each subject has notes grouped into topics. Notes are always created in MD format. 
+
+Always keep notes concise and to the point. Do not expand sections unless asked by user.
+
+Notes are always based on GCSE Year 9 curriculum in the UK
 
 ## Usage
 
@@ -43,6 +47,10 @@ Here are some sample prompts you can use to manage this repository:
 - `history.md`: History subject notes
 - `chemistry.md`: Chemistry subject notes
 - `physics.md`: Physics subject notes
+- `geography.md`: Geography subject notes
+- `maths.md`: Maths subject notes
+- `biology.md`: Biology subject notes
+- `english.md`: English subject notes
 - `CLAUDE.md`: This documentation file
 
 ## Workflow

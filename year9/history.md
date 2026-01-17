@@ -117,3 +117,33 @@
 - **Due:** Next lesson
 - **Status:** Not started (do not produce yet)
 - **Choose one topic:** Bolshevik Russia OR Stalinism
+
+---
+
+## World War II (Year 9 Revision)
+
+### 1. Causes of the War
+- **Treaty of Versailles (1919):** Harsh terms (Reparations, Territory loss, Military limits) created German resentment.
+- **Hitler's Aggression (Foreign Policy):**
+  - Rearmament & Rhineland (1936)
+  - Anschluss with Austria (1938)
+  - Sudetenland & Czechoslovakia
+- **Appeasement:** Britain/France policy of giving in to Hitler to avoid conflict (Munich Agreement).
+- **Nazi-Soviet Pact (1939):** Non-aggression treaty allowed Hitler to invade Poland.
+- **Trigger:** Invasion of Poland (Sept 1, 1939).
+
+### 2. Key Events
+- **Dunkirk (1940):** "Operation Dynamo" evacuated 338,000 Allied troops.
+- **Battle of Britain (1940):** RAF Fighter Command defeated Luftwaffe; prevented invasion.
+- **Operation Barbarossa (1941):** Failed German invasion of USSR; created massive two-front war.
+- **Pearl Harbor (Dec 1941):** Japanese attack brought USA into the war.
+- **D-Day (June 6, 1944):** Allied invasion of Normandy; liberation of Western Europe.
+
+### 3. The Holocaust
+- **Stages:** Discrimination (Nuremberg Laws) → Ghettos → The "Final Solution".
+- **Camps:** 6 million Jews and other persecution victims murdered (e.g., Auschwitz).
+
+### 4. End of War (1945)
+- **VE Day (May):** Germany surrenders.
+- **Atomic Bombs (Aug):** Hiroshima & Nagasaki bombed by US to force surrender.
+- **VJ Day (Aug):** Japan surrenders.
