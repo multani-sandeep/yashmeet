@@ -45,3 +45,34 @@
 
 ### Salts
 - Salts are always **AQUEOUS** unless they **PRECIPITATE OUT**.
+
+### Metallic Bonding
+- **Definition**: Electrostatic force of attraction between positive metal ions (cations) and a sea of delocalised electrons.
+- **Structure**: Giant metallic lattice of positive ions surrounded by free-moving delocalised electrons.
+- **Properties**:
+    - **Conducts electricity**: Delocalised electrons are free to move and carry charge.
+    - **High melting/boiling points**: Strong metallic bonds require a lot of energy to break.
+    - **Malleable/ductile**: Layers of ions can slide without breaking the bond (electrons move with them).
+    - **Lustrous**: Shiny appearance.
+
+### Groups 1 & 2
+
+**Group 1 – Alkali Metals** (Li, Na, K, Rb, Cs, Fr)
+- 1 outer electron → form **+1 ions**.
+- React with water: Metal + Water → Metal Hydroxide + Hydrogen.
+- **Reactivity increases down the group**: Outer electron is further from nucleus, so less nuclear attraction → easier to lose.
+- Stored in oil to prevent reaction with air/water.
+
+**Group 2 – Alkaline Earth Metals** (Be, Mg, Ca, Sr, Ba)
+- 2 outer electrons → form **+2 ions**.
+- React with water, but less vigorously than Group 1.
+- **Reactivity increases down the group** (same reason as Group 1).
+
+### Transition Metals
+- Located in the **d-block**, between Groups 2 and 3.
+- **Properties**:
+    - High melting/boiling points and high density (except mercury – liquid at room temperature).
+    - Can form **multiple ions** with different charges (e.g., Fe²⁺ and Fe³⁺, Cu⁺ and Cu²⁺).
+    - Form **coloured compounds** (e.g., copper compounds are blue, iron(III) compounds are orange/brown).
+    - Good **catalysts** (e.g., Fe in Haber process, MnO₂ for H₂O₂ decomposition).
+    - **Less reactive** than Group 1 & 2 metals.

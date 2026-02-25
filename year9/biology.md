@@ -1,71 +1,159 @@
 # Biology GCSE Year 9 Topics
 
+## Characteristics of Living Organisms
+All living organisms (MRSGREN):
+- **Nutrition**: Require an energy/food source.
+- **Respiration**: Release energy from food.
+- **Excretion**: Remove metabolic waste.
+- **Response**: React to surroundings.
+- **Movement**: All or part of organism moves.
+- **Control**: Regulate internal conditions (homeostasis).
+- **Reproduction**: Produce offspring.
+- **Growth**: Increase in size and develop.
+
+## Variety of Living Organisms
+
+### Eukaryotic Organisms
+- **Plants**: Multicellular; cells have chloroplasts and cellulose cell walls; store carbohydrates as starch or sucrose. Examples: maize, peas/beans.
+- **Animals**: Multicellular; no chloroplasts or cell walls; nervous coordination; store carbohydrate as glycogen. Examples: humans, housefly, mosquito.
+- **Fungi**: Not photosynthetic; body made of hyphae (mycelium); cell walls of **chitin**; feed by saprotrophic nutrition (extracellular digestion + absorption); store glycogen. Examples: Mucor, yeast (single-celled).
+- **Protoctists**: Microscopic, single-celled. Animal-like (Amoeba) or plant-like with chloroplasts (Chlorella). Plasmodium causes malaria.
+
+### Prokaryotic Organisms
+- **Bacteria**: Single-celled; cell wall, cell membrane, cytoplasm, plasmids; **no nucleus** — circular DNA chromosome floats in cytoplasm. Examples: Lactobacillus bulgaricus (yoghurt), Pneumococcus (pneumonia).
+
+### Viruses (not living organisms)
+- Not cells; smaller than bacteria; parasitic — reproduce only inside living cells.
+- Have a **protein coat** and contain either DNA or RNA.
+- Examples: tobacco mosaic virus (prevents chloroplast formation), influenza, HIV (AIDS).
+
+### Pathogens
+- A microorganism that causes disease; may be fungi, bacteria, protoctists or viruses.
+
+---
+
 ## 1. Cell Biology
-- **Cell Structure**
-  - **Eukaryotes vs Prokaryotes**:
-    - **Eukaryotic Cells**: Complex cells found in animals and plants. They have a nucleus containing genetic material.
-    - **Prokaryotic Cells**: Smaller, simpler cells like bacteria. They do not have a nucleus; genetic material floats in the cytoplasm (single DNA loop or plasmids).
-  - **Sub-cellular Structures**:
-    - **Nucleus**: Contains genetic material (DNA), controls cell activities.
-    - **Cytoplasm**: Gel-like substance where chemical reactions happen.
-    - **Cell Membrane**: Controls movement of substances in and out of the cell.
-    - **Mitochondria**: Where aerobic respiration occurs, releasing energy.
+
+### Cell Structure
+- **Eukaryotes vs Prokaryotes**:
+    - **Eukaryotic Cells**: Complex cells (animals, plants, fungi, protoctists). Have a nucleus containing genetic material.
+    - **Prokaryotic Cells**: Smaller, simpler (bacteria). No nucleus; circular DNA chromosome + plasmids in cytoplasm.
+- **Sub-cellular Structures**:
+    - **Nucleus**: Contains DNA; controls cell activities.
+    - **Cytoplasm**: Gel-like; site of chemical reactions.
+    - **Cell Membrane**: Controls movement of substances in/out.
+    - **Mitochondria**: Site of aerobic respiration; releases energy.
     - **Ribosomes**: Site of protein synthesis.
-    - **Cell Wall** (Plant/Algal only): Made of cellulose, strengthens the cell.
-    - **Chloroplasts** (Plant only): Contains chlorophyll, absorbs light for photosynthesis.
-    - **Vacuole** (Plant only): Filled with cell sap, supports the cell.
-  - **Glossary**:
-    - `Eukaryote`: Organism made of cells with a nucleus.
-    - `Prokaryote`: Organism (like bacteria) without a nucleus.
-    - `Organelle`: Specialized structure within a cell performing a specific function.
+    - **Cell Wall** (plant/algal only): Cellulose; strengthens cell.
+    - **Chloroplasts** (plant only): Contains chlorophyll; absorbs light for photosynthesis.
+    - **Vacuole** (plant only): Filled with cell sap; supports the cell.
 
-- **Cell Division (Mitosis)**
-  - **Chromosomes**: Coiled DNA molecules carrying genes. found in the nucleus. Human body cells have 23 pairs.
-  - **The Cell Cycle**:
-    1.  **Growth**: Cell grows, increases mitochondria/ribosomes.
-    2.  **DNA Replication**: DNA doubles so each new cell gets a full set.
-    3.  **Mitosis**: One set of chromosomes is pulled to each end of the cell, nucleus divides.
-    4.  **Division**: Cytoplasm and cell membrane divide to form two identical daughter cells.
-  - **Importance**: Essential for growth, repair, and asexual reproduction.
-  - **Glossary**:
-    - `Mitosis`: Type of cell division resulting in two genetically identical cells.
-    - `Chromosome`: Structure made of DNA that codes for characteristics.
-    - `Stem Cell`: Undifferentiated cell capable of giving rise to many more cells of the same type.
+### Plant vs Animal Cells
+| Feature | Animal | Plant |
+|---|:---:|:---:|
+| Nucleus | ✓ | ✓ |
+| Cytoplasm | ✓ | ✓ |
+| Cell membrane | ✓ | ✓ |
+| Mitochondria | ✓ | ✓ |
+| Ribosomes | ✓ | ✓ |
+| Cell wall (cellulose) | ✗ | ✓ |
+| Chloroplasts | ✗ | ✓ |
+| Large permanent vacuole | ✗ | ✓ |
 
-- **Transport in Cells**
-  - **Diffusion**: Spreading out of particles from an area of **higher** concentration to an area of **lower** concentration.
-    - *Factors affecting rate*: Concentration gradient, Temperature, Surface area.
-  - **Osmosis**: Diffusion of water molecules from a dilute solution to a concentrated solution through a partially permeable membrane.
-  - **Active Transport**: Movement of substances from a more dilute solution to a more concentrated solution (against gradient). Requires energy from respiration.
-  - **Glossary**:
-    - `Diffusion`: Passive movement of particles down a concentration gradient.
-    - `Osmosis`: Movement of water across a semi-permeable membrane.
-    - `Active Transport`: Movement of substances against concentration gradient requiring energy.
-    - `Concentration Gradient`: Difference in concentration between two areas.
+### Cell Division (Mitosis)
+- **Chromosomes**: Coiled DNA molecules carrying genes; found in nucleus. Human body cells have 23 pairs.
+- **The Cell Cycle**:
+    1. **Growth**: Cell grows; increases mitochondria/ribosomes.
+    2. **DNA Replication**: DNA doubles so each new cell gets a full set.
+    3. **Mitosis**: Chromosomes pulled to each end; nucleus divides.
+    4. **Division**: Cytoplasm and membrane divide → two identical daughter cells.
+- **Importance**: Growth, repair, asexual reproduction.
+
+### Transport in Cells
+- **Diffusion**: Particles spread from **high → low** concentration (passive). Affected by: concentration gradient, temperature, surface area.
+- **Osmosis**: Diffusion of water across a partially permeable membrane from dilute → concentrated solution.
+- **Active Transport**: Movement against concentration gradient; requires energy (respiration).
+
+---
 
 ## 2. Organisation
-- Principles of organisation
-- Animal tissues, organs, and organ systems (Digestive, Circulatory)
-- Plant tissues and organ systems
+
+### Levels of Organisation
+Organelles → Cells → Tissues → Organs → Systems
+
+### Biological Molecules
+- **Carbohydrates** (C, H, O): Large molecules made from simple sugars. Starch (plants) and glycogen (animals/fungi) are storage forms.
+- **Proteins** (C, H, O, N): Made from **amino acids**.
+- **Lipids** (C, H, O): Made from **fatty acids + glycerol**.
+
+#### Food Tests
+| Substance | Reagent | Positive Result |
+|---|---|---|
+| Glucose | Benedict's solution (heat) | Blue → brick red precipitate |
+| Starch | Iodine solution | Yellow/brown → blue-black |
+| Protein | Biuret reagent | Blue → purple |
+| Fat | Sudan III / ethanol emulsion test | Red layer / milky emulsion |
+
+### Enzymes
+- Biological catalysts that speed up metabolic reactions without being used up.
+- Have an **active site** complementary in shape to their specific substrate (lock and key model).
+- **Temperature**: Rate increases up to the **optimum** (~37°C in humans). Above optimum → enzyme **denatures** (active site shape changes permanently → no longer works).
+- **pH**: Extremes of pH also denature the enzyme by altering the active site shape.
+
+### Nutrition
+
+#### Balanced Diet
+| Component | Example Sources | Function |
+|---|---|---|
+| Carbohydrate | Bread, rice, pasta | Energy |
+| Protein | Meat, fish, eggs, legumes | Growth and repair |
+| Lipid | Butter, oil, nuts | Energy storage, insulation |
+| Vitamin A | Liver, dairy, carrots | Vision, immune function |
+| Vitamin C | Citrus fruit, vegetables | Healthy skin/gums; immune system |
+| Vitamin D | Sunlight, oily fish, dairy | Calcium absorption; bone health |
+| Calcium | Dairy, leafy greens | Bone and teeth formation |
+| Iron | Red meat, spinach | Haemoglobin production (O₂ transport) |
+| Water | Drinks, food | Solvent; transport medium |
+| Dietary fibre | Wholegrain, vegetables | Aids movement of food through gut |
+
+- **Energy requirements vary** with: activity level, age (growing teens need more), and pregnancy.
+
+#### The Alimentary Canal
+- **Mouth**: Mechanical digestion; salivary amylase begins starch digestion.
+- **Oesophagus**: Muscular tube; moves food by peristalsis.
+- **Stomach**: Churns food; produces protease (pepsin) and HCl (low pH; kills bacteria).
+- **Small intestine** (duodenum + ileum): Main site of digestion and absorption.
+- **Large intestine** (colon + rectum): Absorbs water; forms and stores faeces.
+- **Pancreas**: Produces amylase, protease, lipase → secreted into duodenum.
+
+**Peristalsis**: Wave-like muscular contractions that push food along the gut.
+
+#### Digestive Enzymes
+| Enzyme | Substrate → Product | Produced By |
+|---|---|---|
+| Amylase | Starch → Maltose | Salivary glands, pancreas |
+| Maltase | Maltose → Glucose | Small intestine |
+| Protease | Proteins → Amino acids | Stomach, pancreas |
+| Lipase | Lipids → Fatty acids + Glycerol | Pancreas |
+
+#### Bile
+- Produced by the **liver**; stored in the **gall bladder**; released into the duodenum.
+- **Functions**: (1) Neutralises stomach acid → optimum pH for intestinal enzymes. (2) Emulsifies lipids → smaller droplets → greater surface area for lipase.
+
+#### Absorption — Villi
+- Small intestine wall is folded into **villi** (finger-like projections).
+- Adaptations: large surface area, thin walls (one cell thick), rich blood supply, lacteals (absorb fatty acids/glycerol into lymph).
+
+---
 
 ## 3. Infection and Response
 - **Communicable Diseases (Pathogens)**
-  - **Bacteria**:
-    - **Description**: Very small cells (1/100th size of body cells) that can reproduce rapidly inside your body.
-    - **Mechanism**: They produce **toxins** (poisons) that damage your cells and tissues, making you feel ill.
-    - **Examples**:
-      - **Salmonella**: Food poisoning spread by bacteria in ingested food. Causes fever, cramps, vomiting, diarrhoea.
-      - **Gonorrhoea**: Sexually transmitted disease (STD). Symptoms include yellow/green discharge and pain on urination.
-  - **Fungi**:
-    - **Description**: Some are single-celled; others have a body made of hyphae (thread-like structures).
-    - **Mechanism**: Hyphae can grow and penetrate human skin and surface of plants, causing disease. Can produce spores forming new fungi.
-    - **Examples**:
-      - **Rose Black Spot**: Fungal disease in plants. Purple/black spots on leaves, turning yellow and dropping early. Affects photosynthesis.
-      - **Athlete's Foot**: Fungal infection in humans causing itching/flaking skin.
-  - **Glossary**:
-    - `Pathogen`: Microorganism that causes disease (Bacteria, Viruses, Protists, Fungi).
-    - `Toxin`: Poison produced by bacteria.
-    - `Binary Fission`: Method by which bacteria reproduce (simple cell division).
+    - **Bacteria**: Produce toxins damaging cells/tissues.
+        - Salmonella: food poisoning (fever, cramps, vomiting, diarrhoea).
+        - Gonorrhoea: STD (yellow/green discharge, pain on urination).
+    - **Fungi**: Hyphae penetrate skin/plant surfaces.
+        - Rose Black Spot: purple/black spots on leaves → affects photosynthesis.
+        - Athlete's Foot: itching/flaking skin.
 - Human defence systems
 - Vaccination and antibiotics
 - Drug discovery
