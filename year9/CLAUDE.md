@@ -15,7 +15,7 @@ Here are some sample prompts you can use to manage this repository:
    "Please read `notes.jpg` from the `/dump` folder, extract the text, and add the summarized content to `history.md`."
 
 2. **Process all pending materials**:
-   "Check the `/dump` folder for any new files. For each file, process the content into the relevant subject's markdown file in the root directory, and then move the source file to `/archive` with a timestamp."
+   "Check the `/dump` folder for any new files. For each file, process the content into the relevant subject's markdown file in the root directory, and then move the source file to `/archive` with a timestamp. From the file identify whether it is a past paper, if it is, then create a folder with the name of the subject under `past-papers` directory and move the file to that folder. If the file is a mark scheme, then name the markscheme file matching the past paper with the same name as past paper with a suffix '_markscheme'."
 
 3. **Organize and review**:
    "Review the recent additions in `history.md` for clarity and formatting. Also, check if there are any stray files in `/dump` that haven't been processed yet."
