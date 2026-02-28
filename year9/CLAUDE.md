@@ -7,6 +7,20 @@ Always keep notes concise and to the point. Do not expand sections unless asked 
 
 Notes are always based on GCSE Year 9 curriculum in the UK
 
+## Generating new Papers
+When creating new papers:
+- Always follow the format and structure from the `past-papers' provided
+- Ask whether all syllabus is to be considered or just the test topics
+- Ask difficult level (easy, medium, hard)
+- Create a mark scheme for the generated paper
+- In terms of syllabus and difficulty use IGCSE standard for Year 9 at a UK independent school, specifically Haberdashers Boys school
+- Papers are generated in the `dump` folder
+- Use internet resources to create a paper that is relevant to the syllabus and difficulty level
+
+- If a paper requires information like the periodic table and the table would have been provided in an IGCSE exam then include that in the paper. Do similar for diagrams or other reference material necessary to complete the paper.
+
+- See subject level split below for creating paper with the correct ratio of question type mcqs or subjective.
+
 ## Usage
 
 Here are some sample prompts you can use to manage this repository:
@@ -46,10 +60,12 @@ Here are some sample prompts you can use to manage this repository:
 ### Root Files
 - `history.md`: History subject notes
 - `chemistry.md`: Chemistry subject notes
+   - exams typically have a 50:50 split between mcqs:subjective questions
 - `physics.md`: Physics subject notes
 - `geography.md`: Geography subject notes
 - `maths.md`: Maths subject notes
 - `biology.md`: Biology subject notes
+   - exams typically have a 80:20 split between mcqs:subjective questions.
 - `english.md`: English subject notes
 - `CLAUDE.md`: This documentation file
 

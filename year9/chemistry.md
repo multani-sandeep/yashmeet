@@ -46,7 +46,7 @@
 ### Salts
 - Salts are always **AQUEOUS** unless they **PRECIPITATE OUT**.
 
-### Metallic Bonding [TEST]
+### Metallic Bonding `[TEST]`
 - **Definition**: Electrostatic force of attraction between positive metal ions (cations) and a sea of delocalised electrons.
 - **Structure**: Giant metallic lattice of positive ions surrounded by free-moving delocalised electrons.
 - **Properties**:
@@ -55,7 +55,7 @@
     - **Malleable/ductile**: Layers of ions can slide without breaking the bond (electrons move with them).
     - **Lustrous**: Shiny appearance.
 
-### Groups 1 & 2 [TEST]
+### Groups 1 & 2 `[TEST]`
 
 **Group 1 – Alkali Metals** (Li, Na, K, Rb, Cs, Fr)
 - 1 outer electron → form **+1 ions**.
@@ -68,7 +68,7 @@
 - React with water, but less vigorously than Group 1.
 - **Reactivity increases down the group** (same reason as Group 1).
 
-### Transition Metals [TEST]
+### Transition Metals `[TEST]`
 - Located in the **d-block**, between Groups 2 and 3.
 - **Properties**:
     - High melting/boiling points and high density (except mercury – liquid at room temperature).
