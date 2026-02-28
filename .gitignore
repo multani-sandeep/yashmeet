@@ -1,0 +1,6 @@
+# Dump folder - temporary files for processing
+year9/dump/
+
+# macOS system files
+.DS_Store
+**/.DS_Store
