@@ -5,7 +5,7 @@ This repository is designed to organize and process study materials for Year 9 s
 
 Always keep notes concise and to the point. Do not expand sections unless asked by user.
 
-Notes are always based on GCSE Year 9 curriculum in the UK
+Notes are always based on iGCSE Year 9 curriculum in the UK
 
 ## Generating new Papers
 When creating new papers:
