@@ -25,6 +25,9 @@ When creating new papers:
 
 Here are some sample prompts you can use to manage this repository:
 
+1. **Classify material**
+   Based on the content and filename identify the subject and topic of the material. If the material is a past paper, then create a folder with the name of the subject under `past-papers` directory and move the file to that folder. If the file is a mark scheme, then name the markscheme file matching the past paper with the same name as past paper with a suffix '_markscheme'. If its an assignment, then extract the objectives of the assignment and add it to subject notes. Some assignments are also assessments, in which case it has a question paper and a mark scheme. In that case extract the subject areas from the assignment and update the notes for the subject highlighting the topics covered in the assignment/assessment.
+
 1. **Process specific notes**:
    "Please read `notes.jpg` from the `/dump` folder, extract the text, and add the summarized content to `history.md`."
 
