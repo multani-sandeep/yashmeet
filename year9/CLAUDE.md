@@ -26,15 +26,15 @@ When creating new papers:
 Here are some sample prompts you can use to manage this repository:
 
 1. **Classify material**
-   Based on the content and filename identify the subject and topic of the material. If the material is a past paper, then create a folder with the name of the subject under `past-papers` directory and move the file to that folder. If the file is a mark scheme, then name the markscheme file matching the past paper with the same name as past paper with a suffix '_markscheme'. If its an assignment, then extract the objectives of the assignment and add it to subject notes. Some assignments are also assessments, in which case it has a question paper and a mark scheme. In that case extract the subject areas from the assignment and update the notes for the subject highlighting the topics covered in the assignment/assessment.
+   Based on the content and filename identify the subject and topic of the material. If the material is a past paper, then create a folder with the name of the subject under `past-papers` directory and move the file to that folder. If the file is a mark scheme, then name the markscheme file matching the past paper with the same name as past paper with a suffix '_markscheme'. If its an assignment, then extract the IGCSE objectives of the assignment and add it to subject notes. Some assignments are also assessments, in which case it has a question paper and a mark scheme. In that case extract the IGCSE subject areas from the assignment and update the notes for the subject highlighting the IGCSE topics covered in the assignment/assessment.
 
-1. **Process specific notes**:
+2. **Process specific notes**:
    "Please read `notes.jpg` from the `/dump` folder, extract the text, and add the summarized content to `history.md`."
 
-2. **Process all pending materials**:
+3. **Process all pending materials**:
    "Check the `/dump` folder for any new files. For each file, process the content into the relevant subject's markdown file in the root directory, and then move the source file to `/archive` with a timestamp. From the file identify whether it is a past paper, if it is, then create a folder with the name of the subject under `past-papers` directory and move the file to that folder. If the file is a mark scheme, then name the markscheme file matching the past paper with the same name as past paper with a suffix '_markscheme'."
 
-3. **Organize and review**:
+4. **Organize and review**:
    "Review the recent additions in `history.md` for clarity and formatting. Also, check if there are any stray files in `/dump` that haven't been processed yet."
 
 ## Folder Structure
