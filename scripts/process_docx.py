@@ -5,9 +5,10 @@ import shutil
 from datetime import datetime
 from pathlib import Path
 
-dump_dir = Path("dump/drive-download-20260302T201420Z-3-001")
-archive_dir = Path("archive")
-past_papers_dir = Path("past-papers/maths")
+PROJECT_ROOT = Path(__file__).parent.parent
+dump_dir = PROJECT_ROOT / "year9" / "dump" / "drive-download-20260302T201420Z-3-001"
+archive_dir = PROJECT_ROOT / "year9" / "archive"
+past_papers_dir = PROJECT_ROOT / "year9" / "past-papers" / "maths"
 
 past_papers_dir.mkdir(parents=True, exist_ok=True)
 archive_dir.mkdir(exist_ok=True)

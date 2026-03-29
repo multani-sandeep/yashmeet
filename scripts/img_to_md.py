@@ -22,8 +22,8 @@ from datetime import datetime
 
 import ollama
 
-DUMP_DIR = Path(__file__).parent / "dump"
-ARCHIVE_DIR = Path(__file__).parent / "archive"
+DUMP_DIR = Path(__file__).parent.parent / "year9" / "dump"
+ARCHIVE_DIR = Path(__file__).parent.parent / "year9" / "archive"
 
 IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".gif", ".webp"}
 MODEL = "llava"

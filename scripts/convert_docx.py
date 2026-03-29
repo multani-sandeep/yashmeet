@@ -124,7 +124,7 @@ def main():
 
     docx_path = sys.argv[1]
     output_md_path = sys.argv[2]
-    images_dir = sys.argv[3] if len(sys.argv) > 3 else "year9/past-papers/maths/images"
+    images_dir = sys.argv[3] if len(sys.argv) > 3 else str(Path(__file__).parent.parent / "year9/past-papers/maths/images")
 
     os.makedirs(images_dir, exist_ok=True)
 

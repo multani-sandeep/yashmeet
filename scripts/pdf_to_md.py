@@ -15,8 +15,8 @@ import shutil
 from pathlib import Path
 from datetime import datetime
 
-DUMP_DIR = Path(__file__).parent / "dump"
-ARCHIVE_DIR = Path(__file__).parent / "archive"
+DUMP_DIR = Path(__file__).parent.parent / "year9" / "dump"
+ARCHIVE_DIR = Path(__file__).parent.parent / "year9" / "archive"
 
 
 def convert_with_pymupdf(pdf_path: Path) -> str:
