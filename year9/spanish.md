@@ -1,5 +1,13 @@
 # Spanish Notes
 
+## Revision Topic List (EOY 2026)
+- [Preterite Tense: AR Verbs](#preterite-tense-ar-verbs-revision)
+- [Preterite Tense: ER & IR Verbs](#preterite-tense-er--ir-verbs-revision)
+- [Irregular Verbs in the Preterite](#irregular-verbs-in-the-preterite-revision)
+- [Future Tense](#future-tense-revision)
+- [Reflexive Verbs](#reflexive-verbs-revision)
+- [Food Vocabulary](#food-vocabulary-revision)
+
 ## Curriculum Overview (2025-26)
 **Textbook**: Viva 3 Rojo (GCSE Foundation)
 
@@ -25,3 +33,37 @@
     - **Idioms**: Expressions with *tener*.
 
 ---
+
+## Grammar & Vocabulary (EOY Review)
+
+### Preterite Tense: AR Verbs [REVISION]
+![AR Verbs Preterite](images/spanish/preterite_ar_verbs.jpg)
+
+### Preterite Tense: ER & IR Verbs [REVISION]
+![ER & IR Verbs Preterite](images/spanish/preterite_er_ir_verbs.jpg)
+
+### Irregular Verbs in the Preterite [REVISION]
+![Irregular Verbs Preterite](images/spanish/preterite_irregular_verbs.jpg)
+
+### Future Tense [REVISION]
+- **Voy a + infinitive** (I am going to...)
+
+### Reflexive Verbs [REVISION]
+- **lavarse** (to wash oneself): Me lavo, Te lavas, Se lava, Nos lavamos, Os laváis, Se lavan.
+- **despertarse** (to wake up): Me despierto, Te despiertas, Se despierta, Nos despertamos, Os despertáis, Se despiertan.
+- **acostarse** (to go to bed): Me acuesto, Te acuestas, Se acuesta, Nos acostamos, Os acostáis, Se acuestan.
+- **vestirse** (to dress oneself): Me visto, Te vistes, Se viste, Nos vestimos, Os vestís, Se visten.
+
+### Food Vocabulary [REVISION]
+- **Eggs (los huevos)**:
+    - Fritos (fried)
+    - Pasados por agua (soft boiled)
+    - Revueltos (scrambled)
+    - Al horno (baked)
+- **La paella**:
+    - De marisco (with seafood)
+    - Negra (black)
+    - Valenciana (from Valencia)
+    - Vegetariana (vegetarian)
+
+![Food Vocabulary](images/spanish/food_vocab.png)

@@ -1,5 +1,16 @@
 # Biology GCSE Year 9 Topics
 
+## Revision Topic List (EOY 2026)
+- [Characteristics of Living Organisms](#characteristics-of-living-organisms-revision)
+- [Variety of Living Organisms](#variety-of-living-organisms-revision)
+- [Levels of Organisation](#levels-of-organisation-revision)
+- [Cell Structure and Functions](#cell-structure-and-functions-revision)
+- [Biological Molecules and Enzymes](#biological-molecules-and-enzymes-revision)
+- [Nutrition in Humans](#nutrition-in-humans-revision)
+- [Nutrition and Gas Exchange in Plants](#nutrition-and-gas-exchange-in-plants-revision)
+- [Reproduction in Plants and Humans](#reproduction-in-plants-and-humans-revision)
+- [Practical Investigations](#practical-investigations-revision)
+
 ## Curriculum Overview (2025-26)
 **Exam Board**: Edexcel IGCSE (4BI1)
 
@@ -18,7 +29,9 @@
 
 ---
 
-## Characteristics of Living Organisms `[TEST]`
+---
+
+## Characteristics of Living Organisms [REVISION]
 All living organisms (MRSGREN):
 - **Nutrition**: Require an energy/food source.
 - **Respiration**: Release energy from food.
@@ -29,11 +42,11 @@ All living organisms (MRSGREN):
 - **Reproduction**: Produce offspring.
 - **Growth**: Increase in size and develop.
 
-## Variety of Living Organisms `[TEST]`
+## Variety of Living Organisms [REVISION]
 
 ### Eukaryotic Organisms
 - **Plants**: Multicellular; cells have chloroplasts and cellulose cell walls; store carbohydrates as starch or sucrose. Examples: maize, peas/beans.
-- **Animals**: Multicellular; no chloroplasts or cell walls; nervous coordination; store carbohydrate as glycogen. Examples: humans, housefly, mosquito.
+- **Animals**: Multicellular; no chloroplasts or cell walls; nervous coordination; store carbohydrate as glycogen. Examples: mammals (humans), insects (housefly/mosquito).
 - **Fungi**: Not photosynthetic; body made of hyphae (mycelium); cell walls of **chitin**; feed by saprotrophic nutrition (extracellular digestion + absorption); store glycogen. Examples: Mucor, yeast (single-celled).
 - **Protoctists**: Microscopic, single-celled. Animal-like (Amoeba) or plant-like with chloroplasts (Chlorella). Plasmodium causes malaria.
 
@@ -43,28 +56,27 @@ All living organisms (MRSGREN):
 ### Viruses (not living organisms)
 - Not cells; smaller than bacteria; parasitic — reproduce only inside living cells.
 - Have a **protein coat** and contain either DNA or RNA.
-- Examples: tobacco mosaic virus (prevents chloroplast formation), influenza, HIV (AIDS).
+- Examples: tobacco mosaic virus, influenza, HIV (AIDS).
 
 ### Pathogens
 - A microorganism that causes disease; may be fungi, bacteria, protoctists or viruses.
 
 ---
 
-## 1. Cell Biology
+## 1. Cell Biology [REVISION]
 
-### Cell Structure
-- **Eukaryotes vs Prokaryotes**:
-    - **Eukaryotic Cells**: Complex cells (animals, plants, fungi, protoctists). Have a nucleus containing genetic material.
-    - **Prokaryotic Cells**: Smaller, simpler (bacteria). No nucleus; circular DNA chromosome + plasmids in cytoplasm.
-- **Sub-cellular Structures**:
-    - **Nucleus**: Contains DNA; controls cell activities.
-    - **Cytoplasm**: Gel-like; site of chemical reactions.
-    - **Cell Membrane**: Controls movement of substances in/out.
-    - **Mitochondria**: Site of aerobic respiration; releases energy.
-    - **Ribosomes**: Site of protein synthesis.
-    - **Cell Wall** (plant/algal only): Cellulose; strengthens cell.
-    - **Chloroplasts** (plant only): Contains chlorophyll; absorbs light for photosynthesis.
-    - **Vacuole** (plant only): Filled with cell sap; supports the cell.
+### Levels of Organisation
+Organelles → Cells → Tissues → Organs → Systems
+
+### Cell Structure and Functions
+- **Nucleus**: Contains DNA; controls cell activities.
+- **Cytoplasm**: Gel-like; site of chemical reactions.
+- **Cell Membrane**: Controls movement of substances in/out.
+- **Mitochondria**: Site of aerobic respiration; releases energy.
+- **Ribosomes**: Site of protein synthesis.
+- **Cell Wall** (plant/algal only): Cellulose; strengthens cell.
+- **Chloroplasts** (plant only): Contains chlorophyll; absorbs light for photosynthesis.
+- **Vacuole** (plant only): Filled with cell sap; supports the cell.
 
 ### Plant vs Animal Cells
 | Feature | Animal | Plant |
@@ -78,89 +90,74 @@ All living organisms (MRSGREN):
 | Chloroplasts | ✗ | ✓ |
 | Large permanent vacuole | ✗ | ✓ |
 
-### Cell Division (Mitosis)
-- **Chromosomes**: Coiled DNA molecules carrying genes; found in nucleus. Human body cells have 23 pairs.
-- **The Cell Cycle**:
-    1. **Growth**: Cell grows; increases mitochondria/ribosomes.
-    2. **DNA Replication**: DNA doubles so each new cell gets a full set.
-    3. **Mitosis**: Chromosomes pulled to each end; nucleus divides.
-    4. **Division**: Cytoplasm and membrane divide → two identical daughter cells.
-- **Importance**: Growth, repair, asexual reproduction.
+---
 
-### Transport in Cells
-- **Diffusion**: Particles spread from **high → low** concentration (passive). Affected by: concentration gradient, temperature, surface area.
-- **Osmosis**: Diffusion of water across a partially permeable membrane from dilute → concentrated solution.
-- **Active Transport**: Movement against concentration gradient; requires energy (respiration).
+## 2. Biological Molecules and Enzymes [REVISION]
+
+### Chemical Elements
+- **Carbohydrates**: Carbon (C), Hydrogen (H), Oxygen (O).
+- **Proteins**: C, H, O, Nitrogen (N).
+- **Lipids**: C, H, O.
+
+### Structure
+- **Carbohydrates**: Made from simple sugars (glucose/starch/glycogen).
+- **Proteins**: Made from **amino acids**.
+- **Lipids**: Made from **fatty acids + glycerol**.
+
+### Enzymes
+- Biological catalysts that speed up metabolic reactions.
+- **Temperature**: Increases activity up to the **optimum**; above this, the enzyme **denatures** (active site shape changes permanently).
+- **pH**: Extremes of pH also denature the enzyme by altering the active site shape.
 
 ---
 
-## 2. Organisation `[TEST]`
+## 3. Nutrition and Gas Exchange [REVISION]
 
-### Levels of Organisation
-Organelles → Cells → Tissues → Organs → Systems
+### Nutrition in Humans
+- **Balanced Diet**: Carbohydrates, proteins, lipids, vitamins (A, C, D), minerals (calcium, iron), water, and dietary fibre.
+- **Alimentary Canal**: Mouth, oesophagus, stomach, small intestine (duodenum/ileum), large intestine, pancreas.
+- **Bile**: Produced by the liver, stored in the gall bladder. Neutralises stomach acid and emulsifies lipids (increasing surface area).
+- **Villi**: Finger-like projections in the small intestine; adapted for absorption with large surface area, thin walls, and rich blood supply.
 
-### Biological Molecules
-- **Carbohydrates** (C, H, O): Large molecules made from simple sugars. Starch (plants) and glycogen (animals/fungi) are storage forms.
-- **Proteins** (C, H, O, N): Made from **amino acids**.
-- **Lipids** (C, H, O): Made from **fatty acids + glycerol**.
+### Nutrition and Gas Exchange in Plants
+- **Photosynthesis**: Conversion of light energy to chemical energy.
+    - Word Equation: Carbon Dioxide + Water → Glucose + Oxygen
+    - Symbol Equation: $6CO_2 + 6H_2O \rightarrow C_6H_{12}O_6 + 6O_2$
+- **Factors affecting rate**: Carbon dioxide concentration, light intensity, and temperature.
+- **Mineral Ions**:
+    - **Magnesium**: Needed for chlorophyll production.
+    - **Nitrate**: Needed for amino acids (protein synthesis).
+- **Gas Exchange**: 
+    - Stomata control the movement of $CO_2$ and $O_2$.
+    - Respiration occurs 24/7; Net exchange depends on light intensity (Higher light = more photosynthesis than respiration).
 
-#### Food Tests
-| Substance | Reagent | Positive Result |
-|---|---|---|
-| Glucose | Benedict's solution (heat) | Blue → brick red precipitate |
-| Starch | Iodine solution | Yellow/brown → blue-black |
-| Protein | Biuret reagent | Blue → purple |
-| Fat | Sudan III / ethanol emulsion test | Red layer / milky emulsion |
+---
 
-### Enzymes
-- Biological catalysts that speed up metabolic reactions without being used up.
-- Have an **active site** complementary in shape to their specific substrate (lock and key model).
-- **Temperature**: Rate increases up to the **optimum** (~37°C in humans). Above optimum → enzyme **denatures** (active site shape changes permanently → no longer works).
-- **pH**: Extremes of pH also denature the enzyme by altering the active site shape.
+## 4. Reproduction [REVISION]
 
-### Nutrition
+### General Principles
+- **Sexual vs. Asexual**: Sexual reproduction involves the fusion of male and female gametes (fertilisation) to produce a zygote, which develops into an embryo.
+- **Adaptations for Pollination**:
+    - **Insect-pollinated**: Large, brightly coloured petals; scent; nectar.
+    - **Wind-pollinated**: Small, green petals; long filaments (exposed anthers); feathery stigmas.
 
-#### Balanced Diet
-| Component | Example Sources | Function |
-|---|---|---|
-| Carbohydrate | Bread, rice, pasta | Energy |
-| Protein | Meat, fish, eggs, legumes | Growth and repair |
-| Lipid | Butter, oil, nuts | Energy storage, insulation |
-| Vitamin A | Liver, dairy, carrots | Vision, immune function |
-| Vitamin C | Citrus fruit, vegetables | Healthy skin/gums; immune system |
-| Vitamin D | Sunlight, oily fish, dairy | Calcium absorption; bone health |
-| Calcium | Dairy, leafy greens | Bone and teeth formation |
-| Iron | Red meat, spinach | Haemoglobin production (O₂ transport) |
-| Water | Drinks, food | Solvent; transport medium |
-| Dietary fibre | Wholegrain, vegetables | Aids movement of food through gut |
+### Seed Formation and Germination
+- Fertilisation leads to seed and fruit formation.
+- **Germination Conditions**: Requires Water, Oxygen, and Warmth (**WOW**).
+- **Food Reserves**: Seedlings utilise stored starch until they can carry out photosynthesis.
+- **Asexual Methods**: Natural (runners) and artificial (cuttings).
 
-- **Energy requirements vary** with: activity level, age (growing teens need more), and pregnancy.
+---
 
-#### The Alimentary Canal
-- **Mouth**: Mechanical digestion; salivary amylase begins starch digestion.
-- **Oesophagus**: Muscular tube; moves food by peristalsis.
-- **Stomach**: Churns food; produces protease (pepsin) and HCl (low pH; kills bacteria).
-- **Small intestine** (duodenum + ileum): Main site of digestion and absorption.
-- **Large intestine** (colon + rectum): Absorbs water; forms and stores faeces.
-- **Pancreas**: Produces amylase, protease, lipase → secreted into duodenum.
-
-**Peristalsis**: Wave-like muscular contractions that push food along the gut.
-
-#### Digestive Enzymes
-| Enzyme | Substrate → Product | Produced By |
-|---|---|---|
-| Amylase | Starch → Maltose | Salivary glands, pancreas |
-| Maltase | Maltose → Glucose | Small intestine |
-| Protease | Proteins → Amino acids | Stomach, pancreas |
-| Lipase | Lipids → Fatty acids + Glycerol | Pancreas |
-
-#### Bile
-- Produced by the **liver**; stored in the **gall bladder**; released into the duodenum.
-- **Functions**: (1) Neutralises stomach acid → optimum pH for intestinal enzymes. (2) Emulsifies lipids → smaller droplets → greater surface area for lipase.
-
-#### Absorption — Villi
-- Small intestine wall is folded into **villi** (finger-like projections).
-- Adaptations: large surface area, thin walls (one cell thick), rich blood supply, lacteals (absorb fatty acids/glycerol into lymph).
+## 5. Practical Investigations [REVISION]
+| Investigation | Key Method/Focus |
+|---|---|
+| **Food Tests** | Benedict's (Glucose), Iodine (Starch), Biuret (Protein), Sudan III (Lipids) |
+| **Enzyme Activity** | Effect of temperature and pH on the rate of reaction. |
+| **Energy in Food** | Burning a food sample under a tube of water and measuring temp change ($Q = mc\Delta T$). |
+| **Photosynthesis** | Starch production (Iodine test after boiling/ethanol) and Oxygen evolution (counting bubbles). |
+| **Gas Exchange** | Using hydrogen-carbonate indicator to show changes in $CO_2$ concentration. |
+| **Germination** | Testing varying conditions (temp/water/oxygen) to see which seeds grow. |
 
 ---
 

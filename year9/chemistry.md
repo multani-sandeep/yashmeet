@@ -1,5 +1,14 @@
 # Chemistry Notes
 
+## Revision Topic List (EOY 2026)
+- [Kinetic Theory](#1-kinetic-theory-revision)
+- [Solubility](#2-solubility-revision)
+- [Atomic Structure](#3-atomic-structure-revision)
+- [Ionic Bonding](#4-ionic-bonding-revision)
+- [Metallic Bonding](#5-metallic-bonding-revision)
+- [Covalent Bonding](#6-covalent-bonding-revision)
+- [Formulae and Equations](#7-formulae-and-equations-revision)
+
 ## Curriculum Overview (2025-26)
 **Syllabus Focus**: IGCSE Curriculum
 
@@ -97,4 +106,47 @@
     - Can form **multiple ions** with different charges (e.g., Fe²⁺ and Fe³⁺, Cu⁺ and Cu²⁺).
     - Form **coloured compounds** (e.g., copper compounds are blue, iron(III) compounds are orange/brown).
     - Good **catalysts** (e.g., Fe in Haber process, MnO₂ for H₂O₂ decomposition).
-    - **Less reactive** than Group 1 & 2 metals.
+---
+
+## Year 9 End of Year Review 2026
+
+### 1. Kinetic Theory [REVISION]
+- Arrangement and movement of particles in solids, liquids, and gases (Particle Model).
+- **Changes of State**: Cooling and heating curves (e.g., octadecan-1-ol); identifying states and plateau regions (where state change occurs).
+- **Diffusion**: Definition; random motion and speed of particles in fluids; effect of temperature.
+- **Key Experiments**:
+    - Bromine gas ($Br_{2}$) diffusion.
+    - Ammonia ($NH_{3}$) + Hydrogen Chloride ($HCl$) reaction in a tube (white ring of ammonium chloride).
+    - Potassium Manganate(VII) ($KMnO_{4}$) in water.
+
+### 2. Solubility [REVISION]
+- Factors affecting solubility (temperature).
+- Reading and plotting **Solubility Curves**.
+- Calculating solubility (units: g per 100g of solvent).
+
+### 3. Atomic Structure [REVISION]
+- Nuclear atom and sub-atomic particles (protons, neutrons, electrons).
+- **Electronic Structure**: Connection to group number (outer electrons) and period number (number of shells).
+- **Isotopes**: Definition; same chemical properties but different physical properties; Relative Atomic Mass ($A_{r}$) calculations.
+
+### 4. Ionic Bonding [REVISION]
+- Formation of ions: Metals lose electrons (cations); Non-metals gain electrons (anions).
+- Strong electrostatic attraction between oppositely charged ions in a **Giant Ionic Lattice**.
+- Dot and cross diagrams.
+- **Properties**: High melting/boiling points; conductivity (only when molten or in solution).
+
+### 5. Metallic Bonding [REVISION]
+- Attraction between positive metal ions and a **sea of delocalised electrons**.
+- **Properties**: High melting points (strong attraction); malleable/ductile (layers slide); electrical conductivity (delocalised electrons).
+- **Group 1 (Alkali Metals)**: Reactivity patterns (increases down the group); reaction with water and air; flame colours.
+- **Group 2 (Alkaline Earth Metals)**: Reactions with water/steam and acids; basic oxides; flame colours.
+
+### 6. Covalent Bonding [REVISION]
+- Sharing pairs of electrons (single, double, triple bonds).
+- **Dot and Cross Diagrams**: $H_{2}, CH_{4}, O_{2}, CO_{2}, HCl, N_{2}, H_{2}O, NH_{3}$.
+- **Shapes**: Methane (tetrahedral); linear molecules.
+- **Simple Molecular Compounds**: Weak intermolecular forces; low melting/boiling points; non-conductors.
+- **Group 7 (Halogens)**: Physical trends (colour, state); reactivity decreases down the group; displacement reactions.
+
+### 7. Formulae and Equations [REVISION]
+- Writing and balancing chemical equations.

@@ -1,5 +1,11 @@
 # Maths GCSE Year 9 Topics
 
+## Revision Topic List (Spring 2026)
+- [Algebra](#1-algebra-revision)
+- [Number: Standard Form](#2-number-standard-form-revision)
+- [Shape: Pythagoras & Circle Theorems](#3-shape-revision)
+- [Graphs: Straight Lines](#4-graphs-straight-lines-revision)
+
 ## Curriculum Overview (2025-26)
 
 ### Autumn Term
@@ -55,6 +61,35 @@
 - Sampling and data collection
 - Charts and diagrams
 - Measures of central tendency (Mean, Median, Mode)
+
+## Year 9 Spring Revision 2026
+
+### 1. Algebra [REVISION]
+- **Simplifying expressions**: index laws; algebraic fractions (adding and subtracting as a single fraction)
+- **Solving linear equations**: including equations with fractions
+- **Simultaneous equations**: elimination and substitution
+- **Factorising**: common factor; difference of two squares; quadratic expressions
+- **Linear inequalities**: solving and illustrating solution on a number line
+- **Forming equations from word problems**: geometry angles, consecutive integers, digit reversal, shared totals, speed/distance/time, stamp/cost problems
+
+### 2. Number: Standard Form [REVISION]
+- Writing numbers in standard form; converting back to ordinary numbers
+- Arithmetic in standard form: ×, ÷, +, −
+- Applied problems (e.g. area and diagonal given perimeter in standard form; answers to 2 s.f.)
+
+### 3. Shape [REVISION]
+- **Pythagoras' theorem**: finding missing sides (answers to 3 s.f.)
+- **Circle theorems**: calculating angles with stated reasons — angle at centre, semicircle, same segment, cyclic quadrilateral, tangent-radius, alternate segment
+
+### 4. Graphs: Straight Lines [REVISION]
+- **Gradient**: calculating between two points
+- **Equation of a line**: from two points; from gradient and a point
+- **y = mx + c**: identifying gradient and y-intercept from equation
+- **Parallel lines**: identifying and writing equations of parallel lines
+- **Drawing lines**: plotting straight line graphs from equation
+- **Graphical solutions**: reading solutions from a graph; solving simultaneous equations graphically
+
+---
 
 ## 7. Circle Theorems (Revision)
 - **Angle at Centre:** Angle at the centre is twice the angle at the circumference.

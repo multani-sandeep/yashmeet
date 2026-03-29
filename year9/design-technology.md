@@ -1,5 +1,13 @@
 # Design & Technology Notes
 
+## Revision Topic List (EOY 2026)
+- [Timber: Sources and Properties](#timber-sources-and-properties-revision)
+- [Timber: Joinery and Tools](#timber-joinery-and-tools-revision)
+- [Timber: Environmental Impact](#timber-environmental-impact-revision)
+- [Mechanical Systems](#mechanical-systems)
+- [Metals](#metals)
+- [Polymers](#polymers)
+
 ## Curriculum Overview (2025-26)
 
 ### Autumn Term
@@ -31,3 +39,47 @@
     - **CAD Skills**: Using 3D printing to realise functional products.
 
 ---
+
+## Timber: Sources and Properties [REVISION]
+
+### 1. Sources and Origins
+*(Placeholder: Add notes on where different timbers come from and the differences between hardwoods/softwoods.)*
+
+### 2. Material Properties
+*(Placeholder: Add notes on density, strength, durability, grain, etc.)*
+
+### 3. Material Uses
+*(Placeholder: List common uses for specific timbers like Oak, Pine, MDF, etc.)*
+
+### 4. Material Stock Types
+- **Standard sections**: Boards, strips, square, circular.
+- **Manufactured boards**: Plywood, MDF, Chipboard.
+
+### 5. Seasoning
+- **Air Seasoning**: (Advantages/Disadvantages)
+- **Kiln Seasoning**.
+
+---
+
+## Timber: Joinery and Tools [REVISION]
+
+### 1. Hand Tools
+*(Placeholder: List key tools like Tenon saw, Marking gauge, Chisel, etc.)*
+
+### 2. Joinery Types (Diagrams/Descriptions)
+- **Finger joint**
+- **Dovetail joint**
+- **Mortise and Tenon joint**
+- **Bridle joint**
+- **Dowel joint**
+
+---
+
+## Timber: Environmental Impact [REVISION]
+
+### 1. General Impact
+- Deforestation, sustainability (FSC/PEFC), and recycling.
+
+### 2. MDF Manufacturing and Distribution
+- **Exam Focus**: Discuss the environmental impact of manufacturing and distributing MDF (8 marks).
+    - Consider: Adhesives (Urea Formaldehyde), energy consumption, transport, and disposal.

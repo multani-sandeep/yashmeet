@@ -1,5 +1,9 @@
 # History Revision Notes
 
+## Revision Topic List (EOY 2026)
+- [British Sector of the Western Front (1914–18)](#the-british-sector-of-the-western-front-191418-revision)
+- [Civil Rights in the USA (1945–1965)](#civil-rights-in-the-usa-19451965-revision)
+
 ## Curriculum Overview (2025-26)
 **GCSE Foundation**: Edexcel GCSE History focus.
 
@@ -164,4 +168,30 @@
 ### 4. End of War (1945)
 - **VE Day (May):** Germany surrenders.
 - **Atomic Bombs (Aug):** Hiroshima & Nagasaki bombed by US to force surrender.
-- **VJ Day (Aug):** Japan surrenders.
+---
+
+## The British Sector of the Western Front, 1914–18 [REVISION]
+*Focus: Injuries, treatment, and the trenches.*
+
+### 1. Context and Environment
+- **Trenches**: Defensive systems used throughout the Western Front.
+- **Gas Attacks**: Use of chlorine, phosgene, and mustard gas; effects on soldiers and importance of medical response.
+
+### 2. Exam Skills
+- **Describe 2 features**: Name a feature and explain its importance with factual detail.
+- **Source Utility**: Assess sources based on content and provenance (Nature, Origin, Purpose - NOP).
+- **Follow-up Questions**: Identifying details in a source and suggesting realistic further sources (e.g., government records, diaries).
+
+---
+
+## Civil Rights in the USA, 1945–1965 [REVISION]
+
+### 1. Key Legal and Social Milestones
+- **Brown v. Topeka (1954)**: Landmark Supreme Court case ruling segregation in schools unconstitutional; why it wasn't immediately successful.
+- **Montgomery Bus Boycott (1955)**: Successful 13-month protest sparked by Rosa Parks; role of the Women’s Political Council (WPC).
+- **Little Rock (1957)**: Tension over school desegregation; opposition to integration.
+- **Civil Rights Act (1964)**: Major legislative achievement banning discrimination.
+
+### 2. Exam Skills
+- **Inference**: Making clear inferences from sources and supporting them with specific quotes/details.
+- **Explain Questions (12 marks)**: Using PEEL (Point, Evidence, Explanation, Link) paragraphs to explain causes or reasons for events.
