@@ -7,9 +7,7 @@ import zipfile
 import re
 from pathlib import Path
 
-# Add user site-packages to path
-sys.path.insert(0, '/Users/yashmeet/Library/Python/3.9/lib/python/site-packages')
-
+# Mammoth is now installed in the environment
 import mammoth
 
 def extract_images(docx_path, output_dir):

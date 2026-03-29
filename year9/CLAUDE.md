@@ -75,9 +75,23 @@ Here are some sample prompts you can use to manage this repository:
 ## Workflow
 
 1. **Input**: Place study materials (images, PDFs, text files) in `/dump`
-2. **Process**: Materials are processed and converted into structured notes. Donot expand sections unless asked by user.
+2. **Process**: Materials are processed and converted into structured notes. Do not expand sections unless asked by user.
+   - For **DOCX files with images**, use `scripts/convert_docx.py` to preserve images and formatting.
+   - Extract images to `year9/images/<subject>/` and update markdown links.
 3. **Output**: Notes are added to subject-specific `.md` files in the root directory
 4. **Archive**: Processed source files are moved to `/archive` with timestamps
+
+### DOCX Processing Protocol
+To process a complex DOCX file (like multiple subject notes or papers):
+1. **Convert**: Run `python3 scripts/convert_docx.py "year9/dump/filename.docx" /tmp/output.md /tmp/images`.
+2. **Inspect**: Read `/tmp/output.md` to identify subject(s) and content type.
+3. **Distribute**: 
+   - Move images to `year9/images/<subject>/`.
+   - Update image links in the markdown to point to the new location.
+   - Append or create subject notes in the root directory (e.g., `spanish.md`).
+4. **Finalize**: Move the original DOCX to `year9/archive/` with a timestamp.
+
+Note: Requires `mammoth` library (`pip install mammoth`).
 
 ## Notes
 - Keep the `/dump` folder clean by regularly processing files
