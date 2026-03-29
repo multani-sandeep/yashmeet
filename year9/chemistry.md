@@ -1,5 +1,27 @@
 # Chemistry Notes
 
+## Curriculum Overview (2025-26)
+**Syllabus Focus**: IGCSE Curriculum
+
+### Autumn Term
+- **Kinetic Theory**: Particle model; diffusion; heating and cooling curves for pure substances.
+- **Solubility**: Temperature-solubility curves.
+- **Atomic structure**: Sub-atomic particles; electronic structure.
+- **Ionic bonding**: Ion formation and bonding; link between structure and physical properties.
+
+### Spring Term
+- **Metallic bonding**: Formation and bonding in metals; link between structure and physical properties.
+- **Groups I and II**: Reactions, trends, and properties of Alkali and Alkaline Earth metals.
+- **Covalent bonding**: Simple molecular structures and bonding.
+- **Group VII**: Reactions and trends of the Halogens.
+
+### Summer Term
+- **Revision & Internal Exams**: End of year assessments.
+- **Quantitative Chemistry**: Mass balance calculations; formula determination; Empirical Formula; reacting mass calculations.
+- **Covalent bonding**: Giant covalent structures (e.g., diamond, graphite).
+
+---
+
 ## Topics
 
 ### Ions and Charges

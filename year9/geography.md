@@ -1,5 +1,21 @@
 # Geography Revision Notes
 
+## Curriculum Overview (2025-26)
+
+### Autumn Term
+- **Superpowers**: Factors affecting superpower status; historical context and the legacy of colonialism; international trade and the rise of the BRICS nations.
+- **Prisoners of Geography**: Analysis of Tim Marshall’s work; the relationship between physical geography and geopolitics, with a focus on Russia and Africa.
+
+### Spring Term
+- **Climate Change**: Issues of impact and mitigation; debating viewpoints via a MUN-style global conference.
+- **Social Development (GCSE)**: Avoiding "the single story"; how social development is measured using gender and health metrics; understanding the development gap and continuum.
+
+### Summer Term
+- **Development Challenges (GCSE)**: Population structure and pyramids; challenges in South Asia and Sub-Saharan Africa including child labour, girls' education, and refugee movements.
+- **Health Care**: Specific focus on Sub-Saharan Africa (Infant mortality, HIV, Malaria); comparison of Top-down vs. Bottom-up development strategies.
+
+---
+
 ## Neo-Colonialism and India's Involvement in Africa
 *(Assessment topic — 8/11)*
 

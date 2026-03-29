@@ -37,6 +37,26 @@ Here are some sample prompts you can use to manage this repository:
 4. **Organize and review**:
    "Review the recent additions in `history.md` for clarity and formatting. Also, check if there are any stray files in `/dump` that haven't been processed yet."
 
+## Curriculum Processing Plan
+
+To process the curriculum from a dump (e.g., `Y9 Curriculum Booklet 25-26.pdf`):
+
+1. **Extraction**: Use `python3 scripts/pdf_to_md.py` to convert the curriculum PDF into a temporary Markdown file.
+2. **Analysis**: Read the converted Markdown to identify pages and sections corresponding to each subject.
+3. **Distribution**:
+   - For each subject (Biology, Chemistry, Physics, History, Geography, Maths, English), identify:
+     - Term-by-term objectives
+     - Key topics and assessment types
+     - iGCSE curriculum links
+   - Append or update the curriculum information at the top of the relevant subject's `.md` file (e.g., `biology.md`). Use a "Curriculum Overview" header.
+4. **Formatting**: Ensure all curriculum notes follow these rules:
+   - Use bullet points for clear readability.
+   - Categorize by 'Term 1', 'Term 2', and 'Term 3' where applicable.
+   - Group related topics logically for easier revision planning.
+5. **Completion**:
+   - Archive the source PDF to `year9/archive/` using the script's `--archive` flag.
+   - Delete the temporary Markdown file created during extraction.
+
 ## Folder Structure
 
 ### `/dump`
@@ -61,15 +81,19 @@ Here are some sample prompts you can use to manage this repository:
 - Each subject gets its own markdown file for organized note-taking
 
 ### Root Files
-- `history.md`: History subject notes
-- `chemistry.md`: Chemistry subject notes
-   - exams typically have a 50:50 split between mcqs:subjective questions
-- `physics.md`: Physics subject notes
-- `geography.md`: Geography subject notes
-- `maths.md`: Maths subject notes
-- `biology.md`: Biology subject notes
-   - exams typically have a 80:20 split between mcqs:subjective questions.
+- `biology.md`: Biology subject notes (exams: 80:20 mcqs:subjective)
+- `chemistry.md`: Chemistry subject notes (exams: 50:50 mcqs:subjective)
+- `computer-science.md`: Computer Science subject notes
+- `design-technology.md`: Design & Technology subject notes
 - `english.md`: English subject notes
+- `french.md`: French subject notes
+- `geography.md`: Geography subject notes
+- `history.md`: History subject notes
+- `maths.md`: Maths subject notes
+- `music.md`: Music subject notes
+- `physics.md`: Physics subject notes
+- `spanish.md`: Spanish subject notes
+- `theology-and-philosophy.md`: Theology and Philosophy subject notes
 - `CLAUDE.md`: This documentation file
 
 ## Workflow

@@ -1,5 +1,23 @@
 # Physics Notes
 
+## Curriculum Overview (2025-26)
+**Exam Board**: Edexcel IGCSE Physics (4PH1)
+
+### Autumn Term
+- **Electricity**: Mastering the relationship between charge, current, voltage, and resistance; rules for series and parallel circuits; calculating electrical power and energy.
+- **Waves**: Differentiating between longitudinal and transverse waves; understanding wave properties (amplitude, frequency, wavelength, period).
+- **Sound**: Investigating the speed of sound; applications of ultrasound and the human hearing range; using an oscilloscope to analyze sound wave features.
+
+### Spring Term
+- **Light**: Laws of reflection and the phenomenon of refraction; mathematical application of Snell’s Law; Total Internal Reflection (TIR) and the critical angle.
+- **IGCSE Physics (Spring 2)**: Core units on **Density** (calculating mass/volume) and **Pressure** (pressure in solids, liquids, and gases).
+
+### Summer Term
+- **Solids, Liquids, and Gases**: Molecular kinetic theory of the states of matter; calculating Energy and **Specific Heat Capacity** ($c$); the **Ideal Gas Law** ($P_1V_1 = P_2V_2$).
+- **Motion**: Representing and analyzing movement using Distance-Time and Velocity-Time graphs; calculating acceleration.
+
+---
+
 ## Topics
 
 ### Voltage, Current and Circuits

@@ -1,5 +1,23 @@
 # Biology GCSE Year 9 Topics
 
+## Curriculum Overview (2025-26)
+**Exam Board**: Edexcel IGCSE (4BI1)
+
+### Autumn Term
+- **Characteristics and Variety of Living Organisms**: The 8 characteristics of life; eukaryotic vs. prokaryotic organisms; pathogens (fungi, bacteria, protoctists, viruses); levels of organisation.
+- **Biological Molecules and Diet**: Structure of carbohydrates, proteins, and lipids; food tests (glucose, starch, protein, fat); components of a balanced diet; energy requirements (activity, age, pregnancy).
+- **Enzymes**: Role as biological catalysts; effect of temperature and pH on enzyme activity.
+
+### Spring Term
+- **Digestion in Humans**: Structure and function of the alimentary canal; peristalsis; digestive enzymes (amylase, maltase, protease, lipase); role of bile; adaptations of the small intestine (villi).
+- **Reproduction in Plants**: Sexual vs. asexual reproduction; insect-pollinated vs. wind-pollinated flowers; pollination, fertilisation, seed and fruit formation; seed germination.
+
+### Summer Term
+- **Reproduction in Humans**: Male and female reproductive systems; the menstrual cycle and its hormones (oestrogen, progesterone, FSH, LH); role of the placenta and amniotic sac; secondary sexual characteristics (oestrogen and testosterone).
+- **Nutrition in Plants**: Photosynthesis (equation and importance); factors affecting the rate of photosynthesis; leaf structure and adaptations; mineral ion requirements; gas exchange in relation to respiration and photosynthesis.
+
+---
+
 ## Characteristics of Living Organisms `[TEST]`
 All living organisms (MRSGREN):
 - **Nutrition**: Require an energy/food source.

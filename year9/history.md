@@ -1,5 +1,23 @@
 # History Revision Notes
 
+## Curriculum Overview (2025-26)
+**GCSE Foundation**: Edexcel GCSE History focus.
+
+### Autumn Term
+- **Medicine on the Western Front (1914–18)**: Social study of the First World War; medical advancements in response to injuries, treatment challenges, and life in the trenches.
+- **The Russian Revolution (1917)**: Political ideology, the significance of the 1917 revolutions, and the long-term impact of Communism in the 20th century.
+- **Skills**: Developing Edexcel Paper 1 (Source inference/utility) and Paper 3 (Source analysis/interpretations) competencies.
+
+### Spring Term
+- **World War II & Decolonisation**: The global impact of WWII leading to the dissolution of empires and the struggle for independence; a dedicated study of the Holocaust.
+- **Civil Rights in America (1945–1960s)**: Examining the concept of civil rights and the ongoing struggle for African American civil rights post-WWII.
+- **Project**: Independent research into a decolonised country and peer presentation.
+
+### Summer Term
+- **Migration in Post-WWII Britain**: Analyzing how life in Britain has changed since 1945 due to migration from the West Indies, South Asia (India/Pakistan), and the European Union.
+
+---
+
 ## Topics Log
 - Bolshevik Russia
 - Stalinism
