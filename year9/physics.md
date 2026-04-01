@@ -1,5 +1,11 @@
 # Physics Notes
 
+## Revision Topic List (EOY 2026)
+- [Mechanics](#1-mechanics-revision)
+- [Optics](#2-optics-revision)
+- [Sound & Waves](#3-sound--waves-revision)
+- [Electricity](#4-electricity-revision)
+
 ## Curriculum Overview (2025-26)
 **Exam Board**: Edexcel IGCSE Physics (4PH1)
 
@@ -101,3 +107,110 @@ Think of an electrical circuit like a water pipe system:
 - **Hearing Range**: Humans can hear frequencies between **20 Hz and 20,000 Hz**.
 - **Ultrasound**: Sound with frequencies **above 20,000 Hz**.
     - Used for medical scans (prenatal) and sonar.
+
+---
+
+## Year 9 End of Year Review 2026
+
+### 1. Mechanics [REVISION]
+
+#### Forces
+- Definition of a force; how to represent a force in diagrams; how to measure a force.
+
+#### Gravity
+- What is weight; formula for calculating weight ($W = mg$); gravitational field strength varies on different planets.
+
+#### Springs and Hooke's Law
+- Formula ($F = ke$); measuring the spring constant of a single spring.
+
+#### Types of Energy
+- Concept of Potential Energy; formula for G.P.E. ($E_p = mgh$).
+
+#### Work Done & Kinetic Energy
+- Formulae: $W = Fd$; $E_k = \frac{1}{2}mv^2$.
+
+#### Conservation of Energy
+- The principle of conservation of energy.
+- Examples: pendulum, objects falling, throwing objects upward.
+
+#### Stopping Distances
+- Energy transfers involved in braking.
+- Stopping distance = thinking distance + braking distance.
+
+#### Power
+- Definition of power ($P = W/t$).
+
+---
+
+### 2. Optics [REVISION]
+
+#### Light as a Wave
+- Light is a small part of the electromagnetic spectrum.
+- Light is an example of a transverse wave.
+
+#### Reflection
+- Law of reflection; images in plane mirrors; regular vs. diffuse reflectors.
+
+#### Refraction
+- Description of refraction; reason for refraction; real and apparent depth.
+
+#### Triangular Prisms
+- Dispersion of white light; formation of the visible spectrum.
+
+#### Total Internal Reflection (TIR)
+- What TIR means; the two conditions for TIR; applications of TIR (e.g. optical fibres, periscopes).
+
+---
+
+### 3. Sound & Waves [REVISION]
+
+#### Terminology and Definitions
+- Time period, frequency, wavelength, speed, amplitude.
+
+#### Transverse and Longitudinal Waves
+- Describe particle motion for each type; examples of each.
+
+#### Wave Equation
+- $v = f\lambda$ (wave speed = frequency × wavelength).
+
+#### Time Period
+- $T = 1/f$ (time period = 1 ÷ frequency).
+
+#### Wave Behaviour
+- Diagrams of reflection, refraction, and diffraction.
+
+#### Sound
+- Production and transmission; how to measure the speed of sound; limits of human hearing (20 Hz – 20,000 Hz).
+
+#### Cathode Ray Oscilloscope
+- Measuring time period; calculating frequency; comparing sound quality of different instruments.
+
+---
+
+### 4. Electricity [REVISION]
+
+#### Circuit Symbols
+- Recognise and recall standard GCSE symbols.
+
+#### Current
+- Definition; how to measure current; current in series and parallel circuits.
+
+#### Potential Difference
+- Definition; how to measure p.d.; p.d. in series and parallel circuits; what provides chemical potential energy to circuits.
+
+#### Electrical Resistance
+- Definition; how to measure resistance (ohmmeter, or ammeter + voltmeter); rules for resistors in series and parallel; Ohm's Law ($V = IR$).
+
+#### Circuit Investigations
+- IV characteristics for: fixed resistors, filament lamps, diodes.
+- Relate graph shape to changing resistance; behaviour of diodes.
+
+#### Sensing Components
+- LDR (light-dependent resistor); thermistor — how resistance changes with conditions.
+
+#### Electrical Power & Energy
+- Definition of electrical power ($P = IV$); how to calculate power; definition of electrical energy ($E = Pt$); measuring energy with ammeter, voltmeter, and stop clock.
+
+#### Mains Electricity
+- Wires: Earth, Live, Neutral; mains voltage and frequency in the UK.
+- Safety: fuses, circuit breakers, and Earth wire; electrical hazards.

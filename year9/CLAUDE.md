@@ -15,11 +15,12 @@ When creating new papers:
 - Create a mark scheme for the generated paper
 - In terms of syllabus and difficulty use IGCSE standard for Year 9 at a UK independent school, specifically Haberdashers Boys school
 - Papers are generated in the `dump` folder
+- Subject specific past paper questions can be reused in papers, but should not exceed 20% of the paper
 - Use internet resources to create a paper that is relevant to the syllabus and difficulty level
 
 - If a paper requires information like the periodic table and the table would have been provided in an IGCSE exam then include that in the paper. Do similar for diagrams or other reference material necessary to complete the paper.
 
-- See subject level split below for creating paper with the correct ratio of question type mcqs or subjective.
+- See subject level split below in `Root Files` for creating paper with the correct ratio of question type mcqs or subjective.
 
 ## Usage
 
