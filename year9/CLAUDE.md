@@ -22,6 +22,8 @@ When creating new papers:
 
 - See subject level split below in `Root Files` for creating paper with the correct ratio of question type mcqs or subjective.
 
+- Estimate an A4 size content based on lines per question and options. Assume a wide margin at the bottom of each page.
+
 ## Usage
 
 Here are some sample prompts you can use to manage this repository:
