@@ -135,10 +135,14 @@
 
 ### Measuring Social Development
 - **Social development**: A measure of how well a society is changing for the better — how living standards are improving.
-- **Life expectancy**: Average age a person is expected to live to.
+- **Life expectancy**: Average age a person is expected to live to. Usually calculated separately for men and women.
 - **Literacy rate**: % of a population who can read or write.
-- **Infant mortality rate**: Number of babies per 1000 live births who die under age one.
+- **Birth rate**: The number of children born in one year for every 1,000 people in a country's population.
+- **Infant mortality rate (IMR)**: Number of babies per 1000 live births who die under age one.
 - **Fertility rate**: Average number of children a woman has in her lifetime.
+- **Primary health care**: The first point of contact between a health care worker and a patient. May involve preventative care, e.g. immunisation.
+- **Net immigration**: When more people move into a region than leave it.
+- **Remittances**: Money sent by migrant workers back home to support their families.
 
 **Indicators used:**
 - Life expectancy · Literacy rates · Number of people per doctor · Infant mortality rate
