@@ -11,6 +11,10 @@
 - [Reproduction in Plants and Humans](#reproduction-in-plants-and-humans-revision)
 - [Practical Investigations](#practical-investigations-revision)
 
+## Resources
+- [BBC Bitesize — Edexcel IGCSE Biology Exam Spec](https://www.bbc.co.uk/bitesize/examspecs/zcq2j6f)
+- [Cognito — GCSE Biology Edexcel Topics & Lessons](https://cognitoedu.org/courseoverview/b2-gcse-iedexcel-t/lessons)
+
 ## Curriculum Overview (2025-26)
 **Exam Board**: Edexcel IGCSE (4BI1)
 
@@ -221,36 +225,3 @@ Mouth → Oesophagus → Stomach → Small intestine (duodenum then ileum) → L
 | **Photosynthesis** | Starch production (Iodine test after boiling/ethanol) and Oxygen evolution (counting bubbles). |
 | **Gas Exchange** | Using hydrogen-carbonate indicator to show changes in $CO_2$ concentration. |
 | **Germination** | Testing varying conditions (temp/water/oxygen) to see which seeds grow. |
-
----
-
-## 3. Infection and Response
-- **Communicable Diseases (Pathogens)**
-    - **Bacteria**: Produce toxins damaging cells/tissues.
-        - Salmonella: food poisoning (fever, cramps, vomiting, diarrhoea).
-        - Gonorrhoea: STD (yellow/green discharge, pain on urination).
-    - **Fungi**: Hyphae penetrate skin/plant surfaces.
-        - Rose Black Spot: purple/black spots on leaves → affects photosynthesis.
-        - Athlete's Foot: itching/flaking skin.
-- Human defence systems
-- Vaccination and antibiotics
-- Drug discovery
-
-## 4. Bioenergetics
-- Photosynthesis
-- Respiration (Aerobic and Anaerobic)
-- Metabolism
-
-## 5. Homeostasis and Response
-- Nervous system
-- Hormonal coordination
-- Homeostasis in action
-
-## 6. Inheritance, Variation and Evolution
-- Reproduction
-- Genetics and DNA
-- Evolution and Natural Selection
-
-## 7. Ecology
-- Adaptations and competition
-- Ecosystems and biodiversity
