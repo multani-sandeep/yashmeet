@@ -120,7 +120,8 @@
     - Potassium Manganate(VII) ($KMnO_{4}$) in water.
 
 ### 2. Solubility [REVISION]
-- Factors affecting solubility (temperature).
+- **Measuring solubility**: Dissolve a solute in a known mass of solvent at a set temperature until no more dissolves (saturated solution); evaporate and weigh the dissolved solid.
+- Factors affecting solubility: temperature (most solids more soluble when hotter; gases less soluble when hotter).
 - Reading and plotting **Solubility Curves**.
 - Calculating solubility (units: g per 100g of solvent).
 
@@ -138,15 +139,15 @@
 ### 5. Metallic Bonding [REVISION]
 - Attraction between positive metal ions and a **sea of delocalised electrons**.
 - **Properties**: High melting points (strong attraction); malleable/ductile (layers slide); electrical conductivity (delocalised electrons).
-- **Group 1 (Alkali Metals)**: Reactivity patterns (increases down the group); reaction with water and air; flame colours.
-- **Group 2 (Alkaline Earth Metals)**: Reactions with water/steam and acids; basic oxides; flame colours.
+- **Group 1 (Alkali Metals)**: Reactivity increases down the group (outer electron further from nucleus, less attraction → easier to lose); stored in oil to prevent reaction with air/moisture; reactions with water → metal hydroxide + hydrogen; reactions with dilute acid → salt + hydrogen; oxides are **basic**; flame colours (Li = red, Na = yellow, K = lilac).
+- **Group 2 (Alkaline Earth Metals)**: Action of air (form oxide coatings); **Ca** reacts with cold water → calcium hydroxide + hydrogen; **Mg** reacts with steam (not cold water) → magnesium oxide + hydrogen; reactions with dilute acids → salt + hydrogen; oxides are **basic**; flame colours (Mg = white, Ca = brick red, Ba = green).
 
 ### 6. Covalent Bonding [REVISION]
 - Sharing pairs of electrons (single, double, triple bonds).
 - **Dot and Cross Diagrams**: $H_{2}, CH_{4}, O_{2}, CO_{2}, HCl, N_{2}, H_{2}O, NH_{3}$.
 - **Shapes**: Methane (tetrahedral); linear molecules.
 - **Simple Molecular Compounds**: Weak intermolecular forces; low melting/boiling points; non-conductors.
-- **Group 7 (Halogens)**: Physical trends (colour, state); reactivity decreases down the group; displacement reactions.
+- **Group 7 (Halogens)**: Physical trends (colour darkens, state changes from gas → liquid → solid going down); reactivity decreases down the group (harder to gain an electron as atomic radius increases); **predict F** as most reactive, **At** as least reactive by extrapolating the trend; displacement reactions (more reactive halogen displaces less reactive halide from solution); **uses**: Cl₂ for water purification/bleach, I₂ as antiseptic.
 
 ### 7. Formulae and Equations [REVISION]
 - Writing and balancing chemical equations.

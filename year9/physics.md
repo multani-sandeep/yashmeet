@@ -22,6 +22,33 @@
 - **Solids, Liquids, and Gases**: Molecular kinetic theory of the states of matter; calculating Energy and **Specific Heat Capacity** ($c$); the **Ideal Gas Law** ($P_1V_1 = P_2V_2$).
 - **Motion**: Representing and analyzing movement using Distance-Time and Velocity-Time graphs; calculating acceleration.
 
+## Textbook & Practice Questions
+**Book**: Physics for Edexcel International GCSE (England) — available on [Boost Learning](https://boost-learning.com/ebooks/listing) (log in with Yashmeet's Microsoft school account).
+
+Each chapter has a short set of end-of-chapter questions. Each topic has Exam Style Questions and Extend & Challenge questions. Answers are in the textbook.
+
+| Revision Topic | Textbook Sections | Pages | Exam Qs | Extend & Challenge |
+|---|---|---|---|---|
+| **Electricity** | 2.1 Introducing Electricity | p.50 | p.86 (Q1–19) | p.91 (Q1–3) |
+| | 2.2 Using Mains Electricity | p.52 | | |
+| | 2.3 Electrical Power | p.56 | | |
+| | 2.4 Electric Circuits | p.58 | | |
+| | 2.5 Calculating Resistance | p.62 | | |
+| | 2.7 Current and Voltage Rules | p.69 | | |
+| | 2.8 Circuit Calculations | p.73 | | |
+| **Waves, Light & Sound** | 3.1 Introducing Waves | p.93 | p.121 (Q1–14, 16–19) | p.125 (Q1–2) |
+| | 3.2 Ripple Tanks | p.97 | | |
+| | 3.4 Reflection of Light | p.105 | | |
+| | 3.5 Refraction of Light | p.107 | | |
+| | 3.6 Total Internal Reflection | p.110 | | |
+| | 3.7 Sound Waves | p.112 | | |
+| | 3.8 Loudness, Quality and Pitch | p.115 | | |
+| **Mechanics** | 4.1 Energy | p.127 | p.154 (Q1, 5–6, 8–10, 12–15, 19–20) | p.157 (Q1) |
+| | 4.4 What is Work? | p.138 | | |
+| | 4.5 Calculating Energy | p.141 | | |
+
+> **Year 9 Exam Note**: Diodes, filament lamps, thermistors and LDRs (textbook §2.5) are **not** assessed in the Year 9 examination.
+
 ---
 
 ## Topics
@@ -150,12 +177,14 @@ Think of an electrical circuit like a water pipe system:
 
 #### Reflection
 - Law of reflection; images in plane mirrors; regular vs. diffuse reflectors.
+- Image in a plane mirror is: **virtual** (cannot be projected), **upright**, and **laterally inverted** (left–right flipped).
 
 #### Refraction
 - Description of refraction; reason for refraction; real and apparent depth.
 
 #### Triangular Prisms
-- Dispersion of white light; formation of the visible spectrum.
+- Dispersion of white light; formation of the visible spectrum (ROYGBIV).
+- Different colours travel at **different speeds** in glass → different refractive indices → different angles of refraction. Violet bends most, red bends least.
 
 #### Total Internal Reflection (TIR)
 - What TIR means; the two conditions for TIR; applications of TIR (e.g. optical fibres, periscopes).
@@ -178,12 +207,16 @@ Think of an electrical circuit like a water pipe system:
 
 #### Wave Behaviour
 - Diagrams of reflection, refraction, and diffraction.
+- **Diffraction**: Waves spread out as they pass through a gap or around an obstacle. Greatest when gap size ≈ wavelength. Longer wavelength → more diffraction; shorter wavelength → less.
+- **Waves transfer energy, not matter** — the medium vibrates but does not travel with the wave.
 
 #### Sound
 - Production and transmission; how to measure the speed of sound; limits of human hearing (20 Hz – 20,000 Hz).
+- **Loud sounds and hearing damage**: Very loud sounds cause large vibrations in the ear. The hair cells in the cochlea can be permanently damaged, leading to hearing loss.
 
 #### Cathode Ray Oscilloscope
 - Measuring time period; calculating frequency; comparing sound quality of different instruments.
+- **Harmonics**: Different instruments produce the same fundamental frequency but with different overtones (harmonics), giving each instrument its unique **timbre** (quality of sound). Shown as a more complex waveform on the CRO.
 
 ---
 
@@ -202,15 +235,23 @@ Think of an electrical circuit like a water pipe system:
 - Definition; how to measure resistance (ohmmeter, or ammeter + voltmeter); rules for resistors in series and parallel; Ohm's Law ($V = IR$).
 
 #### Circuit Investigations
-- IV characteristics for: fixed resistors, filament lamps, diodes.
-- Relate graph shape to changing resistance; behaviour of diodes.
+- IV characteristics for fixed resistors (straight line through origin → constant resistance).
+- > **Not in Year 9 exam**: filament lamps, diodes, thermistors, LDRs.
 
 #### Sensing Components
-- LDR (light-dependent resistor); thermistor — how resistance changes with conditions.
+- > **Not in Year 9 exam**: LDRs and thermistors are not assessed this year.
 
 #### Electrical Power & Energy
 - Definition of electrical power ($P = IV$); how to calculate power; definition of electrical energy ($E = Pt$); measuring energy with ammeter, voltmeter, and stop clock.
 
 #### Mains Electricity
-- Wires: Earth, Live, Neutral; mains voltage and frequency in the UK.
-- Safety: fuses, circuit breakers, and Earth wire; electrical hazards.
+- Wires: **Live** (brown, carries voltage), **Neutral** (blue, completes circuit), **Earth** (green/yellow, safety).
+- UK mains: 230V AC, 50Hz.
+- **AC vs DC**: AC (alternating current) — direction of current reverses periodically (mains supply). DC (direct current) — current flows in one direction only (batteries).
+- **Why wires heat up**: Current flowing through a resistance causes electrical energy to be transferred as heat ($P = I^2R$). Higher current or higher resistance → more heating.
+- **Safety devices**:
+    - **Fuse**: Thin wire that melts if current exceeds its rating, breaking the circuit. Choose the fuse rating just above the normal operating current: $I = P/V$.
+    - **Earth wire**: Connects metal casing to earth — if live wire touches casing, current flows to earth → fuse blows → circuit breaks.
+    - **Insulation**: Plastic coating on wires prevents contact with live conductors.
+    - **Double insulation**: Appliance has no earth wire — fully enclosed in non-conducting casing (two layers of insulation), so no shock risk even if internal fault.
+    - **Circuit breakers / RCDs**: Detect current imbalance between live and neutral (e.g. current leaking to earth through a person) and switch off the circuit faster than a fuse.
