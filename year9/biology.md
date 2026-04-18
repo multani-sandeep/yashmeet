@@ -221,7 +221,9 @@ Mouth → Oesophagus → Stomach → Small intestine (duodenum then ileum) → L
 |---|---|
 | **Food Tests** | Benedict's (Glucose), Iodine (Starch), Biuret (Protein), Sudan III (Lipids) |
 | **Enzyme Activity** | Effect of temperature and pH on the rate of reaction. |
-| **Energy in Food** | Burning a food sample under a tube of water and measuring temp change ($Q = mc\Delta T$). |
+| **Energy in Food** | Burning a food sample under a tube of water and measuring temp change ($Q = mc\Delta T$). <br/> Energy (J) = 4.2 × mass of water (g) × temperature rise (°C). Since water density = 1 g/cm³, mass and volume are interchangeable, so it's also written as: Q = 4.2 × volume of water (cm³) × ΔT
+
+This is just Q = mcΔT with c = 4.2 baked in.|
 | **Photosynthesis** | Starch production (Iodine test after boiling/ethanol) and Oxygen evolution (counting bubbles). |
 | **Gas Exchange** | Using hydrogen-carbonate indicator to show changes in $CO_2$ concentration. |
 | **Germination** | Testing varying conditions (temp/water/oxygen) to see which seeds grow. |
