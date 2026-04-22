@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Year 9 Maths — Algebra Practice Paper (Hard)</title>
+  <script>
+    MathJax = {
+      tex: { inlineMath: [['$', '$']], displayMath: [['$$', '$$']] },
+      options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre'] }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Times New Roman", Times, serif;
+      font-size: 12pt;
+      color: #000;
+      background: #fff;
+      max-width: 210mm;
+      margin: 0 auto;
+      padding: 20mm 18mm 28mm;
+    }
+
+    /* ── Header ── */
+    .school-header {
+      text-align: center;
+      border-bottom: 3px solid #000;
+      padding-bottom: 10px;
+      margin-bottom: 14px;
+    }
+
+    .school-header h1 {
+      font-size: 15pt;
+      font-weight: bold;
+      margin-bottom: 3px;
+    }
+
+    .school-header .subtitle {
+      font-size: 11pt;
+    }
+
+    .school-header .meta {
+      font-size: 10pt;
+      color: #444;
+      margin-top: 4px;
+    }
+
+    /* ── Instruction box ── */
+    .instructions {
+      border: 1.5px solid #000;
+      padding: 10px 14px;
+      margin: 14px 0;
+      font-size: 11pt;
+    }
+
+    .instructions h2 {
+      font-size: 12pt;
+      margin-bottom: 6px;
+    }
+
+    .instructions ul {
+      padding-left: 18px;
+      margin-top: 4px;
+    }
+
+    .instructions li {
+      margin-bottom: 3px;
+    }
+
+    .timing-row {
+      display: flex;
+      gap: 40px;
+      margin-bottom: 6px;
+      font-weight: bold;
+    }
+
+    /* ── Sections ── */
+    .section-heading {
+      background: #fff;
+      color: #000;
+      border: 1.5px solid #000;
+      border-left: 5px solid #000;
+      padding: 5px 10px;
+      font-size: 12pt;
+      font-weight: bold;
+      margin: 22px 0 12px;
+    }
+
+    /* ── Questions ── */
+    .question {
+      margin-bottom: 18px;
+    }
+
+    .question-title {
+      font-weight: bold;
+      font-size: 12pt;
+      margin-bottom: 6px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 3px;
+    }
+
+    .part {
+      margin: 10px 0 10px 16px;
+    }
+
+    .part-label {
+      font-weight: bold;
+    }
+
+    .part-body {
+      margin-top: 4px;
+    }
+
+    /* ── Answer lines ── */
+    .answer-line {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      margin-top: 8px;
+      flex-wrap: wrap;
+    }
+
+    .answer-dots {
+      flex: 1;
+      min-width: 120px;
+      border-bottom: 1px dotted #555;
+      height: 16px;
+    }
+
+    .marks {
+      font-weight: bold;
+      white-space: nowrap;
+      font-size: 11pt;
+    }
+
+    /* ── Number line ── */
+    .number-line {
+      font-family: "Courier New", monospace;
+      font-size: 10pt;
+      background: #fff;
+      border: 1px solid #aaa;
+      padding: 8px 12px;
+      margin: 8px 0;
+      white-space: pre;
+      overflow-x: auto;
+    }
+
+    /* ── Working space ── */
+    .working-space {
+      border: 1px dashed #bbb;
+      height: 70px;
+      margin: 10px 0 4px;
+      position: relative;
+    }
+
+    .working-space::after {
+      content: "Working space";
+      position: absolute;
+      top: 4px;
+      right: 8px;
+      font-size: 9pt;
+      color: #bbb;
+      font-style: italic;
+    }
+
+    /* ── Simultaneous equation alignment ── */
+    .sim-eq {
+      margin: 6px 0 6px 20px;
+    }
+
+    .sim-eq p {
+      margin: 2px 0;
+    }
+
+    /* ── Word problem note ── */
+    .note-box {
+      border-left: 3px solid #000;
+      padding: 5px 10px;
+      background: #fff;
+      margin: 10px 0;
+      font-style: italic;
+    }
+
+    /* ── Score grid ── */
+    .score-grid {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 24px;
+      font-size: 11pt;
+    }
+
+    .score-grid th,
+    .score-grid td {
+      border: 1px solid #000;
+      padding: 5px 8px;
+      text-align: center;
+    }
+
+    .score-grid th {
+      background: #fff;
+      font-weight: bold;
+    }
+
+    .score-grid td:first-child {
+      text-align: left;
+    }
+
+    .score-grid .total-row {
+      font-weight: bold;
+      background: #fff;
+    }
+
+    /* ── Footer ── */
+    .paper-footer {
+      margin-top: 24px;
+      border-top: 2px solid #000;
+      padding-top: 8px;
+      text-align: center;
+      font-size: 10pt;
+      color: #444;
+      font-style: italic;
+    }
+
+    /* ── Print ── */
+    @media print {
+      body {
+        padding: 15mm 18mm 25mm;
+      }
+
+      /* .section-heading { page-break-after: avoid; }
+      .question { page-break-inside: avoid; } */
+    }
+
+    hr.divider {
+      border: none;
+      border-top: 1px solid #ddd;
+      margin: 12px 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════════════ HEADER ══ -->
+  <header class="school-header">
+    <h1>Haberdashers Boys School</h1>
+    <div class="subtitle"><strong>Year 9 Mathematics — Algebra Practice Paper</strong></div>
+    <div class="meta">Date: 18 April 2026 &nbsp;|&nbsp; Difficulty: HARD &nbsp;|&nbsp; iGCSE Standard</div>
+  </header>
+
+  <!-- ═══════════════════════════════════════════ INSTRUCTIONS ══ -->
+  <div class="instructions">
+    <h2>Instructions to Candidates</h2>
+    <div class="timing-row">
+      <span>Time allowed: 1 hour 45 minutes</span>
+      <span>Total marks: 101</span>
+    </div>
+    <ul>
+      <li>Answer <strong>ALL</strong> questions in the spaces provided.</li>
+      <li>Write your answers in <strong>black or blue pen</strong>.</li>
+      <li>Show <strong>ALL</strong> working clearly. Marks may be awarded for correct method even if the final answer is
+        wrong.</li>
+      <li><strong>Calculators are NOT permitted</strong> unless stated.</li>
+      <li>Diagrams are NOT accurately drawn unless stated otherwise.</li>
+    </ul>
+  </div>
+
+  <!-- ═══════════════════════════════════════════ SECTION A ══ -->
+  <div class="section-heading">SECTION A — Algebraic Fractions &nbsp;(21 marks)</div>
+
+  <div class="question">
+    <div class="question-title">Question 1 — Simplify fully</div>
+
+    <div class="part">
+      <span class="part-label">(a)</span>
+      <div class="part-body">$\dfrac{4x^2y^3}{10xy^5}$</div>
+      <div class="answer-line">
+        <span>Answer:</span>
+        <div class="answer-dots"></div>
+        <span class="marks">[1]</span>
+      </div>
+    </div>
+    <hr class="divider">
+
+    <div class="part">
+      <span class="part-label">(b)</span>
+      <div class="part-body">$\dfrac{x^2 - 16}{x^2 + 2x - 8}$</div>
+      <div class="working-space"></div>
+      <div class="answer-line">
+        <span>Answer:</span>
+        <div class="answer-dots"></div>
+        <span class="marks">[3]</span>
+      </div>
+    </div>
+    <hr class="divider">
+
+    <div class="part">
+      <span class="part-label">(c)</span>
+      <div class="part-body">$\dfrac{3x^2 + x - 2}{x^2 - 1}$</div>
+      <div class="working-space"></div>
+      <div class="answer-line">
+        <span>Answer:</span>
+        <div class="answer-dots"></div>
+        <span class="marks">[3]</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Question 2 — Write as a single fraction in its simplest form</div>
+
+    <div class="part">
+      <span class="part-label">(a)</span>
+      <div class="part-body">$\dfrac{3}{x+2} - \dfrac{1}{x-3}$</div>
+      <div class="working-space"></div>
+      <div class="answer-line">
+        <span>Answer:</span>
+        <div class="answer-dots"></div>
+        <span class="marks">[3]</span>
+      </div>
+    </div>
+    <hr class="divider">
+
+    <div class="part">
+      <span class="part-label">(b)</span>
+      <div class="part-body">$\dfrac{x+1}{x-2} + \dfrac{x-3}{x+1}$</div>
+      <div class="working-space"></div>
+      <div class="answer-line">
+        <span>Answer:</span>
+        <div class="answer-dots"></div>
+        <span class="marks">[4]</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Question 3 — Solve</div>
+
+    <div class="part">
+      <span class="part-label">(a)</span>
+      <div class="part-body">$\dfrac{4}{x-1} = \dfrac{3}{x+2}$</div>
+      <div class="working-space"></div>
+      <div class="answer-line">
+        <span>$x =$</span>
+        <div class="answer-dots"></div>
+        <span class="marks">[3]</span>
+      </div>
+    </div>
+    <hr class="divider">
+
+    <div class="part">
+      <span class="part-label">(b)</span>
+      <div class="part-body">$\dfrac{x+3}{x-1} - \dfrac{x-2}{x+4} = 1$</div>
+      <div class="working-space" style="height:90px"></div>
+      <div class="answer-line">
+        <span>$x =$</span>
+        <div class="answer-dots"></div>
+        <span class="marks">[4]</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════ SECTION B ══ -->
+  <div class="section-heading">SECTION B — Solving Linear and Quadratic Equations &nbsp;(14 marks)</div>
+
+  <div class="question">
+    <div class="question-title">Question 4 — Solve these linear equations</div>
+
+    <div class="part">
+      <span class="part-label">(a)</span>
+      <div class="part-body">$\dfrac{3(2x-1)}{4} - \dfrac{x+5}{6} = 2$</div>
+      <div class="working-space" style="height:80px"></div>
+      <div class="answer-line">
+        <span>$x =$</span>
+        <div class="answer-dots"></div>
+        <span class="marks">[3]</span>
+      </div>
+    </div>
+    <hr class="divider">
+
+    <div class="part">
+      <span class="part-label">(b)</span>
+      <div class="part-body">$5 - \dfrac{2}{3}(4x + 9) = \dfrac{x-1}{2}$</div>
+      <div class="working-space" style="height:80px"></div>
+      <div class="answer-line">
+        <span>$x =$</span>
+        <div class="answer-dots"></div>
+        <span class="marks">[3]</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">Question 5 — Solve these quadratic equations</div>
+
+    <div class="part">
+      <span class="part-label">(a)</span>
+      <div class="part-body">$x^2 - 5x - 14 = 0$</div>
+      <div class="working-space"></div>
+      <div class="answer-line">
+        <span>$x =$</span>
+        <div class="answer-dots"></div>
+        <span class="marks">[2]</span>
+      </div>
+    </div>
+    <hr class="divider">
+
+    <div class="part">
+      <span class="part-label">(b)</span>
+      <div class="part-body">$2x^2 + 7x - 15 = 0$</div>
+      <div class="working-space"></div>
+      <div class="answer-line">
+        <span>$x =$</span>
+        <div class="answer-dots"></div>
+        <span class="marks">[2]</span>
+      </div>
+    </div>
+    <hr class="divider">
+
+    <div class="part">
+      <span class="part-label">(c)</span>
+      <div class="part-body">$3x^2 - 4x = 7$</div>
+      <div class="working-space"></div>
+      <div class="answer-line">
+        <span>$x =$</span>
+        <div class="answer-dots"></div>
+        <span class="marks">[2]</span>
+      </div>
+    </div>
+    <hr class="divider">
+
+    <div class="part">
+      <span class="part-label">(d)</span>
+      <div class="part-body">$(2x - 3)^2 = 25$</div>
+      <div class="working-space"></div>
+      <div class="answer-line">
+        <span>$x =$</span>
+        <div class="answer-dots"></div>
+        <span class="marks">[2]</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════ SECTION C ══ -->
+  <div class="section-heading">SECTION C — Factorising &nbsp;(14 marks)</div>
+
+  <div class="question">
+    <div class="question-title">Question 6 — Factorise fully</div>
+
+    <div class="part">
+      <span class="part-label">(a)</span>
+      <div class="part-body">$12x^3y^2 - 8x^2y^3 + 20x^4y$</div>
+      <div class="answer-line">
+        <span>Answer:</span>
+        <div class="answer-dots"></div>
+        <span class="marks">[2]</span>
+      </div>
+    </div>
+    <hr class="divider">
+
+    <div class="part">
+      <span class="part-label">(b)</span>
+      <div class="part-body">$9x^2 - 49y^2$</div>
+      <div class="answer-line">
+        <span>Answer:</span>
+        <div class="answer-dots"></div>
+        <span class="marks">[2]</span>
+      </div>
+    </div>
+    <hr class="divider">
+
+    <div class="part">
+      <span class="part-label">(c)</span>
+      <div class="part-body">$4a^4 - 25b^2$</div>
+      <div class="answer-line">
+        <span>Answer:</span>
+        <div class="answer-dots"></div>
+        <span class="marks">[2]</span>
+      </div>
+    </div>
+    <hr class="divider">
+
+    <div class="part">
+      <span class="part-label">(d)</span>
+      <div class="part-body">$x^2 - 3x - 40$</div>
+      <div class="answer-line">
+        <span>Answer:</span>
+        <div class="answer-dots"></div>
+        <span class="marks">[2]</span>
+      </div>
+    </div>
+    <hr class="divider">
+
+    <div class="part">
+      <span class="part-label">(e)</span>
+      <div class="part-body">$6x^2 - 11x - 10$</div>
+      <div class="working-space"></div>
+      <div class="answer-line">
+        <span>Answer:</span>
+        <div class="answer-dots"></div>
+        <span class="marks">[2]</span>
+      </div>
+    </div>
+    <hr class="divider">
+
+    <div class="part">
+      <span class="part-label">(f)</span>
+      <div class="part-body">$2x^2 + 13x + 15$</div>
+      <div class="working-space"></div>
+      <div class="answer-line">
+        <span>Answer:</span>
+        <div class="answer-dots"></div>
+        <span class="marks">[2]</span>
+      </div>
+    </div>
+    <hr class="divider">
+
+    <div class="part">
+      <span class="part-label">(g)</span>
+      <div class="part-body">$4x^2 - 12x + 9$</div>
+      <div class="working-space"></div>
+      <div class="answer-line">
+        <span>Answer:</span>
+        <div class="answer-dots"></div>
+        <span class="marks">[2]</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════ SECTION D ══ -->
+  <div class="section-heading">SECTION D — Simultaneous Equations &nbsp;(12 marks)</div>
+
+  <div class="question">
+    <div class="question-title">Question 7 — Solve these simultaneous equations</div>
+
+    <div class="part">
+      <span class="part-label">(a)</span>
+      <div class="sim-eq">
+        <p>$3x - 2y = 13$</p>
+        <p>$5x + 4y = 11$</p>
+      </div>
+      <div class="working-space" style="height:90px"></div>
+      <div class="answer-line" style="margin-bottom:4px">
+        <span>$x =$</span>
+        <div class="answer-dots"></div>
+      </div>
+      <div class="answer-line">
+        <span>$y =$</span>
+        <div class="answer-dots"></div>
+        <span class="marks">[3]</span>
+      </div>
+    </div>
+    <hr class="divider">
+
+    <div class="part">
+      <span class="part-label">(b)</span>
+      <div class="sim-eq">
+        <p>$\dfrac{x}{3} + \dfrac{y}{2} = 4$</p>
+        <p style="margin-top:6px">$2x - y = 6$</p>
+      </div>
+      <div class="working-space" style="height:90px"></div>
+      <div class="answer-line" style="margin-bottom:4px">
+        <span>$x =$</span>
+        <div class="answer-dots"></div>
+      </div>
+      <div class="answer-line">
+        <span>$y =$</span>
+        <div class="answer-dots"></div>
+        <span class="marks">[4]</span>
+      </div>
+    </div>
+    <hr class="divider">
+
+    <div class="part">
+      <span class="part-label">(c)</span>
+      <div class="part-body">One equation is quadratic. Solve:</div>
+      <div class="sim-eq" style="margin-top:6px">
+        <p>$y = x + 2$</p>
+        <p>$x^2 + y^2 = 52$</p>
+      </div>
+      <div class="working-space" style="height:100px"></div>
+      <div style="margin-top:8px; line-height:2">
+        $x =$ <span style="display:inline-block; width:80px; border-bottom:1px dotted #555"></span>
+        &nbsp;&nbsp; $y =$ <span style="display:inline-block; width:80px; border-bottom:1px dotted #555"></span>
+        &nbsp;&nbsp; <strong>or</strong> &nbsp;&nbsp;
+        $x =$ <span style="display:inline-block; width:80px; border-bottom:1px dotted #555"></span>
+        &nbsp;&nbsp; $y =$ <span style="display:inline-block; width:80px; border-bottom:1px dotted #555"></span>
+        &nbsp;&nbsp; <span class="marks">[5]</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════ SECTION E ══ -->
+  <div class="section-heading">SECTION E — Inequalities &nbsp;(8 marks)</div>
+
+  <div class="question">
+    <div class="question-title">Question 8</div>
+
+    <div class="part">
+      <span class="part-label">(a)</span>
+      <div class="part-body">Solve the inequality $\;5 - 3x > 2x - 10\;$ and represent your solution on the number line
+        below.</div>
+      <div class="working-space"></div>
+      <div class="number-line">←──────┼──────┼──────┼──────┼──────┼──────┼──────┼──────→
+        -4 -2 0 2 4 6 8</div>
+      <div class="answer-line">
+        <span>Answer:</span>
+        <div class="answer-dots"></div>
+        <span class="marks">[2]</span>
+      </div>
+    </div>
+    <hr class="divider">
+
+    <div class="part">
+      <span class="part-label">(b)</span>
+      <div class="part-body">Solve the double inequality $\;-1 \leq \dfrac{2x+3}{5} < 3$</div>
+          <div class="working-space"></div>
+          <div class="answer-line">
+            <span>Answer:</span>
+            <div class="answer-dots"></div>
+            <span class="marks">[3]</span>
+          </div>
+      </div>
+      <hr class="divider">
+
+      <div class="part">
+        <span class="part-label">(c)</span>
+        <div class="part-body">Find all integers that satisfy <strong>both</strong>:</div>
+        <div class="sim-eq" style="margin-top:6px">
+          <p>$3x - 4 > 5$ &nbsp;&nbsp;&nbsp; <strong>and</strong> &nbsp;&nbsp;&nbsp; $2x + 1 \leq 15$</p>
+        </div>
+        <div class="working-space"></div>
+        <div class="answer-line">
+          <span>Integers:</span>
+          <div class="answer-dots"></div>
+          <span class="marks">[3]</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════ SECTION F ══ -->
+    <div class="section-heading">SECTION F — Rearranging Formulae &nbsp;(8 marks)</div>
+
+    <div class="question">
+      <div class="question-title">Question 9 — Rearrange each formula to make the indicated letter the subject</div>
+
+      <div class="part">
+        <span class="part-label">(a)</span>
+        <div class="part-body">$v^2 = u^2 + 2as$ &nbsp;&nbsp;&nbsp; (make $u$ the subject)</div>
+        <div class="working-space"></div>
+        <div class="answer-line">
+          <span>$u =$</span>
+          <div class="answer-dots"></div>
+          <span class="marks">[2]</span>
+        </div>
+      </div>
+      <hr class="divider">
+
+      <div class="part">
+        <span class="part-label">(b)</span>
+        <div class="part-body">$T = 2\pi\sqrt{\dfrac{L}{g}}$ &nbsp;&nbsp;&nbsp; (make $L$ the subject)</div>
+        <div class="working-space" style="height:90px"></div>
+        <div class="answer-line">
+          <span>$L =$</span>
+          <div class="answer-dots"></div>
+          <span class="marks">[3]</span>
+        </div>
+      </div>
+      <hr class="divider">
+
+      <div class="part">
+        <span class="part-label">(c)</span>
+        <div class="part-body">$\dfrac{a-b}{a+b} = k$ &nbsp;&nbsp;&nbsp; (make $a$ the subject)</div>
+        <div class="working-space" style="height:90px"></div>
+        <div class="answer-line">
+          <span>$a =$</span>
+          <div class="answer-dots"></div>
+          <span class="marks">[3]</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════ SECTION G ══ -->
+    <div class="section-heading">SECTION G — Sequences and nth Term &nbsp;(6 marks)</div>
+
+    <div class="question">
+      <div class="question-title">Question 10</div>
+
+      <div class="part">
+        <span class="part-label">(a)</span>
+        <div class="part-body">Write down the $n$th term of the sequence: &nbsp; $5,\ 9,\ 13,\ 17,\ 21,\ \ldots$</div>
+        <div class="answer-line" style="margin-top:10px">
+          <span>$n$th term =</span>
+          <div class="answer-dots"></div>
+          <span class="marks">[2]</span>
+        </div>
+      </div>
+      <hr class="divider">
+
+      <div class="part">
+        <span class="part-label">(b)</span>
+        <div class="part-body">The $n$th term of a sequence is $n^2 - 3n + 5$.</div>
+
+        <div class="part" style="margin-top:8px">
+          <span class="part-label">(i)</span>
+          <div class="part-body">Find the 7th term of the sequence.</div>
+          <div class="answer-line">
+            <span>Answer:</span>
+            <div class="answer-dots"></div>
+            <span class="marks">[1]</span>
+          </div>
+        </div>
+
+        <div class="part" style="margin-top:8px">
+          <span class="part-label">(ii)</span>
+          <div class="part-body">Show that the term with value 75 satisfies a quadratic equation, and find which term
+            number it is.</div>
+          <div class="working-space" style="height:90px"></div>
+          <div class="answer-line">
+            <span>It is the</span>
+            <div class="answer-dots" style="max-width:60px"></div>
+            <span>th term.</span>
+            <span class="marks">[3]</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════ SECTION H ══ -->
+    <div class="section-heading">SECTION H — Word Problems: Form and Solve &nbsp;(8 marks)</div>
+
+    <div class="note-box">For each part, you <strong>MUST</strong> form an equation or pair of equations before solving.
+    </div>
+
+    <div class="question">
+      <div class="question-title">Question 11</div>
+
+      <div class="part">
+        <span class="part-label">(a)</span>
+        <div class="part-body">
+          A rectangle has length $(3x + 2)$ cm and width $(x - 1)$ cm. Its area is 54 cm².
+          <br>Show that $3x^2 - x - 56 = 0$ and hence find the dimensions of the rectangle.
+        </div>
+        <div class="working-space" style="height:110px"></div>
+        <div class="answer-line">
+          <span>Answer:</span>
+          <div class="answer-dots"></div>
+          <span class="marks">[4]</span>
+        </div>
+      </div>
+      <hr class="divider">
+
+      <div class="part">
+        <span class="part-label">(b)</span>
+        <div class="part-body">
+          Two numbers differ by 5. The sum of their squares is 193.
+          <br>Set up and solve equations to find the two numbers.
+        </div>
+        <div class="working-space" style="height:110px"></div>
+        <div class="answer-line">
+          <span>Answer:</span>
+          <div class="answer-dots"></div>
+          <span class="marks">[4]</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════ SECTION I ══ -->
+    <div class="section-heading">SECTION I — Algebraic Proof &nbsp;(10 marks)</div>
+
+    <div class="question">
+      <div class="question-title">Question 12</div>
+
+      <div class="part">
+        <span class="part-label">(a)</span>
+        <div class="part-body">Prove that the sum of any three consecutive even numbers is always a multiple of 6.</div>
+        <div class="working-space" style="height:100px"></div>
+        <div style="text-align:right; font-weight:bold; margin-top:4px">[3]</div>
+      </div>
+      <hr class="divider">
+
+      <div class="part">
+        <span class="part-label">(b)</span>
+        <div class="part-body">Prove that $(n + 3)^2 - (n - 1)^2 \equiv 8(n + 1)$ for all values of $n$.</div>
+        <div class="working-space" style="height:100px"></div>
+        <div style="text-align:right; font-weight:bold; margin-top:4px">[3]</div>
+      </div>
+      <hr class="divider">
+
+      <div class="part">
+        <span class="part-label">(c)</span>
+        <div class="part-body">Prove that the product of two consecutive odd numbers is always one less than a multiple
+          of 4.</div>
+        <div class="working-space" style="height:110px"></div>
+        <div style="text-align:right; font-weight:bold; margin-top:4px">[4]</div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════ END ══ -->
+    <div
+      style="text-align:center; font-weight:bold; font-size:13pt; margin:24px 0 18px; border-top:2px solid #000; padding-top:12px;">
+      END OF PAPER &nbsp;—&nbsp; Total: 101 marks
+    </div>
+
+    <!-- ═══════════════════════════════════════════ SCORE GRID ══ -->
+    <p style="font-weight:bold; margin-bottom:6px">For Teacher Use Only</p>
+    <table class="score-grid">
+      <thead>
+        <tr>
+          <th>Section</th>
+          <th>Topic</th>
+          <th>Marks Available</th>
+          <th>Marks Achieved</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>A</td>
+          <td>Algebraic Fractions</td>
+          <td>21</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>B</td>
+          <td>Linear and Quadratic Equations</td>
+          <td>14</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>C</td>
+          <td>Factorising</td>
+          <td>14</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>D</td>
+          <td>Simultaneous Equations</td>
+          <td>12</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>E</td>
+          <td>Inequalities</td>
+          <td>8</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>F</td>
+          <td>Rearranging Formulae</td>
+          <td>8</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>G</td>
+          <td>Sequences and nth Term</td>
+          <td>6</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>H</td>
+          <td>Word Problems</td>
+          <td>8</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>I</td>
+          <td>Algebraic Proof</td>
+          <td>10</td>
+          <td></td>
+        </tr>
+        <tr class="total-row">
+          <td colspan="2">TOTAL</td>
+          <td>101</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="paper-footer">
+      Paper designed to iGCSE standard — Hard difficulty — Year 9 Haberdashers Boys School — 18 April 2026
+    </div>
+
+</body>
+
+</html>

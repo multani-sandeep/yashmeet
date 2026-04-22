@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Year 9 Physics — Electricity &amp; Sound Practice Paper (Hard) — 19 April 2026</title>
+  <script>
+    MathJax = {
+      tex: { inlineMath: [['$', '$']], displayMath: [['$$', '$$']] },
+      options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre'] }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Times New Roman", Times, serif;
+      font-size: 12pt;
+      color: #000;
+      background: #fff;
+      max-width: 210mm;
+      margin: 0 auto;
+      padding: 20mm 18mm 28mm;
+    }
+
+    /* ── Header ── */
+    .school-header {
+      text-align: center;
+      border-bottom: 3px solid #000;
+      padding-bottom: 10px;
+      margin-bottom: 14px;
+    }
+
+    .school-header h1 {
+      font-size: 15pt;
+      font-weight: bold;
+      margin-bottom: 3px;
+    }
+
+    .school-header .subtitle {
+      font-size: 11pt;
+    }
+
+    .school-header .meta {
+      font-size: 10pt;
+      color: #444;
+      margin-top: 4px;
+    }
+
+    /* ── Candidate row ── */
+    .candidate-row {
+      display: flex;
+      gap: 30px;
+      margin: 14px 0;
+      font-size: 11pt;
+    }
+
+    .candidate-field {
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+      flex: 1;
+    }
+
+    .candidate-field .field-label {
+      white-space: nowrap;
+      font-weight: bold;
+    }
+
+    .field-line {
+      flex: 1;
+      border-bottom: 1px solid #000;
+      height: 16px;
+    }
+
+    /* ── Instruction box ── */
+    .instructions {
+      border: 1.5px solid #000;
+      padding: 10px 14px;
+      margin: 14px 0;
+      font-size: 11pt;
+    }
+
+    .instructions h2 {
+      font-size: 12pt;
+      margin-bottom: 6px;
+    }
+
+    .instructions ul {
+      padding-left: 18px;
+      margin-top: 4px;
+    }
+
+    .instructions li {
+      margin-bottom: 3px;
+    }
+
+    /* ── Data sheet ── */
+    .data-sheet {
+      margin: 16px 0;
+      border: 1px solid #000;
+      padding: 10px 14px;
+    }
+
+    .data-sheet h3 {
+      font-size: 11pt;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    .data-sheet table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 10.5pt;
+    }
+
+    .data-sheet td {
+      padding: 3px 8px;
+      border: 1px solid #ccc;
+    }
+
+    .data-sheet td:first-child {
+      width: 42%;
+    }
+
+    .constants {
+      margin-top: 8px;
+      font-size: 10.5pt;
+    }
+
+    /* ── Section headings ── */
+    .section-heading {
+      background: #fff;
+      color: #000;
+      border: 1.5px solid #000;
+      border-left: 5px solid #000;
+      padding: 5px 10px;
+      font-size: 12pt;
+      font-weight: bold;
+      margin: 24px 0 12px;
+    }
+
+    /* ── Question blocks ── */
+    .question {
+      margin-bottom: 20px;
+    }
+
+    .question-title {
+      font-weight: bold;
+      font-size: 12pt;
+      margin-bottom: 8px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 3px;
+    }
+
+    .question-context {
+      margin-bottom: 10px;
+      line-height: 1.6;
+    }
+
+    /* ── Parts ── */
+    .part {
+      margin: 10px 0 10px 16px;
+    }
+
+    .part-label {
+      font-weight: bold;
+    }
+
+    .part-body {
+      margin-top: 4px;
+      line-height: 1.6;
+    }
+
+    /* ── Circuit diagram box ── */
+    .circuit-box {
+      border: 1px solid #000;
+      background: #fff;
+      font-family: "Courier New", monospace;
+      font-size: 10pt;
+      padding: 10px 14px;
+      margin: 8px 0;
+      white-space: pre;
+      line-height: 1.4;
+    }
+
+    /* ── Diagram placeholder ── */
+    .diagram-box {
+      border: 1px dashed #888;
+      min-height: 90px;
+      margin: 8px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #888;
+      font-style: italic;
+      font-size: 10pt;
+      text-align: center;
+      padding: 8px;
+    }
+
+    /* ── Answer lines ── */
+    .answer-line {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      margin-top: 8px;
+      flex-wrap: wrap;
+    }
+
+    .answer-dots {
+      flex: 1;
+      min-width: 100px;
+      border-bottom: 1px dotted #555;
+      height: 16px;
+    }
+
+    .answer-short {
+      display: inline-block;
+      width: 80px;
+      border-bottom: 1px dotted #555;
+      height: 16px;
+      vertical-align: bottom;
+    }
+
+    .marks {
+      font-weight: bold;
+      white-space: nowrap;
+      font-size: 11pt;
+    }
+
+    /* ── Working space ── */
+    .working-space {
+      border: 1px dashed #bbb;
+      min-height: 60px;
+      margin: 8px 0 4px;
+      position: relative;
+    }
+
+    .working-space::after {
+      content: "Working space";
+      position: absolute;
+      top: 4px;
+      right: 8px;
+      font-size: 9pt;
+      color: #bbb;
+      font-style: italic;
+    }
+
+    /* ── Answer write-in lines (multiple blank lines) ── */
+    .write-lines {
+      margin: 6px 0;
+    }
+
+    .write-line {
+      border-bottom: 1px solid #ccc;
+      height: 22px;
+      margin-bottom: 4px;
+    }
+
+    /* ── Equation display ── */
+    .eq-display {
+      margin: 6px 0 6px 16px;
+    }
+
+    /* ── CRO traces description box ── */
+    .trace-box {
+      border: 1px solid #888;
+      padding: 8px 12px;
+      margin: 8px 0;
+      font-size: 10.5pt;
+      background: #fff;
+    }
+
+    .trace-box p {
+      margin-bottom: 4px;
+    }
+
+    /* ── Two-column answer row ── */
+    .two-col-answer {
+      display: flex;
+      gap: 20px;
+      margin-top: 8px;
+    }
+
+    .two-col-answer .col {
+      flex: 1;
+    }
+
+    /* ── Inline answer pair ── */
+    .inline-answer {
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-top: 6px;
+    }
+
+    .inline-label {
+      white-space: nowrap;
+    }
+
+    /* ── Footer ── */
+    .paper-footer {
+      margin-top: 30px;
+      border-top: 2px solid #000;
+      padding-top: 6px;
+      font-size: 9.5pt;
+      text-align: center;
+      color: #333;
+    }
+
+    /* ── Page break hints ── */
+    .page-break {
+      page-break-before: always;
+    }
+
+    /* ── Print styles ── */
+    @media print {
+      body {
+        padding: 15mm 15mm 22mm;
+        max-width: 100%;
+        font-size: 11pt;
+      }
+
+      /* .section-heading {
+        page-break-before: always;
+      }
+
+      .question {
+        page-break-inside: avoid;
+      } */
+
+      .working-space {
+        min-height: 55px;
+      }
+
+      .write-line {
+        height: 20px;
+      }
+
+      a {
+        text-decoration: none;
+        color: #000;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ═══════════════════ HEADER ═══════════════════ -->
+  <div class="school-header">
+    <h1>Physics &mdash; Electricity &amp; Sound</h1>
+    <div class="subtitle">Year 9 Practice Paper &nbsp;|&nbsp; <strong>Hard</strong> &nbsp;|&nbsp; Haberdashers Boys
+      School</div>
+    <div class="meta">Edexcel iGCSE Physics (4PH1) &nbsp;&mdash;&nbsp; 19 April 2026 &nbsp;&mdash;&nbsp; Total:
+      <strong>90 marks</strong>
+    </div>
+  </div>
+
+  <!-- Candidate row -->
+  <div class="candidate-row">
+    <div class="candidate-field">
+      <span class="field-label">Name:</span>
+      <div class="field-line"></div>
+    </div>
+    <div class="candidate-field" style="flex:0 0 auto; min-width:120px;">
+      <span class="field-label">Form:</span>
+      <div class="field-line" style="min-width:60px;"></div>
+    </div>
+    <div class="candidate-field" style="flex:0 0 auto; min-width:160px;">
+      <span class="field-label">Date:</span>
+      <div class="field-line" style="min-width:90px;"></div>
+    </div>
+  </div>
+
+  <!-- Instructions -->
+  <div class="instructions">
+    <h2>Instructions</h2>
+    <ul>
+      <li>Answer <strong>all</strong> questions in <strong>both</strong> sections.</li>
+      <li>You may use a calculator.</li>
+      <li>Show all working clearly where calculation marks are available &mdash; a correct answer without working may
+        not receive full marks.</li>
+      <li>Write answers in the spaces provided.</li>
+      <li>The total mark for this paper is <strong>90 marks</strong>.</li>
+      <li>Equations and data you may find useful are listed on the inside cover below.</li>
+    </ul>
+  </div>
+
+  <!-- Data sheet -->
+  <div class="data-sheet">
+    <h3>Equations &mdash; Data Sheet</h3>
+    <table>
+      <tr>
+        <td>Charge</td>
+        <td>$Q = It$</td>
+      </tr>
+      <tr>
+        <td>Ohm&rsquo;s Law</td>
+        <td>$V = IR$</td>
+      </tr>
+      <tr>
+        <td>Resistors in series</td>
+        <td>$R_\text{total} = R_1 + R_2 + \ldots$</td>
+      </tr>
+      <tr>
+        <td>Resistors in parallel</td>
+        <td>$\dfrac{1}{R_\text{total}} = \dfrac{1}{R_1} + \dfrac{1}{R_2} + \ldots$</td>
+      </tr>
+      <tr>
+        <td>Electrical power</td>
+        <td>$P = IV = I^2R = \dfrac{V^2}{R}$</td>
+      </tr>
+      <tr>
+        <td>Electrical energy</td>
+        <td>$E = Pt = IVt$</td>
+      </tr>
+      <tr>
+        <td>Fuse selection</td>
+        <td>$I = \dfrac{P}{V}$</td>
+      </tr>
+      <tr>
+        <td>Wave equation</td>
+        <td>$v = f\lambda$</td>
+      </tr>
+      <tr>
+        <td>Time period</td>
+        <td>$T = \dfrac{1}{f}$</td>
+      </tr>
+      <tr>
+        <td>Speed of sound in air</td>
+        <td>$v \approx 340 \text{ m s}^{-1}$</td>
+      </tr>
+    </table>
+    <div class="constants">$g = 10 \text{ m s}^{-2}$ &nbsp;&nbsp;&nbsp; UK mains supply: $230 \text{ V}$ AC, $50 \text{
+      Hz}$</div>
+  </div>
+
+  <hr style="border:none; border-top:2px solid #000; margin:20px 0;">
+
+  <!-- ═══════════════════ SECTION A ═══════════════════ -->
+  <div class="section-heading">Section A &mdash; Electricity &nbsp;(48 marks)</div>
+
+  <!-- ─── Q1 ─── -->
+  <div class="question">
+    <div class="question-title">Question 1 &mdash; Current, Charge and Ohm&rsquo;s Law &nbsp;<span
+        style="font-weight:normal;">(12 marks)</span></div>
+    <div class="question-context">
+      A resistor is connected to a 12 V battery. A current of 0.40 A flows through the resistor for 5 minutes.
+    </div>
+
+    <div class="part">
+      <span class="part-label">(a)</span>
+      <div class="part-body">
+        Define <em>electric current</em> in terms of charge flow. <span class="marks">[1]</span>
+        <div class="write-lines">
+          <div class="write-line"></div>
+          <div class="write-line"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="part">
+      <span class="part-label">(b)</span>
+      <div class="part-body">
+        Calculate the total charge that flows through the resistor in 5 minutes. State the unit. <span
+          class="marks">[3]</span>
+        <div class="working-space" style="min-height:50px;"></div>
+        <div class="answer-line">
+          <span>$Q =$</span>
+          <div class="answer-short"></div><span class="inline-label">unit:</span>
+          <div class="answer-short"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="part">
+      <span class="part-label">(c)</span>
+      <div class="part-body">
+        Calculate the resistance of the resistor. <span class="marks">[2]</span>
+        <div class="working-space"></div>
+        <div class="answer-line"><span>$R =$</span>
+          <div class="answer-short"></div><span>$\Omega$</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="part">
+      <span class="part-label">(d)</span>
+      <div class="part-body">
+        Calculate the electrical energy transferred by the resistor over the 5 minutes. <span class="marks">[2]</span>
+        <div class="working-space"></div>
+        <div class="answer-line"><span>$E =$</span>
+          <div class="answer-short"></div><span>J</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="part">
+      <span class="part-label">(e)</span>
+      <div class="part-body">
+        The resistor becomes warm during operation. Explain, in terms of electrons and atomic structure, why electrical
+        energy is transferred as thermal energy in a resistor. <span class="marks">[2]</span>
+        <div class="write-lines">
+          <div class="write-line"></div>
+          <div class="write-line"></div>
+          <div class="write-line"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="part">
+      <span class="part-label">(f)</span>
+      <div class="part-body">
+        A second, identical resistor is now added in <strong>parallel</strong> with the first. Explain what happens to
+        (i) the total resistance and (ii) the total current drawn from the battery. <span class="marks">[2]</span>
+        <div class="write-lines" style="margin-top:6px;">
+          <div style="display:flex; gap:8px; align-items:baseline; margin-bottom:4px;"><span
+              style="white-space:nowrap; font-weight:bold;">(i) Total resistance:</span>
+            <div class="answer-dots"></div>
+          </div>
+          <div style="display:flex; gap:8px; align-items:baseline;"><span
+              style="white-space:nowrap; font-weight:bold;">(ii) Total current:</span>
+            <div class="answer-dots"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr style="border:none; border-top:1px solid #999; margin:18px 0;">
+
+  <!-- ─── Q2 ─── -->
+  <div class="question">
+    <div class="question-title">Question 2 &mdash; Series and Parallel Circuits &nbsp;<span
+        style="font-weight:normal;">(16 marks)</span></div>
+    <div class="question-context">
+      The circuit below consists of a 24 V battery, a 6 &Omega; resistor ($R_1$) in series with a parallel combination
+      of a 12 &Omega; resistor ($R_2$) and an 8 &Omega; resistor ($R_3$).
+    </div>
+
+    <div class="circuit-box"> ┌──────────────────────────────────────────────────────┐
+      │ │
+      [24V] [R₁ = 6Ω] ┌──[R₂ = 12Ω]──┐ │
+      │ ─────────────────────→ │ ├────────┘
+      │ └──[R₃ = 8Ω]──┘
+      └──────────────────────────────────────────────────────┘</div>
+
+    <div class="part">
+      <span class="part-label">(a)</span>
+      <div class="part-body">
+        Calculate the combined resistance of the parallel section ($R_2$ and $R_3$). <span class="marks">[3]</span>
+        <div class="eq-display">$$\frac{1}{R_\text{parallel}} = \frac{1}{R_2} + \frac{1}{R_3}$$</div>
+        <div class="working-space"></div>
+        <div class="answer-line"><span>$R_\text{parallel} =$</span>
+          <div class="answer-short"></div><span>$\Omega$</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="part">
+      <span class="part-label">(b)</span>
+      <div class="part-body">
+        Calculate the total resistance of the whole circuit. <span class="marks">[1]</span>
+        <div class="answer-line" style="margin-top:10px;"><span>$R_\text{total} =$</span>
+          <div class="answer-short"></div><span>$\Omega$</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="part">
+      <span class="part-label">(c)</span>
+      <div class="part-body">
+        Calculate the total current flowing from the battery. <span class="marks">[2]</span>
+        <div class="working-space"></div>
+        <div class="answer-line"><span>$I_\text{total} =$</span>
+          <div class="answer-short"></div><span>A</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="part">
+      <span class="part-label">(d)</span>
+      <div class="part-body">
+        Calculate the voltage dropped across $R_1$. <span class="marks">[2]</span>
+        <div class="working-space"></div>
+        <div class="answer-line"><span>$V_{R_1} =$</span>
+          <div class="answer-short"></div><span>V</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="part">
+      <span class="part-label">(e)</span>
+      <div class="part-body">
+        Hence calculate the voltage across the parallel section. <span class="marks">[1]</span>
+        <div class="answer-line" style="margin-top:10px;"><span>$V_\text{parallel} =$</span>
+          <div class="answer-short"></div><span>V</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="part">
+      <span class="part-label">(f)</span>
+      <div class="part-body">
+        Calculate the current through $R_2$ and the current through $R_3$ separately. <span class="marks">[4]</span>
+        <p style="margin-top:6px; font-weight:bold; font-size:10.5pt;">Working for $I_{R_2}$:</p>
+        <div class="working-space"></div>
+        <div class="answer-line"><span>$I_{R_2} =$</span>
+          <div class="answer-short"></div><span>A</span>
+        </div>
+        <p style="margin-top:10px; font-weight:bold; font-size:10.5pt;">Working for $I_{R_3}$:</p>
+        <div class="working-space"></div>
+        <div class="answer-line"><span>$I_{R_3} =$</span>
+          <div class="answer-short"></div><span>A</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="part">
+      <span class="part-label">(g)</span>
+      <div class="part-body">
+        Verify your answers to (f) by confirming that $I_{R_2} + I_{R_3} = I_\text{total}$. <span
+          class="marks">[1]</span>
+        <div class="write-lines">
+          <div class="write-line"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="part">
+      <span class="part-label">(h)</span>
+      <div class="part-body">
+        Calculate the power dissipated in $R_1$. <span class="marks">[2]</span>
+        <div class="working-space"></div>
+        <div class="answer-line"><span>$P_{R_1} =$</span>
+          <div class="answer-short"></div><span>W</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr style="border:none; border-top:1px solid #999; margin:18px 0;">
+
+  <!-- ─── Q3 ─── -->
+  <div class="question">
+    <div class="question-title">Question 3 &mdash; Electrical Power, Energy and Mains Safety &nbsp;<span
+        style="font-weight:normal;">(12 marks)</span></div>
+    <div class="question-context">A kettle is rated at <strong>2200 W, 230 V</strong>.</div>
+
+    <div class="part">
+      <span class="part-label">(a)</span>
+      <div class="part-body">
+        Calculate the current drawn by the kettle at full power. <span class="marks">[2]</span>
+        <div class="eq-display">$P = IV$</div>
+        <div class="working-space"></div>
+        <div class="answer-line"><span>$I =$</span>
+          <div class="answer-short"></div><span>A</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="part">
+      <span class="part-label">(b)</span>
+      <div class="part-body">
+        The kettle is available with fuses rated at 3 A, 5 A, and 13 A. State which fuse should be fitted and explain
+        why. <span class="marks">[2]</span>
+        <div style="margin-top:8px;">
+          <div style="display:flex; gap:8px; align-items:baseline; margin-bottom:8px;"><span
+              style="white-space:nowrap; font-weight:bold;">Fuse chosen:</span>
+            <div class="answer-short"></div><span>A</span>
+          </div>
+          <div style="display:flex; gap:8px; align-items:baseline;"><span
+              style="white-space:nowrap; font-weight:bold;">Reason:</span>
+            <div class="answer-dots"></div>
+          </div>
+          <div class="write-line" style="margin-top:4px;"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="part">
+      <span class="part-label">(c)</span>
+      <div class="part-body">
+        Calculate the electrical energy transferred when the kettle operates for 3 minutes. Give your answer in
+        kilojoules. <span class="marks">[3]</span>
+        <div class="working-space"></div>
+        <div class="answer-line"><span>$E =$</span>
+          <div class="answer-short"></div><span>kJ</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="part">
+      <span class="part-label">(d)</span>
+      <div class="part-body">
+        A hairdryer is labelled &ldquo;double insulated.&rdquo; Explain what this means and state which safety wire is
+        <strong>not</strong> needed in a double-insulated appliance and why. <span class="marks">[3]</span>
+        <div class="write-lines">
+          <div class="write-line"></div>
+          <div class="write-line"></div>
+          <div class="write-line"></div>
+          <div class="write-line"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="part">
+      <span class="part-label">(e)</span>
+      <div class="part-body">
+        State the colour of the live wire in a UK mains plug and explain the role of the neutral wire. <span
+          class="marks">[2]</span>
+        <div style="margin-top:8px;">
+          <div style="display:flex; gap:8px; align-items:baseline; margin-bottom:8px;"><span
+              style="white-space:nowrap; font-weight:bold;">Live wire colour:</span>
+            <div class="answer-short"></div>
+          </div>
+          <div style="display:flex; gap:8px; align-items:baseline;"><span
+              style="white-space:nowrap; font-weight:bold;">Role of neutral wire:</span>
+            <div class="answer-dots"></div>
+          </div>
+          <div class="write-line" style="margin-top:4px;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr style="border:none; border-top:1px solid #999; margin:18px 0;">
+
+  <!-- ─── Q4 ─── -->
+  <div class="question">
+    <div class="question-title">Question 4 &mdash; AC vs DC and Circuit Calculations &nbsp;<span
+        style="font-weight:normal;">(8 marks)</span></div>
+
+    <div class="part">
+      <span class="part-label">(a)</span>
+      <div class="part-body">
+        Describe the difference between alternating current (AC) and direct current (DC), and state one source of each.
+        <span class="marks">[3]</span>
+        <div class="write-lines">
+          <div class="write-line"></div>
+          <div class="write-line"></div>
+          <div class="write-line"></div>
+          <div class="write-line"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="part">
+      <span class="part-label">(b)</span>
+      <div class="part-body">
+        The UK mains supply is 230 V AC at 50 Hz. Calculate the time period of the AC cycle. <span
+          class="marks">[2]</span>
+        <div class="eq-display">$T = \dfrac{1}{f}$</div>
+        <div class="working-space"></div>
+        <div class="answer-line"><span>$T =$</span>
+          <div class="answer-short"></div><span>s</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="part">
+      <span class="part-label">(c)</span>
+      <div class="part-body">
+        A circuit breaker (RCD) trips when it detects a difference between the current in the live wire and the current
+        in the neutral wire. Explain why this difference would arise if a person accidentally touched the live wire.
+        <span class="marks">[3]</span>
+        <div class="write-lines">
+          <div class="write-line"></div>
+          <div class="write-line"></div>
+          <div class="write-line"></div>
+          <div class="write-line"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════ SECTION B ═══════════════════ -->
+  <div class="section-heading page-break">Section B &mdash; Sound &amp; Waves &nbsp;(42 marks)</div>
+
+  <!-- ─── Q5 ─── -->
+  <div class="question">
+    <div class="question-title">Question 5 &mdash; Nature of Sound Waves &nbsp;<span style="font-weight:normal;">(10
+        marks)</span></div>
+
+    <div class="part">
+      <span class="part-label">(a)</span>
+      <div class="part-body">
+        Sound is described as a longitudinal wave. Explain what the terms <em>longitudinal</em> and <em>transverse</em>
+        mean, and state whether sound is longitudinal or transverse, giving a reason. <span class="marks">[3]</span>
+        <div class="write-lines">
+          <div class="write-line"></div>
+          <div class="write-line"></div>
+          <div class="write-line"></div>
+          <div class="write-line"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="part">
+      <span class="part-label">(b)</span>
+      <div class="part-body">
+        Explain why sound cannot travel through a vacuum, using ideas about particles. <span class="marks">[2]</span>
+        <div class="write-lines">
+          <div class="write-line"></div>
+          <div class="write-line"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="part">
+      <span class="part-label">(c)</span>
+      <div class="part-body">
+        A student stands 680 m from a large wall and claps her hands. She hears the echo 4.0 s later. Calculate the
+        speed of sound using this data. Show your working and comment on whether your answer is consistent with the
+        accepted value of 340 m s<sup>&minus;1</sup>. <span class="marks">[4]</span>
+        <div class="working-space" style="min-height:70px;"></div>
+        <div class="answer-line"><span>$v =$</span>
+          <div class="answer-short"></div><span>m s<sup>&minus;1</sup></span>
+        </div>
+        <div style="display:flex; gap:8px; align-items:baseline; margin-top:8px;">
+          <span style="white-space:nowrap; font-weight:bold;">Comment:</span>
+          <div class="answer-dots"></div>
+        </div>
+        <div class="write-line" style="margin-top:4px;"></div>
+      </div>
+    </div>
+
+    <div class="part">
+      <span class="part-label">(d)</span>
+      <div class="part-body">
+        Sound travels faster in solids than in gases. Explain this using a particle model. <span
+          class="marks">[1]</span>
+        <div class="write-lines">
+          <div class="write-line"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr style="border:none; border-top:1px solid #999; margin:18px 0;">
+
+  <!-- ─── Q6 ─── -->
+  <div class="question">
+    <div class="question-title">Question 6 &mdash; Wave Properties: Frequency, Wavelength and the Wave Equation
+      &nbsp;<span style="font-weight:normal;">(12 marks)</span></div>
+
+    <div class="part">
+      <span class="part-label">(a)</span>
+      <div class="part-body">
+        Define the following wave properties:
+        <div class="part" style="margin-top:8px;">
+          <span class="part-label">(i)</span>
+          <span> Frequency <span class="marks">[1]</span></span>
+          <div class="write-lines">
+            <div class="write-line"></div>
+          </div>
+        </div>
+        <div class="part">
+          <span class="part-label">(ii)</span>
+          <span> Wavelength <span class="marks">[1]</span></span>
+          <div class="write-lines">
+            <div class="write-line"></div>
+          </div>
+        </div>
+        <div class="part">
+          <span class="part-label">(iii)</span>
+          <span> Time period <span class="marks">[1]</span></span>
+          <div class="write-lines">
+            <div class="write-line"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="part">
+      <span class="part-label">(b)</span>
+      <div class="part-body">
+        A sound wave in air has a frequency of 850 Hz. The speed of sound in air is 340 m s<sup>&minus;1</sup>.
+        <div class="part" style="margin-top:8px;">
+          <span class="part-label">(i)</span>
+          <span> Calculate the wavelength of this sound wave. <span class="marks">[2]</span></span>
+          <div class="eq-display">$v = f\lambda$</div>
+          <div class="working-space"></div>
+          <div class="answer-line"><span>$\lambda =$</span>
+            <div class="answer-short"></div><span>m</span>
+          </div>
+        </div>
+        <div class="part" style="margin-top:10px;">
+          <span class="part-label">(ii)</span>
+          <span> Calculate the time period of this wave. <span class="marks">[2]</span></span>
+          <div class="eq-display">$T = \dfrac{1}{f}$</div>
+          <div class="working-space"></div>
+          <div class="answer-line"><span>$T =$</span>
+            <div class="answer-short"></div><span>s</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="part">
+      <span class="part-label">(c)</span>
+      <div class="part-body">
+        The same sound wave now enters water, where the speed of sound is 1500 m s<sup>&minus;1</sup>.
+        <div class="part" style="margin-top:8px;">
+          <span class="part-label">(i)</span>
+          <span> State what happens to the <strong>frequency</strong> of the sound wave when it enters water. Give a
+            reason. <span class="marks">[1]</span></span>
+          <div class="write-lines">
+            <div class="write-line"></div>
+          </div>
+        </div>
+        <div class="part" style="margin-top:8px;">
+          <span class="part-label">(ii)</span>
+          <span> Calculate the new wavelength of the sound wave in water. <span class="marks">[2]</span></span>
+          <div class="working-space"></div>
+          <div class="answer-line"><span>$\lambda_\text{water} =$</span>
+            <div class="answer-short"></div><span>m</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="part">
+      <span class="part-label">(d)</span>
+      <div class="part-body">
+        Explain the link between frequency and pitch, and between amplitude and loudness. <span class="marks">[2]</span>
+        <div class="write-lines">
+          <div class="write-line"></div>
+          <div class="write-line"></div>
+          <div class="write-line"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr style="border:none; border-top:1px solid #999; margin:18px 0;">
+
+  <!-- ─── Q7 ─── -->
+  <div class="question">
+    <div class="question-title">Question 7 &mdash; The Oscilloscope and Sound Quality &nbsp;<span
+        style="font-weight:normal;">(12 marks)</span></div>
+    <div class="question-context">
+      A cathode ray oscilloscope (CRO) displays sound waves as voltage&ndash;time traces. The CRO has the following
+      settings:
+      <ul style="margin: 6px 0 6px 20px;">
+        <li><strong>Time-base</strong>: 2 ms per division (each square = 2 ms wide)</li>
+        <li><strong>Voltage gain</strong>: 1 V per division (each square = 1 V tall)</li>
+      </ul>
+      Four traces A, B, C and D are described below (each on a 6 &times; 4 grid of 1-cm squares):
+    </div>
+
+    <div class="trace-box">
+      <p><strong>Trace A</strong> &mdash; 1 complete wave every 4 divisions wide; amplitude 2 divisions tall.</p>
+      <p><strong>Trace B</strong> &mdash; 1 complete wave every 2 divisions wide; amplitude 2 divisions tall.</p>
+      <p><strong>Trace C</strong> &mdash; 1 complete wave every 4 divisions wide; amplitude 4 divisions tall.</p>
+      <p><strong>Trace D</strong> &mdash; A complex waveform with the same period as Trace A but an irregular shape
+        (many harmonics visible).</p>
+    </div>
+
+    <div class="part">
+      <span class="part-label">(a)</span>
+      <div class="part-body">
+        Calculate the time period and frequency of Trace A. <span class="marks">[3]</span>
+        <div class="working-space"></div>
+        <div class="two-col-answer">
+          <div class="col">
+            <div class="answer-line"><span>$T =$</span>
+              <div class="answer-short"></div><span>ms =</span>
+              <div class="answer-short"></div><span>s</span>
+            </div>
+          </div>
+          <div class="col">
+            <div class="answer-line"><span>$f =$</span>
+              <div class="answer-short"></div><span>Hz</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="part">
+      <span class="part-label">(b)</span>
+      <div class="part-body">
+        Calculate the time period and frequency of Trace B. <span class="marks">[2]</span>
+        <div class="two-col-answer" style="margin-top:10px;">
+          <div class="col">
+            <div class="answer-line"><span>$T =$</span>
+              <div class="answer-short"></div><span>s</span>
+            </div>
+          </div>
+          <div class="col">
+            <div class="answer-line"><span>$f =$</span>
+              <div class="answer-short"></div><span>Hz</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="part">
+      <span class="part-label">(c)</span>
+      <div class="part-body">
+        Compare the <strong>pitch</strong> and <strong>loudness</strong> of Trace A and Trace C. Explain your answer.
+        <span class="marks">[2]</span>
+        <div class="write-lines">
+          <div class="write-line"></div>
+          <div class="write-line"></div>
+          <div class="write-line"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="part">
+      <span class="part-label">(d)</span>
+      <div class="part-body">
+        Trace D has the same fundamental frequency as Trace A but a different waveform shape. Name the property of sound
+        that causes two musical instruments playing the same note to sound different, and explain how the CRO shows
+        this. <span class="marks">[2]</span>
+        <div class="write-lines">
+          <div class="write-line"></div>
+          <div class="write-line"></div>
+          <div class="write-line"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="part">
+      <span class="part-label">(e)</span>
+      <div class="part-body">
+        The voltage gain is now changed to 0.5 V per division, with the time-base unchanged and the same sound source as
+        Trace A connected. Describe what change you would observe on the screen. <span class="marks">[1]</span>
+        <div class="write-lines">
+          <div class="write-line"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="part">
+      <span class="part-label">(f)</span>
+      <div class="part-body">
+        State the human hearing range and define the term <em>ultrasound</em>. <span class="marks">[2]</span>
+        <div style="margin-top:8px;">
+          <div style="display:flex; gap:8px; align-items:baseline; margin-bottom:8px;"><span
+              style="white-space:nowrap; font-weight:bold;">Hearing range:</span>
+            <div class="answer-short"></div><span>Hz to</span>
+            <div class="answer-short"></div><span>Hz</span>
+          </div>
+          <div style="display:flex; gap:8px; align-items:baseline;"><span
+              style="white-space:nowrap; font-weight:bold;">Ultrasound:</span>
+            <div class="answer-dots"></div>
+          </div>
+          <div class="write-line" style="margin-top:4px;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr style="border:none; border-top:1px solid #999; margin:18px 0;">
+
+  <!-- ─── Q8 ─── -->
+  <div class="question">
+    <div class="question-title">Question 8 &mdash; Ultrasound and Wave Behaviour &nbsp;<span
+        style="font-weight:normal;">(8 marks)</span></div>
+
+    <div class="part">
+      <span class="part-label">(a)</span>
+      <div class="part-body">
+        An ultrasound pulse is used to measure the depth of a seabed. The pulse travels at 1500 m s<sup>&minus;1</sup>
+        in seawater and the reflected pulse returns to the ship 0.24 s after it was sent.
+
+        <div class="part" style="margin-top:8px;">
+          <span class="part-label">(i)</span>
+          <span> Calculate the depth of the seabed. <span class="marks">[3]</span></span>
+          <div class="working-space" style="min-height:70px;"></div>
+          <div class="answer-line"><span>Depth $=$</span>
+            <div class="answer-short"></div><span>m</span>
+          </div>
+        </div>
+
+        <div class="part" style="margin-top:10px;">
+          <span class="part-label">(ii)</span>
+          <span> State <strong>one</strong> medical use of ultrasound and <strong>one</strong> reason why ultrasound is
+            preferred over X-rays for certain medical applications. <span class="marks">[2]</span></span>
+          <div style="margin-top:8px;">
+            <div style="display:flex; gap:8px; align-items:baseline; margin-bottom:8px;"><span
+                style="white-space:nowrap; font-weight:bold;">Medical use:</span>
+              <div class="answer-dots"></div>
+            </div>
+            <div style="display:flex; gap:8px; align-items:baseline;"><span
+                style="white-space:nowrap; font-weight:bold;">Reason preferred over X-rays:</span>
+              <div class="answer-dots"></div>
+            </div>
+            <div class="write-line" style="margin-top:4px;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="part">
+      <span class="part-label">(b)</span>
+      <div class="part-body">
+        Diffraction is a property of all waves. State the condition under which diffraction is <strong>greatest</strong>
+        and explain why this limits the use of high-frequency ultrasound for imaging large, deep objects. <span
+          class="marks">[3]</span>
+        <div class="write-lines">
+          <div class="write-line"></div>
+          <div class="write-line"></div>
+          <div class="write-line"></div>
+          <div class="write-line"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="paper-footer">
+    <strong>END OF QUESTION PAPER</strong> &nbsp;&mdash;&nbsp; Total: 90 marks
+    <br>
+    Haberdashers Boys School &mdash; Year 9 Physics &mdash; Electricity &amp; Sound &mdash; 19 April 2026
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Year 9 Physics — Optics &amp; Mechanics Practice Paper (Hard)</title>
+  <script>
+    MathJax = {
+      tex: { inlineMath: [['$','$']], displayMath: [['$$','$$']] },
+      options: { skipHtmlTags: ['script','noscript','style','textarea','pre'] }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: "Times New Roman", Times, serif;
+      font-size: 12pt;
+      color: #000;
+      background: #fff;
+      max-width: 210mm;
+      margin: 0 auto;
+      padding: 20mm 18mm 28mm;
+    }
+
+    /* ── Header ── */
+    .school-header {
+      text-align: center;
+      border-bottom: 3px solid #000;
+      padding-bottom: 10px;
+      margin-bottom: 14px;
+    }
+    .school-header h1 { font-size: 15pt; font-weight: bold; margin-bottom: 3px; }
+    .school-header .subtitle { font-size: 11pt; }
+    .school-header .meta { font-size: 10pt; color: #444; margin-top: 4px; }
+
+    /* ── Candidate row ── */
+    .candidate-row {
+      display: flex;
+      gap: 30px;
+      margin: 14px 0;
+      font-size: 11pt;
+    }
+    .candidate-field { display: flex; align-items: baseline; gap: 6px; flex: 1; }
+    .candidate-field .field-label { white-space: nowrap; font-weight: bold; }
+    .field-line { flex: 1; border-bottom: 1px solid #000; height: 16px; }
+
+    /* ── Instruction box ── */
+    .instructions {
+      border: 1.5px solid #000;
+      padding: 10px 14px;
+      margin: 14px 0;
+      font-size: 11pt;
+    }
+    .instructions h2 { font-size: 12pt; margin-bottom: 6px; }
+    .instructions ul { padding-left: 18px; margin-top: 4px; }
+    .instructions li { margin-bottom: 3px; }
+
+    /* ── Data sheet ── */
+    .data-sheet {
+      margin: 16px 0;
+      border: 1px solid #000;
+      padding: 10px 14px;
+    }
+    .data-sheet h3 { font-size: 11pt; margin-bottom: 8px; font-weight: bold; }
+    .data-sheet table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 10.5pt;
+    }
+    .data-sheet td {
+      padding: 3px 8px;
+      border: 1px solid #ccc;
+    }
+    .data-sheet td:first-child { width: 42%; }
+    .constants { margin-top: 8px; font-size: 10.5pt; }
+
+    /* ── Section headings ── */
+    .section-heading {
+      background: #fff;
+      color: #000;
+      border: 1.5px solid #000;
+      border-left: 5px solid #000;
+      padding: 5px 10px;
+      font-size: 12pt;
+      font-weight: bold;
+      margin: 24px 0 12px;
+    }
+
+    /* ── Question blocks ── */
+    .question { margin-bottom: 20px; }
+    .question-title {
+      font-weight: bold;
+      font-size: 12pt;
+      margin-bottom: 8px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 3px;
+    }
+    .question-context { margin-bottom: 10px; line-height: 1.6; }
+
+    /* ── Parts ── */
+    .part { margin: 10px 0 10px 16px; }
+    .part-label { font-weight: bold; }
+    .part-body { margin-top: 4px; line-height: 1.6; }
+
+    /* ── Diagram placeholder ── */
+    .diagram-box {
+      border: 1px dashed #888;
+      min-height: 90px;
+      margin: 8px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #888;
+      font-style: italic;
+      font-size: 10pt;
+      text-align: center;
+      padding: 8px;
+    }
+
+    /* ── Answer lines ── */
+    .answer-line {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      margin-top: 8px;
+      flex-wrap: wrap;
+    }
+    .answer-dots {
+      flex: 1;
+      min-width: 100px;
+      border-bottom: 1px dotted #555;
+      height: 16px;
+    }
+    .answer-short {
+      display: inline-block;
+      width: 80px;
+      border-bottom: 1px dotted #555;
+      height: 16px;
+      vertical-align: bottom;
+    }
+    .marks { font-weight: bold; white-space: nowrap; font-size: 11pt; }
+
+    /* ── Numbered answer list ── */
+    .answer-list { list-style: none; padding: 0; margin: 8px 0 8px 0; }
+    .answer-list li {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+    .answer-list li .list-num { white-space: nowrap; font-weight: bold; min-width: 16px; }
+    .answer-list li .list-line {
+      flex: 1;
+      border-bottom: 1px dotted #555;
+      height: 16px;
+    }
+
+    /* ── Working space ── */
+    .working-space {
+      border: 1px dashed #bbb;
+      min-height: 60px;
+      margin: 8px 0 4px;
+      position: relative;
+    }
+    .working-space::after {
+      content: "Working space";
+      position: absolute;
+      top: 4px; right: 8px;
+      font-size: 9pt;
+      color: #bbb;
+      font-style: italic;
+    }
+
+    /* ── Answer write-in lines (multiple blank lines) ── */
+    .write-lines { margin: 6px 0; }
+    .write-line {
+      border-bottom: 1px solid #ccc;
+      height: 22px;
+      margin-bottom: 4px;
+    }
+
+    /* ── Equation display ── */
+    .eq-display { margin: 6px 0 6px 16px; }
+
+    /* ── EM spectrum table ── */
+    .em-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 10.5pt;
+      margin: 8px 0;
+    }
+    .em-table th, .em-table td {
+      border: 1px solid #000;
+      padding: 4px 8px;
+    }
+    .em-table th { font-weight: bold; }
+
+    /* ── Inline answer fields ── */
+    .inline-answer { display: flex; gap: 24px; flex-wrap: wrap; margin-top: 8px; }
+    .inline-field { display: flex; align-items: baseline; gap: 6px; }
+
+    /* ── Score grid ── */
+    .score-grid {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 24px;
+      font-size: 11pt;
+    }
+    .score-grid th, .score-grid td {
+      border: 1px solid #000;
+      padding: 5px 8px;
+      text-align: center;
+    }
+    .score-grid th { background: #fff; font-weight: bold; }
+    .score-grid td:first-child { text-align: left; }
+    .score-grid .total-row { font-weight: bold; background: #fff; }
+
+    /* ── Footer ── */
+    .paper-footer {
+      margin-top: 24px;
+      border-top: 2px solid #000;
+      padding-top: 8px;
+      text-align: center;
+      font-size: 10pt;
+      color: #444;
+      font-style: italic;
+    }
+
+    hr.divider { border: none; border-top: 1px solid #ddd; margin: 14px 0; }
+
+    @media print {
+      body { padding: 15mm 18mm 25mm; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ═══ HEADER ═══ -->
+<header class="school-header">
+  <h1>Haberdashers Boys School</h1>
+  <div class="subtitle"><strong>Year 9 Physics — Optics &amp; Mechanics Practice Paper</strong></div>
+  <div class="meta">Date: 19 April 2026 &nbsp;|&nbsp; Difficulty: HARD &nbsp;|&nbsp; iGCSE Standard &nbsp;|&nbsp; 90 marks</div>
+</header>
+
+<!-- ═══ CANDIDATE ROW ═══ -->
+<div class="candidate-row">
+  <div class="candidate-field">
+    <span class="field-label">Name:</span>
+    <div class="field-line"></div>
+  </div>
+  <div class="candidate-field" style="flex:0 0 auto; min-width:120px">
+    <span class="field-label">Form:</span>
+    <div class="field-line" style="min-width:60px"></div>
+  </div>
+  <div class="candidate-field" style="flex:0 0 auto; min-width:160px">
+    <span class="field-label">Date:</span>
+    <div class="field-line" style="min-width:90px"></div>
+  </div>
+</div>
+
+<!-- ═══ INSTRUCTIONS ═══ -->
+<div class="instructions">
+  <h2>Instructions to Candidates</h2>
+  <ul>
+    <li>Answer <strong>ALL</strong> questions in both sections.</li>
+    <li>You <strong>may</strong> use a calculator.</li>
+    <li>Show all working clearly where calculation marks are available — a correct answer without working may not receive full marks.</li>
+    <li>Write answers in the spaces provided.</li>
+    <li>The total mark for this paper is <strong>90 marks</strong>.</li>
+    <li>Equations you may find useful are listed in the data sheet below.</li>
+  </ul>
+</div>
+
+<!-- ═══ DATA SHEET ═══ -->
+<div class="data-sheet">
+  <h3>Equations — Data Sheet</h3>
+  <table>
+    <tr><td>Snell's law</td><td>$n_1 \sin\theta_1 = n_2 \sin\theta_2$</td></tr>
+    <tr><td>Refractive index</td><td>$n = \dfrac{\sin\theta_i}{\sin\theta_r} = \dfrac{c}{v}$</td></tr>
+    <tr><td>Critical angle</td><td>$\sin C = \dfrac{1}{n}$</td></tr>
+    <tr><td>Lens formula</td><td>$\dfrac{1}{f} = \dfrac{1}{u} + \dfrac{1}{v}$</td></tr>
+    <tr><td>Magnification</td><td>$m = \dfrac{v}{u} = \dfrac{\text{image height}}{\text{object height}}$</td></tr>
+    <tr><td>Lens power</td><td>$P = \dfrac{1}{f}$ &nbsp;(f in metres, P in dioptres)</td></tr>
+    <tr><td>Speed</td><td>$v = \dfrac{d}{t}$</td></tr>
+    <tr><td>Acceleration</td><td>$a = \dfrac{\Delta v}{t}$</td></tr>
+    <tr><td>Newton's second law</td><td>$F = ma$</td></tr>
+    <tr><td>Momentum</td><td>$p = mv$</td></tr>
+    <tr><td>Weight</td><td>$W = mg$</td></tr>
+    <tr><td>Work done</td><td>$W = Fd$</td></tr>
+    <tr><td>Power</td><td>$P = \dfrac{W}{t}$</td></tr>
+    <tr><td>Kinetic energy</td><td>$KE = \dfrac{1}{2}mv^2$</td></tr>
+    <tr><td>Gravitational PE</td><td>$GPE = mgh$</td></tr>
+    <tr><td>Efficiency</td><td>$\eta = \dfrac{\text{useful energy out}}{\text{total energy in}} \times 100\%$</td></tr>
+    <tr><td>Hooke's law</td><td>$F = kx$</td></tr>
+    <tr><td>Moment</td><td>$M = Fd$</td></tr>
+  </table>
+  <div class="constants">
+    $g = 10 \text{ m s}^{-2}$ &nbsp;&nbsp;&nbsp;&nbsp; Speed of light in vacuum: $c = 3.0 \times 10^8 \text{ m s}^{-1}$
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════ SECTION A ═══ -->
+<div class="section-heading">SECTION A — Optics &nbsp;(45 marks)</div>
+
+<!-- ── Q1 ── -->
+<div class="question">
+  <div class="question-title">Question 1 — Refraction and Snell's Law &nbsp;(14 marks)</div>
+  <div class="question-context">
+    A ray of light travels from air into a glass block. The angle of incidence in air is $50°$ and the angle of refraction in glass is $30°$.
+  </div>
+
+  <div class="part">
+    <span class="part-label">(a)</span>
+    <div class="part-body">State what is meant by the <em>angle of refraction</em>.</div>
+    <div class="write-lines"><div class="write-line"></div><div class="write-line"></div></div>
+    <div style="text-align:right" class="marks">[1]</div>
+  </div>
+  <hr class="divider">
+
+  <div class="part">
+    <span class="part-label">(b)</span>
+    <div class="part-body">Calculate the refractive index $n$ of the glass. Show your working.</div>
+    <div class="eq-display">$$n = \frac{\sin\theta_i}{\sin\theta_r}$$</div>
+    <div class="working-space" style="min-height:70px"></div>
+    <div class="answer-line">
+      <span>$n =$</span><div class="answer-short"></div>
+      <span class="marks">[2]</span>
+    </div>
+  </div>
+  <hr class="divider">
+
+  <div class="part">
+    <span class="part-label">(c)</span>
+    <div class="part-body">Calculate the critical angle $C$ for the glass–air interface.</div>
+    <div class="working-space"></div>
+    <div class="answer-line">
+      <span>$C =$</span><div class="answer-short"></div><span>$°$</span>
+      <span class="marks">[2]</span>
+    </div>
+  </div>
+  <hr class="divider">
+
+  <div class="part">
+    <span class="part-label">(d)</span>
+    <div class="part-body">Explain, using the concept of critical angle, why total internal reflection (TIR) occurs when a ray inside glass hits the glass–air surface at an angle greater than $C$.</div>
+    <div class="write-lines">
+      <div class="write-line"></div>
+      <div class="write-line"></div>
+      <div class="write-line"></div>
+    </div>
+    <div style="text-align:right" class="marks">[3]</div>
+  </div>
+  <hr class="divider">
+
+  <div class="part">
+    <span class="part-label">(e)</span>
+    <div class="part-body">A fibre-optic cable uses TIR to transmit data. The core has refractive index $n_\text{core} = 1.52$ and is surrounded by cladding with refractive index $n_\text{clad} = 1.40$.</div>
+
+    <div class="part" style="margin-top:10px">
+      <span class="part-label">(i)</span>
+      <div class="part-body">Explain why cladding with a <em>lower</em> refractive index than the core is necessary for TIR to occur.</div>
+      <div class="write-lines"><div class="write-line"></div><div class="write-line"></div></div>
+      <div style="text-align:right" class="marks">[2]</div>
+    </div>
+
+    <div class="part" style="margin-top:10px">
+      <span class="part-label">(ii)</span>
+      <div class="part-body">Calculate the critical angle at the core–cladding interface using Snell's law:</div>
+      <div class="eq-display">$$n_\text{core}\sin C = n_\text{clad}\sin 90°$$</div>
+      <div class="working-space"></div>
+      <div class="answer-line">
+        <span>$C =$</span><div class="answer-short"></div><span>$°$</span>
+        <span class="marks">[2]</span>
+      </div>
+    </div>
+  </div>
+  <hr class="divider">
+
+  <div class="part">
+    <span class="part-label">(f)</span>
+    <div class="part-body">State <strong>two</strong> applications of TIR other than fibre optics.</div>
+    <ul class="answer-list">
+      <li><span class="list-num">1.</span><div class="list-line"></div></li>
+      <li><span class="list-num">2.</span><div class="list-line"></div></li>
+    </ul>
+    <div style="text-align:right" class="marks">[2]</div>
+  </div>
+</div>
+
+<!-- ── Q2 ── -->
+<div class="question">
+  <div class="question-title">Question 2 — Converging Lenses and the Lens Formula &nbsp;(16 marks)</div>
+
+  <div class="diagram-box" style="min-height:110px">
+    [Draw a converging (convex) lens. Label: principal axis, optical centre O, principal focus F on each side, focal length $f$. An upright object of height 4 cm stands 30 cm to the left of the lens.]
+  </div>
+
+  <div class="question-context" style="margin-top:10px">
+    A converging lens has focal length $f = 10$ cm. An object is placed $u = 30$ cm from the lens.
+  </div>
+
+  <div class="part">
+    <span class="part-label">(a)(i)</span>
+    <div class="part-body">Use the lens formula $\dfrac{1}{f} = \dfrac{1}{u} + \dfrac{1}{v}$ to calculate the image distance $v$.</div>
+    <div class="working-space" style="min-height:80px"></div>
+    <div class="answer-line">
+      <span>$v =$</span><div class="answer-short"></div><span>cm</span>
+      <span class="marks">[3]</span>
+    </div>
+  </div>
+  <hr class="divider">
+
+  <div class="part">
+    <span class="part-label">(a)(ii)</span>
+    <div class="part-body">Calculate the magnification $m$ produced by the lens. &nbsp; $m = \dfrac{v}{u}$</div>
+    <div class="answer-line" style="margin-top:10px">
+      <span>$m =$</span><div class="answer-short"></div>
+      <span class="marks">[2]</span>
+    </div>
+  </div>
+  <hr class="divider">
+
+  <div class="part">
+    <span class="part-label">(a)(iii)</span>
+    <div class="part-body">State whether the image is <strong>real or virtual</strong> and <strong>upright or inverted</strong>, giving a reason for each.</div>
+    <div class="write-lines"><div class="write-line"></div><div class="write-line"></div></div>
+    <div style="text-align:right" class="marks">[2]</div>
+  </div>
+  <hr class="divider">
+
+  <div class="question-context" style="margin-top:12px">
+    The object is now moved to a distance of $u = 6$ cm from the same lens ($f = 10$ cm).
+  </div>
+
+  <div class="part">
+    <span class="part-label">(b)(i)</span>
+    <div class="part-body">Use the lens formula to calculate $v$.</div>
+    <div class="working-space" style="min-height:80px"></div>
+    <div class="answer-line">
+      <span>$v =$</span><div class="answer-short"></div><span>cm</span>
+      <span class="marks">[3]</span>
+    </div>
+  </div>
+  <hr class="divider">
+
+  <div class="part">
+    <span class="part-label">(b)(ii)</span>
+    <div class="part-body">What does the sign of $v$ tell you about the nature of the image?</div>
+    <div class="write-lines"><div class="write-line"></div></div>
+    <div style="text-align:right" class="marks">[1]</div>
+  </div>
+  <hr class="divider">
+
+  <div class="part">
+    <span class="part-label">(b)(iii)</span>
+    <div class="part-body">Name the optical instrument that uses this arrangement (object inside focal length of a converging lens).</div>
+    <div class="write-lines"><div class="write-line"></div></div>
+    <div style="text-align:right" class="marks">[1]</div>
+  </div>
+  <hr class="divider">
+
+  <div class="question-context" style="margin-top:12px">
+    A diverging lens has power $P = -4$ dioptres.
+  </div>
+
+  <div class="part">
+    <span class="part-label">(c)(i)</span>
+    <div class="part-body">Calculate the focal length of this lens. &nbsp; Use $P = \dfrac{1}{f}$ where $f$ is in metres.</div>
+    <div class="answer-line" style="margin-top:10px">
+      <span>$f =$</span><div class="answer-short"></div><span>m</span>
+      <span class="marks">[2]</span>
+    </div>
+  </div>
+  <hr class="divider">
+
+  <div class="part">
+    <span class="part-label">(c)(ii)</span>
+    <div class="part-body">Describe <strong>two</strong> differences between the image formed by a diverging lens and that formed by a converging lens when the object is beyond the focal point.</div>
+    <ul class="answer-list">
+      <li><span class="list-num">1.</span><div class="list-line"></div></li>
+      <li><span class="list-num">2.</span><div class="list-line"></div></li>
+    </ul>
+    <div style="text-align:right" class="marks">[2]</div>
+  </div>
+</div>
+
+<!-- ── Q3 ── -->
+<div class="question">
+  <div class="question-title">Question 3 — Dispersion and the Electromagnetic Spectrum &nbsp;(15 marks)</div>
+
+  <div class="part">
+    <span class="part-label">(a)(i)</span>
+    <div class="part-body">When a narrow beam of white light passes through a triangular glass prism it produces a spectrum of colours. Name this phenomenon.</div>
+    <div class="write-lines"><div class="write-line"></div></div>
+    <div style="text-align:right" class="marks">[1]</div>
+  </div>
+  <hr class="divider">
+
+  <div class="part">
+    <span class="part-label">(a)(ii)</span>
+    <div class="part-body">Explain, in terms of refractive index and wave speed, why different colours of light separate when passing through glass.</div>
+    <div class="write-lines">
+      <div class="write-line"></div><div class="write-line"></div><div class="write-line"></div>
+    </div>
+    <div style="text-align:right" class="marks">[3]</div>
+  </div>
+  <hr class="divider">
+
+  <div class="part">
+    <span class="part-label">(a)(iii)</span>
+    <div class="part-body">State which colour is refracted <strong>most</strong> and which is refracted <strong>least</strong>.</div>
+    <div class="inline-answer" style="margin-top:10px">
+      <div class="inline-field">
+        <span>Most refracted:</span>
+        <div class="answer-short" style="width:100px"></div>
+      </div>
+      <div class="inline-field">
+        <span>Least refracted:</span>
+        <div class="answer-short" style="width:100px"></div>
+      </div>
+    </div>
+    <div style="text-align:right; margin-top:4px" class="marks">[2]</div>
+  </div>
+  <hr class="divider">
+
+  <div class="part">
+    <span class="part-label">(b)</span>
+    <div class="part-body">The table below shows regions of the electromagnetic spectrum.</div>
+    <table class="em-table" style="margin-top:8px">
+      <tr><th>Region</th><th>Approximate wavelength range</th></tr>
+      <tr><td>Gamma rays</td><td>$&lt; 10^{-12}$ m</td></tr>
+      <tr><td>X-rays</td><td>$10^{-12}$ m to $10^{-8}$ m</td></tr>
+      <tr><td>Ultraviolet</td><td>$10^{-8}$ m to $3.8 \times 10^{-7}$ m</td></tr>
+      <tr><td><strong>Visible</strong></td><td>$3.8 \times 10^{-7}$ m to $7.0 \times 10^{-7}$ m</td></tr>
+      <tr><td>Infrared</td><td>$7.0 \times 10^{-7}$ m to $10^{-3}$ m</td></tr>
+      <tr><td>Microwaves</td><td>$10^{-3}$ m to $10^{-1}$ m</td></tr>
+      <tr><td>Radio waves</td><td>$&gt; 10^{-1}$ m</td></tr>
+    </table>
+  </div>
+  <hr class="divider">
+
+  <div class="part">
+    <span class="part-label">(b)(i)</span>
+    <div class="part-body">State <strong>three</strong> properties common to all electromagnetic waves.</div>
+    <ul class="answer-list">
+      <li><span class="list-num">1.</span><div class="list-line"></div></li>
+      <li><span class="list-num">2.</span><div class="list-line"></div></li>
+      <li><span class="list-num">3.</span><div class="list-line"></div></li>
+    </ul>
+    <div style="text-align:right" class="marks">[3]</div>
+  </div>
+  <hr class="divider">
+
+  <div class="part">
+    <span class="part-label">(b)(ii)</span>
+    <div class="part-body">Calculate the frequency of red light with wavelength $\lambda = 700$ nm. &nbsp; Use $c = f\lambda$.</div>
+    <div class="working-space"></div>
+    <div class="answer-line">
+      <span>$f =$</span><div class="answer-dots"></div><span>Hz</span>
+      <span class="marks">[2]</span>
+    </div>
+  </div>
+  <hr class="divider">
+
+  <div class="part">
+    <span class="part-label">(b)(iii)</span>
+    <div class="part-body">State <strong>one</strong> harmful effect of UV radiation (other than sunburn) and <strong>one</strong> beneficial use of UV.</div>
+    <div class="inline-answer" style="flex-direction:column; gap:10px; margin-top:10px">
+      <div class="inline-field" style="gap:8px; width:100%">
+        <span style="white-space:nowrap">Harmful effect:</span>
+        <div style="flex:1; border-bottom:1px dotted #555; height:16px"></div>
+      </div>
+      <div class="inline-field" style="gap:8px; width:100%">
+        <span style="white-space:nowrap">Beneficial use:</span>
+        <div style="flex:1; border-bottom:1px dotted #555; height:16px"></div>
+      </div>
+    </div>
+    <div style="text-align:right; margin-top:4px" class="marks">[2]</div>
+  </div>
+  <hr class="divider">
+
+  <div class="part">
+    <span class="part-label">(c)</span>
+    <div class="part-body">A student claims that radio waves and gamma rays are "completely different types of wave." Evaluate this claim.</div>
+    <div class="write-lines"><div class="write-line"></div><div class="write-line"></div></div>
+    <div style="text-align:right" class="marks">[2]</div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════ SECTION B ═══ -->
+<div class="section-heading">SECTION B — Mechanics &nbsp;(45 marks)</div>
+
+<!-- ── Q4 ── -->
+<div class="question">
+  <div class="question-title">Question 4 — Motion and Graphs &nbsp;(13 marks)</div>
+  <div class="question-context">
+    A car starts from rest and accelerates uniformly for 8 s, reaching a speed of $24 \text{ m s}^{-1}$. It then travels at constant speed for 12 s, before braking uniformly to rest in 6 s.
+  </div>
+
+  <div class="part">
+    <span class="part-label">(a)</span>
+    <div class="part-body">Sketch a velocity–time graph for the car's full journey. Label axes, key values, and the three phases clearly.</div>
+    <div class="diagram-box" style="min-height:120px">
+      [Velocity–time graph — sketch here. Label: velocity axis (m s⁻¹), time axis (s), values 0, 8, 20, 26 on time axis, 24 on velocity axis. Three phases: acceleration, constant speed, deceleration.]
+    </div>
+  </div>
+  <hr class="divider">
+
+  <div class="part">
+    <span class="part-label">(a)(i)</span>
+    <div class="part-body">Calculate the acceleration during the first 8 s. &nbsp; $a = \dfrac{\Delta v}{t}$</div>
+    <div class="working-space"></div>
+    <div class="answer-line">
+      <span>$a =$</span><div class="answer-short"></div><span>$\text{m s}^{-2}$</span>
+      <span class="marks">[2]</span>
+    </div>
+  </div>
+  <hr class="divider">
+
+  <div class="part">
+    <span class="part-label">(a)(ii)</span>
+    <div class="part-body">Calculate the total distance travelled by the car over the entire journey.</div>
+    <div class="working-space" style="min-height:80px"></div>
+    <div class="answer-line">
+      <span>Total distance $=$</span><div class="answer-short"></div><span>m</span>
+      <span class="marks">[3]</span>
+    </div>
+  </div>
+  <hr class="divider">
+
+  <div class="part">
+    <span class="part-label">(a)(iii)</span>
+    <div class="part-body">A second car travels the same total distance at a constant speed over the same total time as the first car's journey. Calculate this constant speed.</div>
+    <div class="working-space"></div>
+    <div class="answer-line">
+      <span>$v =$</span><div class="answer-short"></div><span>$\text{m s}^{-1}$</span>
+      <span class="marks">[2]</span>
+    </div>
+  </div>
+  <hr class="divider">
+
+  <div class="part">
+    <span class="part-label">(b)(i)</span>
+    <div class="part-body">A velocity–time graph for a different object shows a <strong>curved</strong> line of increasing gradient. What does this indicate about the acceleration?</div>
+    <div class="write-lines"><div class="write-line"></div></div>
+    <div style="text-align:right" class="marks">[1]</div>
+  </div>
+  <hr class="divider">
+
+  <div class="part">
+    <span class="part-label">(b)(ii)</span>
+    <div class="part-body">Describe how you would use a v–t graph to find the distance travelled between two times $t_1$ and $t_2$.</div>
+    <div class="write-lines"><div class="write-line"></div></div>
+    <div style="text-align:right" class="marks">[1]</div>
+  </div>
+  <hr class="divider">
+
+  <div class="question-context" style="margin-top:10px">
+    A stone is thrown horizontally from the top of a cliff at $15 \text{ m s}^{-1}$. It hits the sea 3.0 s later. Ignore air resistance.
+  </div>
+
+  <div class="part">
+    <span class="part-label">(c)(i)</span>
+    <div class="part-body">Calculate the vertical velocity of the stone just before it hits the sea. ($g = 10 \text{ m s}^{-2}$)</div>
+    <div class="working-space"></div>
+    <div class="answer-line">
+      <span>$v_y =$</span><div class="answer-short"></div><span>$\text{m s}^{-1}$</span>
+      <span class="marks">[2]</span>
+    </div>
+  </div>
+  <hr class="divider">
+
+  <div class="part">
+    <span class="part-label">(c)(ii)</span>
+    <div class="part-body">Explain why the horizontal velocity of the stone remains $15 \text{ m s}^{-1}$ throughout the flight (in the absence of air resistance).</div>
+    <div class="write-lines"><div class="write-line"></div><div class="write-line"></div></div>
+    <div style="text-align:right" class="marks">[2]</div>
+  </div>
+</div>
+
+<!-- ── Q5 ── -->
+<div class="question">
+  <div class="question-title">Question 5 — Newton's Laws, Momentum and Collisions &nbsp;(14 marks)</div>
+  <div class="question-context">
+    A railway wagon of mass 1200 kg moving at $4.0 \text{ m s}^{-1}$ collides and <strong>couples</strong> with a stationary wagon of mass 800 kg.
+  </div>
+
+  <div class="part">
+    <span class="part-label">(a)(i)</span>
+    <div class="part-body">State the principle of conservation of momentum.</div>
+    <div class="write-lines"><div class="write-line"></div><div class="write-line"></div></div>
+    <div style="text-align:right" class="marks">[1]</div>
+  </div>
+  <hr class="divider">
+
+  <div class="part">
+    <span class="part-label">(a)(ii)</span>
+    <div class="part-body">Calculate the velocity of the coupled wagons immediately after the collision. &nbsp; $p_\text{before} = p_\text{after}$</div>
+    <div class="working-space" style="min-height:80px"></div>
+    <div class="answer-line">
+      <span>$v =$</span><div class="answer-short"></div><span>$\text{m s}^{-1}$</span>
+      <span class="marks">[3]</span>
+    </div>
+  </div>
+  <hr class="divider">
+
+  <div class="part">
+    <span class="part-label">(a)(iii)</span>
+    <div class="part-body">Calculate the kinetic energy <strong>lost</strong> in the collision. State whether this is an elastic or inelastic collision, giving a reason.</div>
+    <div class="working-space" style="min-height:90px"></div>
+    <div class="answer-line" style="margin-bottom:8px">
+      <span>$KE_\text{lost} =$</span><div class="answer-short"></div><span>J</span>
+      <span class="marks">[4]</span>
+    </div>
+    <div class="answer-line">
+      <span>Type of collision:</span>
+      <div class="answer-short" style="width:90px"></div>
+      <span>because</span>
+      <div class="answer-dots"></div>
+    </div>
+  </div>
+  <hr class="divider">
+
+  <div class="question-context" style="margin-top:12px">
+    A rocket in deep space (no gravity, no air resistance) fires its engine, expelling gas of mass 50 kg at $600 \text{ m s}^{-1}$ backwards. The rocket and remaining fuel have total mass 950 kg. Before firing, everything is at rest.
+  </div>
+
+  <div class="part">
+    <span class="part-label">(b)(i)</span>
+    <div class="part-body">Calculate the speed of the rocket after the engine fires.</div>
+    <div class="working-space"></div>
+    <div class="answer-line">
+      <span>$v_\text{rocket} =$</span><div class="answer-short"></div><span>$\text{m s}^{-1}$</span>
+      <span class="marks">[2]</span>
+    </div>
+  </div>
+  <hr class="divider">
+
+  <div class="part">
+    <span class="part-label">(b)(ii)</span>
+    <div class="part-body">State which of Newton's laws explains why the rocket accelerates forward when gas is expelled backward, and explain how it applies.</div>
+    <div class="write-lines"><div class="write-line"></div><div class="write-line"></div></div>
+    <div style="text-align:right" class="marks">[2]</div>
+  </div>
+  <hr class="divider">
+
+  <div class="part">
+    <span class="part-label">(c)(i)</span>
+    <div class="part-body">A force of 360 N acts on a 90 kg object for 5 s, starting from rest. Calculate the final speed of the object.</div>
+    <div class="working-space"></div>
+    <div class="answer-line">
+      <span>$v =$</span><div class="answer-short"></div><span>$\text{m s}^{-1}$</span>
+      <span class="marks">[2]</span>
+    </div>
+  </div>
+</div>
+
+<!-- ── Q6 ── -->
+<div class="question">
+  <div class="question-title">Question 6 — Energy, Work and Power &nbsp;(12 marks)</div>
+  <div class="question-context">
+    A skier of mass 65 kg starts from rest at the top of a slope of vertical height 40 m. She reaches the bottom with a speed of $24 \text{ m s}^{-1}$.
+  </div>
+
+  <div class="part">
+    <span class="part-label">(a)</span>
+    <div class="part-body">Calculate the gravitational potential energy lost by the skier as she descends. &nbsp; $GPE = mgh$</div>
+    <div class="working-space"></div>
+    <div class="answer-line">
+      <span>$GPE_\text{lost} =$</span><div class="answer-short"></div><span>J</span>
+      <span class="marks">[2]</span>
+    </div>
+  </div>
+  <hr class="divider">
+
+  <div class="part">
+    <span class="part-label">(b)</span>
+    <div class="part-body">Calculate the kinetic energy of the skier at the bottom of the slope. &nbsp; $KE = \dfrac{1}{2}mv^2$</div>
+    <div class="working-space"></div>
+    <div class="answer-line">
+      <span>$KE =$</span><div class="answer-short"></div><span>J</span>
+      <span class="marks">[2]</span>
+    </div>
+  </div>
+  <hr class="divider">
+
+  <div class="part">
+    <span class="part-label">(c)</span>
+    <div class="part-body">Calculate the efficiency of the energy transfer from GPE to KE. &nbsp; $\eta = \dfrac{\text{useful energy out}}{\text{total energy in}} \times 100\%$</div>
+    <div class="answer-line" style="margin-top:10px">
+      <span>$\eta =$</span><div class="answer-short"></div><span>%</span>
+      <span class="marks">[2]</span>
+    </div>
+  </div>
+  <hr class="divider">
+
+  <div class="part">
+    <span class="part-label">(d)</span>
+    <div class="part-body">Calculate the work done against friction and drag combined (energy not converted to KE).</div>
+    <div class="answer-line" style="margin-top:10px">
+      <span>$W_\text{friction} =$</span><div class="answer-short"></div><span>J</span>
+      <span class="marks">[1]</span>
+    </div>
+  </div>
+  <hr class="divider">
+
+  <div class="part">
+    <span class="part-label">(e)</span>
+    <div class="part-body">The skier takes 12 s to descend the slope. Calculate her average power output (using total GPE lost over time).</div>
+    <div class="working-space"></div>
+    <div class="answer-line">
+      <span>$P =$</span><div class="answer-short"></div><span>W</span>
+      <span class="marks">[2]</span>
+    </div>
+  </div>
+  <hr class="divider">
+
+  <div class="part">
+    <span class="part-label">(f)</span>
+    <div class="part-body">A different skier of mass 80 kg uses a ski lift to return to the top of the 40 m slope. The lift motor does 80 000 J of work in total. Calculate the efficiency of the lift.</div>
+    <div class="working-space" style="min-height:80px"></div>
+    <div class="answer-line">
+      <span>$\eta =$</span><div class="answer-short"></div><span>%</span>
+      <span class="marks">[3]</span>
+    </div>
+  </div>
+</div>
+
+<!-- ── Q7 ── -->
+<div class="question">
+  <div class="question-title">Question 7 — Moments, Pressure and Hooke's Law &nbsp;(6 marks)</div>
+
+  <div class="question-context">
+    A uniform beam of length 2.4 m is pivoted at its centre. A weight of 30 N is hung 0.8 m to the left of the pivot. A second weight $W$ is hung 0.6 m to the right of the pivot.
+  </div>
+
+  <div class="part">
+    <span class="part-label">(a)(i)</span>
+    <div class="part-body">State the principle of moments for a body in equilibrium.</div>
+    <div class="write-lines"><div class="write-line"></div></div>
+    <div style="text-align:right" class="marks">[1]</div>
+  </div>
+  <hr class="divider">
+
+  <div class="part">
+    <span class="part-label">(a)(ii)</span>
+    <div class="part-body">Calculate $W$. &nbsp; (sum of clockwise moments = sum of anticlockwise moments)</div>
+    <div class="working-space"></div>
+    <div class="answer-line">
+      <span>$W =$</span><div class="answer-short"></div><span>N</span>
+      <span class="marks">[2]</span>
+    </div>
+  </div>
+  <hr class="divider">
+
+  <div class="question-context" style="margin-top:12px">
+    A spring has spring constant $k = 400 \text{ N m}^{-1}$. A load of 0.5 kg is hung from the spring.
+  </div>
+
+  <div class="part">
+    <span class="part-label">(b)(i)</span>
+    <div class="part-body">Calculate the extension of the spring. &nbsp; $F = kx$, &nbsp; $g = 10 \text{ m s}^{-2}$</div>
+    <div class="working-space"></div>
+    <div class="answer-line">
+      <span>$x =$</span><div class="answer-short"></div><span>m</span>
+      <span class="marks">[2]</span>
+    </div>
+  </div>
+  <hr class="divider">
+
+  <div class="part">
+    <span class="part-label">(b)(ii)</span>
+    <div class="part-body">State what would happen if a load much larger than the elastic limit is applied.</div>
+    <div class="write-lines"><div class="write-line"></div></div>
+    <div style="text-align:right" class="marks">[1]</div>
+  </div>
+</div>
+
+<!-- ═══ END ═══ -->
+<div style="text-align:center; font-weight:bold; font-size:13pt; margin:28px 0 18px; border-top:2px solid #000; padding-top:12px;">
+  END OF QUESTION PAPER &nbsp;—&nbsp; Total: 90 marks
+</div>
+
+<!-- ═══ SCORE GRID ═══ -->
+<p style="font-weight:bold; margin-bottom:6px">For Teacher Use Only</p>
+<table class="score-grid">
+  <thead>
+    <tr>
+      <th>Question</th>
+      <th>Topic</th>
+      <th>Section</th>
+      <th>Marks Available</th>
+      <th>Marks Achieved</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td>Refraction, Snell's law, TIR, fibre optics</td><td>A — Optics</td><td>14</td><td></td></tr>
+    <tr><td>2</td><td>Lens formula, magnification, diverging lens</td><td>A — Optics</td><td>16</td><td></td></tr>
+    <tr><td>3</td><td>Dispersion, EM spectrum, UV</td><td>A — Optics</td><td>15</td><td></td></tr>
+    <tr><td>4</td><td>Motion, v–t graphs, projectile</td><td>B — Mechanics</td><td>13</td><td></td></tr>
+    <tr><td>5</td><td>Momentum, Newton's laws, collisions</td><td>B — Mechanics</td><td>14</td><td></td></tr>
+    <tr><td>6</td><td>Energy, work, power, efficiency</td><td>B — Mechanics</td><td>12</td><td></td></tr>
+    <tr><td>7</td><td>Moments, Hooke's law</td><td>B — Mechanics</td><td>6</td><td></td></tr>
+    <tr class="total-row"><td colspan="3">TOTAL</td><td>90</td><td></td></tr>
+  </tbody>
+</table>
+
+<div class="paper-footer">
+  Haberdashers Boys School &nbsp;—&nbsp; Year 9 Physics &nbsp;—&nbsp; Optics &amp; Mechanics &nbsp;—&nbsp; Hard &nbsp;—&nbsp; April 2026
+</div>
+
+</body>
+</html>
