@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Y9 Mocks Exam Timetable — Yashmeet Singh Multani</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 11pt;
+    color: #000;
+    background: #fff;
+    padding: 18mm 16mm;
+  }
+
+  /* ── Header ── */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 2px solid #000;
+    padding-bottom: 8px;
+    margin-bottom: 14px;
+  }
+  .header-left h1 {
+    font-size: 18pt;
+    font-weight: 700;
+  }
+  .header-left h2 {
+    font-size: 10.5pt;
+    font-weight: 400;
+    color: #444;
+    margin-top: 3px;
+  }
+  .header-right {
+    text-align: right;
+    font-size: 9.5pt;
+    line-height: 1.7;
+    color: #333;
+  }
+
+  /* ── Day sections ── */
+  .day { margin-bottom: 11px; }
+
+  .day-header {
+    border: 1.5px solid #000;
+    border-bottom: none;
+    padding: 4px 10px;
+    font-size: 10.5pt;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+  }
+  .day-header .exam-count {
+    font-size: 8.5pt;
+    font-weight: 400;
+    color: #555;
+  }
+
+  /* ── Table ── */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1.5px solid #000;
+  }
+  th {
+    font-size: 7.5pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 3px 10px;
+    text-align: left;
+    border-bottom: 1px solid #000;
+    background: #fff;
+  }
+  td {
+    padding: 5px 10px;
+    border-bottom: 1px solid #ccc;
+    vertical-align: middle;
+    font-size: 10.5pt;
+  }
+  tr:last-child td { border-bottom: none; }
+
+  .col-time { width: 16%; white-space: nowrap; }
+  .col-dur  { width: 10%; text-align: center; }
+  .col-subj { width: 38%; }
+  .col-loc  { width: 18%; }
+  .col-bring{ width: 18%; font-size: 9.5pt; color: #333; }
+
+  /* Row variants */
+  .subj-name  { font-weight: 700; }
+  .badge {
+    font-size: 7pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border: 1px solid #000;
+    padding: 1px 4px;
+    margin-left: 5px;
+    vertical-align: middle;
+    border-radius: 2px;
+  }
+  .badge-games { border-color: #888; color: #666; }
+  .badge-rev   { border-color: #888; color: #666; font-style: italic; }
+
+  /* Games and revision rows — just italic/muted, no colour fill */
+  tr.games-row td { color: #666; }
+  tr.games-row .subj-name { font-weight: 400; font-style: italic; }
+  tr.rev-row td   { color: #666; }
+  tr.rev-row .subj-name { font-weight: 400; font-style: italic; }
+
+  /* ── Reminder box ── */
+  .reminder-box {
+    margin-top: 12px;
+    border: 1.5px solid #000;
+    border-radius: 3px;
+    padding: 7px 12px;
+    font-size: 9.5pt;
+  }
+  .reminder-box strong {
+    font-size: 9pt;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .reminder-box ul {
+    margin-top: 4px;
+    padding-left: 18px;
+    line-height: 1.7;
+  }
+
+  /* ── Key ── */
+  .key {
+    margin-top: 10px;
+    font-size: 8.5pt;
+    color: #444;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  .key strong { color: #000; }
+  .key-item { display: flex; align-items: center; gap: 6px; }
+  .key-swatch {
+    display: inline-block;
+    width: 28px;
+    height: 10px;
+    border: 1px solid #000;
+  }
+  .key-swatch-games { border-color: #888; }
+  .key-swatch-rev   { border-color: #888; }
+
+  /* ── Footer ── */
+  .footer {
+    margin-top: 12px;
+    padding-top: 6px;
+    border-top: 1px solid #aaa;
+    font-size: 8pt;
+    color: #666;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media print {
+    body { padding: 12mm 12mm; }
+    @page { size: A4 portrait; margin: 0; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-left">
+    <h1>Y9 Mocks — May 2026</h1>
+    <h2>Exam Timetable &nbsp;&middot;&nbsp; Haberdashers&rsquo; Boys&rsquo; School</h2>
+  </div>
+  <div class="header-right">
+    <strong>Yashmeet Singh Multani</strong><br>
+    Candidate No: 3099<br>
+    UCI: 173110253099C<br>
+    DOB: 24 Jan 2012
+  </div>
+</div>
+
+<!-- Monday -->
+<div class="day">
+  <div class="day-header">
+    <span>Monday &nbsp; 11 May 2026</span>
+    <span class="exam-count">3 exams</span>
+  </div>
+  <table>
+    <tr>
+      <th class="col-time">Time</th>
+      <th class="col-dur">Duration</th>
+      <th class="col-subj">Subject</th>
+      <th class="col-loc">Venue</th>
+      <th class="col-bring">Bring</th>
+    </tr>
+    <tr>
+      <td class="col-time">09:00 – 10:00</td>
+      <td class="col-dur">1h</td>
+      <td class="col-subj"><span class="subj-name">Geography</span></td>
+      <td class="col-loc">Bourne Hall</td>
+      <td class="col-bring">Pen, pencil, ruler</td>
+    </tr>
+    <tr>
+      <td class="col-time">10:45 – 12:15</td>
+      <td class="col-dur">1h 30m</td>
+      <td class="col-subj"><span class="subj-name">Spanish</span></td>
+      <td class="col-loc">Bourne Hall</td>
+      <td class="col-bring">Pen, pencil, ruler</td>
+    </tr>
+    <tr>
+      <td class="col-time">14:00 – 15:30</td>
+      <td class="col-dur">1h 30m</td>
+      <td class="col-subj"><span class="subj-name">Mathematics</span></td>
+      <td class="col-loc">Bourne Hall</td>
+      <td class="col-bring">Pen, pencil, ruler, <strong>calculator</strong></td>
+    </tr>
+  </table>
+</div>
+
+<!-- Tuesday -->
+<div class="day">
+  <div class="day-header">
+    <span>Tuesday &nbsp; 12 May 2026</span>
+    <span class="exam-count">2 exams + games lesson</span>
+  </div>
+  <table>
+    <tr>
+      <th class="col-time">Time</th>
+      <th class="col-dur">Duration</th>
+      <th class="col-subj">Subject</th>
+      <th class="col-loc">Venue</th>
+      <th class="col-bring">Bring</th>
+    </tr>
+    <tr>
+      <td class="col-time">09:00 – 10:00</td>
+      <td class="col-dur">1h</td>
+      <td class="col-subj"><span class="subj-name">Biology</span></td>
+      <td class="col-loc">Bourne Hall</td>
+      <td class="col-bring">Pen, pencil, ruler</td>
+    </tr>
+    <tr>
+      <td class="col-time">10:45 – 12:00</td>
+      <td class="col-dur">1h 15m</td>
+      <td class="col-subj"><span class="subj-name">English</span></td>
+      <td class="col-loc">Bourne Hall</td>
+      <td class="col-bring">Pen, pencil, ruler</td>
+    </tr>
+    <tr class="games-row">
+      <td class="col-time">14:00 – 16:00</td>
+      <td class="col-dur">2h</td>
+      <td class="col-subj"><span class="subj-name">Games Lesson</span> <span class="badge badge-games">Not an exam</span></td>
+      <td class="col-loc">—</td>
+      <td class="col-bring">Games kit</td>
+    </tr>
+  </table>
+</div>
+
+<!-- Wednesday -->
+<div class="day">
+  <div class="day-header">
+    <span>Wednesday &nbsp; 13 May 2026</span>
+    <span class="exam-count">3 exams</span>
+  </div>
+  <table>
+    <tr>
+      <th class="col-time">Time</th>
+      <th class="col-dur">Duration</th>
+      <th class="col-subj">Subject</th>
+      <th class="col-loc">Venue</th>
+      <th class="col-bring">Bring</th>
+    </tr>
+    <tr>
+      <td class="col-time">08:50 – 10:05</td>
+      <td class="col-dur">1h 15m</td>
+      <td class="col-subj"><span class="subj-name">Theology &amp; Philosophy</span></td>
+      <td class="col-loc">Bourne Hall</td>
+      <td class="col-bring">Pen, pencil, ruler</td>
+    </tr>
+    <tr>
+      <td class="col-time">10:45 – 12:15</td>
+      <td class="col-dur">1h 30m</td>
+      <td class="col-subj"><span class="subj-name">French</span></td>
+      <td class="col-loc">Bourne Hall</td>
+      <td class="col-bring">Pen, pencil, ruler</td>
+    </tr>
+    <tr>
+      <td class="col-time">14:00 – 15:30</td>
+      <td class="col-dur">1h 30m</td>
+      <td class="col-subj"><span class="subj-name">Physics</span></td>
+      <td class="col-loc">Bourne Hall</td>
+      <td class="col-bring">Pen, pencil, ruler, <strong>calculator</strong></td>
+    </tr>
+  </table>
+</div>
+
+<!-- Thursday -->
+<div class="day">
+  <div class="day-header">
+    <span>Thursday &nbsp; 14 May 2026</span>
+    <span class="exam-count">2 exams + revision session</span>
+  </div>
+  <table>
+    <tr>
+      <th class="col-time">Time</th>
+      <th class="col-dur">Duration</th>
+      <th class="col-subj">Subject</th>
+      <th class="col-loc">Venue</th>
+      <th class="col-bring">Bring</th>
+    </tr>
+    <tr>
+      <td class="col-time">09:00 – 10:00</td>
+      <td class="col-dur">1h</td>
+      <td class="col-subj"><span class="subj-name">History</span></td>
+      <td class="col-loc">Bourne Hall</td>
+      <td class="col-bring">Pen, pencil, ruler</td>
+    </tr>
+    <tr class="rev-row">
+      <td class="col-time">10:45 – 12:15</td>
+      <td class="col-dur">1h 30m</td>
+      <td class="col-subj"><span class="subj-name">Revision Session</span> <span class="badge badge-rev">Timetabled</span></td>
+      <td class="col-loc">Bourne Hall</td>
+      <td class="col-bring">Pen, pencil, notes</td>
+    </tr>
+    <tr>
+      <td class="col-time">14:00 – 15:30</td>
+      <td class="col-dur">1h 30m</td>
+      <td class="col-subj"><span class="subj-name">Chemistry</span></td>
+      <td class="col-loc">Bourne Hall</td>
+      <td class="col-bring">Pen, pencil, ruler, <strong>calculator</strong></td>
+    </tr>
+  </table>
+</div>
+
+<!-- Reminder -->
+<div class="reminder-box">
+  <strong>Always bring to every exam</strong>
+  <ul>
+    <li>Black or blue ink pens (bring spares) &nbsp;&middot;&nbsp; HB pencil &nbsp;&middot;&nbsp; Ruler &nbsp;&middot;&nbsp; Eraser</li>
+    <li>Scientific calculator for: Mathematics, Physics, Chemistry</li>
+    <li>Arrive at least <strong>10 minutes early</strong> and go straight to Bourne Hall</li>
+    <li>No phones or smart watches permitted in the exam room</li>
+  </ul>
+</div>
+
+<!-- Key -->
+<div class="key">
+  <strong>Key:</strong>
+  <div class="key-item">Normal rows = exam</div>
+  <div class="key-item"><span style="font-style:italic; color:#666;">Italic row</span> = not an exam or timetabled revision slot</div>
+</div>
+
+<div class="footer">
+  <span>Haberdashers&rsquo; Boys&rsquo; School &nbsp;&middot;&nbsp; Y9 Mocks May 2026</span>
+  <span>Candidate 3099 &nbsp;&middot;&nbsp; UCI 173110253099C</span>
+</div>
+
+</body>
+</html>
