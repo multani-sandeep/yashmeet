@@ -10,6 +10,7 @@ Two sub-agents handle all work in this repo. Invoke them with `@`:
 |-------|------------|
 | `@note-taker` | Processing dump files, extracting notes, classifying past papers, archiving materials |
 | `@paper-generator` | Creating practice papers and mark schemes |
+| `@quiz-gen` | Creating interactive HTML flashcard quizzes for specific topics; asks difficulty (default Hard) |
 
 ## Folder Structure
 
@@ -51,4 +52,8 @@ Two sub-agents handle all work in this repo. Invoke them with `@`:
 
 # Classify a new file
 @note-taker Classify and process year9/dump/<filename>
+
+# Generate a quiz
+@quiz-gen Create a Hard Biology quiz on cell division and mitosis
+@quiz-gen Quiz me on Geography plate tectonics — Medium difficulty
 ```
