@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Physics — Sound & Waves</title>
+  <script>
+    MathJax = {
+      tex: { inlineMath: [['$','$']], displayMath: [['$$','$$']] },
+      options: { skipHtmlTags: ['script','noscript','style','textarea','pre'] }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: "Times New Roman", Times, serif;
+      font-size: 12pt;
+      color: #000;
+      background: #fff;
+      max-width: 210mm;
+      margin: 0 auto;
+      padding: 20mm 18mm 28mm;
+    }
+
+    h1 {
+      font-size: 15pt;
+      font-weight: bold;
+      text-align: center;
+      border-bottom: 3px solid #000;
+      padding-bottom: 10px;
+      margin-bottom: 16px;
+    }
+
+    h2 {
+      font-size: 12pt;
+      font-weight: bold;
+      border: 1.5px solid #000;
+      border-left: 5px solid #000;
+      padding: 5px 10px;
+      margin: 24px 0 12px;
+    }
+
+    h3 {
+      font-size: 11pt;
+      font-weight: bold;
+      margin: 16px 0 6px;
+    }
+
+    p {
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+
+    ul, ol {
+      padding-left: 22px;
+      margin-bottom: 10px;
+      line-height: 1.6;
+    }
+
+    li { margin-bottom: 4px; }
+
+    /* Answer lines for MCQ options */
+    li p { margin-bottom: 2px; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0;
+      font-size: 11pt;
+    }
+
+    th, td {
+      border: 1px solid #000;
+      padding: 5px 10px;
+      text-align: left;
+    }
+
+    th { font-weight: bold; background: #f0f0f0; }
+
+    blockquote {
+      border-left: 4px solid #888;
+      padding: 6px 14px;
+      margin: 10px 0;
+      color: #333;
+      font-style: italic;
+    }
+
+    code {
+      font-family: "Courier New", monospace;
+      font-size: 10.5pt;
+      background: #f5f5f5;
+      padding: 1px 4px;
+      border-radius: 2px;
+    }
+
+    pre {
+      font-family: "Courier New", monospace;
+      font-size: 10pt;
+      background: #f5f5f5;
+      border: 1px solid #ccc;
+      padding: 10px 14px;
+      margin: 10px 0;
+      white-space: pre-wrap;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #ccc;
+      margin: 20px 0;
+    }
+
+    strong { font-weight: bold; }
+    em { font-style: italic; }
+
+    @media print {
+      body { padding: 0; }
+      @page { margin: 20mm 18mm 28mm; size: A4; }
+    }
+  </style>
+</head>
+<body>
+<h1>Physics — Sound &amp; Waves</h1>
+<h3>Year 9 Practice Paper &nbsp;|&nbsp; Hard &nbsp;|&nbsp; 8 May 2026 &nbsp;|&nbsp; Haberdashers Boys School</h3>
+<p><strong>Name:</strong> ______________________________ &nbsp;&nbsp;&nbsp; <strong>Form:</strong> ______ &nbsp;&nbsp;&nbsp; <strong>Date:</strong> ____________</p>
+<hr />
+<p><strong>Instructions</strong><br />
+- Answer <strong>all</strong> questions.<br />
+- You may use a calculator.<br />
+- Show all working clearly where calculation marks are available — a correct answer without working may not receive full marks.<br />
+- Write answers in the spaces provided.<br />
+- The total mark for this paper is <strong>90 marks</strong>.<br />
+- Equations and data you may find useful are listed on the inside cover below.</p>
+<hr />
+<p><strong>Equations — Data Sheet (Sound &amp; Waves)</strong></p>
+<table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th>Equation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Wave equation</td>
+<td>$v = f\lambda$</td>
+</tr>
+<tr>
+<td>Time period</td>
+<td>$T = \dfrac{1}{f}$</td>
+</tr>
+<tr>
+<td>Echo distance</td>
+<td>$d = \dfrac{v \times t}{2}$</td>
+</tr>
+<tr>
+<td>Speed of sound in air (20 °C)</td>
+<td>$v \approx 340 \text{ m s}^{-1}$</td>
+</tr>
+<tr>
+<td>Speed of sound in water</td>
+<td>$v \approx 1500 \text{ m s}^{-1}$</td>
+</tr>
+<tr>
+<td>Speed of sound in steel</td>
+<td>$v \approx 5100 \text{ m s}^{-1}$</td>
+</tr>
+<tr>
+<td>Speed of light / all EM waves in vacuum</td>
+<td>$c = 3.0 \times 10^8 \text{ m s}^{-1}$</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Human hearing range:</strong> 20 Hz to 20 000 Hz</p>
+<p><strong>Ultrasound:</strong> sound with frequency above 20 000 Hz (20 kHz)</p>
+<hr />
+<h2>Question 1 — Nature of Waves (14 marks)</h2>
+<p><strong>(a)</strong> Distinguish between a <strong>transverse</strong> wave and a <strong>longitudinal</strong> wave. In each case, state the relationship between the direction of vibration of the particles and the direction of energy transfer. [2]</p>
+<p>Transverse: _______________________________________________________________________</p>
+<p>_________________________________________________________________________________</p>
+<p>Longitudinal: ____________________________________________________________________</p>
+<p>_________________________________________________________________________________</p>
+<p><strong>(b)</strong> State whether each of the following is a <strong>transverse</strong> or <strong>longitudinal</strong> wave: [3]</p>
+<table>
+<thead>
+<tr>
+<th>Wave</th>
+<th>Transverse or Longitudinal?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sound in air</td>
+<td>_____________________</td>
+</tr>
+<tr>
+<td>Light</td>
+<td>_____________________</td>
+</tr>
+<tr>
+<td>Seismic P-wave (compression wave through Earth)</td>
+<td>_____________________</td>
+</tr>
+</tbody>
+</table>
+<p><strong>(c)</strong> Define the following wave properties:</p>
+<p><strong>(c)(i)</strong> Amplitude [1]</p>
+<p>_________________________________________________________________________________</p>
+<p><strong>(c)(ii)</strong> Wavelength [1]</p>
+<p>_________________________________________________________________________________</p>
+<p><strong>(c)(iii)</strong> Frequency [1]</p>
+<p>_________________________________________________________________________________</p>
+<p><strong>(c)(iv)</strong> Time period [1]</p>
+<p>_________________________________________________________________________________</p>
+<p><strong>(d)</strong> A wave has a frequency of 400 Hz.</p>
+<p><strong>(d)(i)</strong> Calculate the time period of this wave. [2]</p>
+<p>$T = \dfrac{1}{f}$</p>
+<p>Working:</p>
+<p>_________________________________________________________________________________</p>
+<p>$T =$ _________ s</p>
+<p><strong>(d)(ii)</strong> The same wave travels at $320 \text{ m s}^{-1}$. Calculate its wavelength. [2]</p>
+<p>$v = f\lambda$</p>
+<p>Working:</p>
+<p>_________________________________________________________________________________</p>
+<p>$\lambda =$ _________ m</p>
+<p><strong>(e)</strong> A wave diagram shows the following: the crest-to-crest distance is 2.4 m, and 5 complete waves pass a fixed point every second. Without using the wave equation, explain how you can determine the wave speed from these values, and then calculate it. [1]</p>
+<p>_________________________________________________________________________________</p>
+<p>$v =$ _________ m s$^{-1}$</p>
+<hr />
+<h2>Question 2 — Sound Waves: Production, Transmission and Speed (14 marks)</h2>
+<p><strong>(a)</strong> Sound is produced when an object vibrates. Describe, in terms of particle behaviour, how a vibrating loudspeaker cone creates a sound wave in air. Your answer should refer to compressions and rarefactions. [3]</p>
+<p>_________________________________________________________________________________</p>
+<p>_________________________________________________________________________________</p>
+<p>_________________________________________________________________________________</p>
+<p><strong>(b)</strong> Explain why sound cannot travel through a vacuum. [2]</p>
+<p>_________________________________________________________________________________</p>
+<p>_________________________________________________________________________________</p>
+<p><strong>(c)</strong> The table below shows the approximate speed of sound in three materials.</p>
+<table>
+<thead>
+<tr>
+<th>Material</th>
+<th>Speed of sound</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Air (20 °C)</td>
+<td>340 m s$^{-1}$</td>
+</tr>
+<tr>
+<td>Water</td>
+<td>1500 m s$^{-1}$</td>
+</tr>
+<tr>
+<td>Steel</td>
+<td>5100 m s$^{-1}$</td>
+</tr>
+</tbody>
+</table>
+<p><strong>(c)(i)</strong> Describe the general trend shown in the table. [1]</p>
+<p>_________________________________________________________________________________</p>
+<p><strong>(c)(ii)</strong> Use the particle model to explain why sound travels faster in steel than in air. [2]</p>
+<p>_________________________________________________________________________________</p>
+<p>_________________________________________________________________________________</p>
+<p><strong>(d)</strong> A sound wave of frequency 1200 Hz travels through water.</p>
+<p><strong>(d)(i)</strong> Calculate the wavelength of the sound wave in water. [2]</p>
+<p>$v = f\lambda$</p>
+<p>Working:</p>
+<p>_________________________________________________________________________________</p>
+<p>$\lambda =$ _________ m</p>
+<p><strong>(d)(ii)</strong> The sound wave now passes from water into air. State what happens to the <strong>frequency</strong> and explain your reasoning. [1]</p>
+<p>_________________________________________________________________________________</p>
+<p><strong>(d)(iii)</strong> Calculate the wavelength of the same sound wave in air. [2]</p>
+<p>Working:</p>
+<p>_________________________________________________________________________________</p>
+<p>$\lambda_\text{air} =$ _________ m</p>
+<p><strong>(e)</strong> A musician notices that the sound from a steel railway track reaches her ear noticeably earlier when she presses her ear to the rail than when she listens through the air, even though she is standing next to the track. Explain this observation using data from the table in part (c). [1]</p>
+<p>_________________________________________________________________________________</p>
+<hr />
+<h2>Question 3 — Reflection of Sound and Echoes (12 marks)</h2>
+<p><strong>(a)</strong> State the <strong>law of reflection</strong> for waves. [1]</p>
+<p>_________________________________________________________________________________</p>
+<p><strong>(b)</strong> A student stands 510 m from a large cliff face and fires a starting pistol. She hears the echo 3.0 s after firing.</p>
+<p><strong>(b)(i)</strong> Calculate the speed of sound using this data. Show your working clearly. [3]</p>
+<p>Working:</p>
+<p>_________________________________________________________________________________</p>
+<p>_________________________________________________________________________________</p>
+<p>$v =$ _________ m s$^{-1}$</p>
+<p><strong>(b)(ii)</strong> Comment on whether your answer is consistent with the accepted value of 340 m s$^{-1}$. Suggest one reason why the experimental value might differ from the accepted value. [2]</p>
+<p>Comment: _______________________________________________________________________</p>
+<p>Reason for difference: __________________________________________________________</p>
+<p><strong>(c)</strong> A ship uses echo-sounding to measure the depth of the seabed. The sound pulse travels at 1500 m s$^{-1}$ in seawater. The reflected pulse returns to the ship <strong>0.18 s</strong> after it was emitted.</p>
+<p><strong>(c)(i)</strong> Calculate the depth of the seabed below the ship. [3]</p>
+<p>$d = \dfrac{v \times t}{2}$</p>
+<p>Working:</p>
+<p>_________________________________________________________________________________</p>
+<p>_________________________________________________________________________________</p>
+<p>Depth $=$ _________ m</p>
+<p><strong>(c)(ii)</strong> Explain why the total travel time must be <strong>halved</strong> when calculating the depth from an echo. [1]</p>
+<p>_________________________________________________________________________________</p>
+<p><strong>(d)</strong> Reverberation is the persistence of sound in a room due to multiple reflections. Explain why a room with soft furnishings (carpets, curtains, upholstered furniture) has less reverberation than an empty concrete room. [2]</p>
+<p>_________________________________________________________________________________</p>
+<p>_________________________________________________________________________________</p>
+<hr />
+<h2>Question 4 — The Oscilloscope and Sound Quality (14 marks)</h2>
+<p>A microphone is connected to a cathode ray oscilloscope (CRO). The CRO has the following settings:</p>
+<ul>
+<li><strong>Time-base</strong>: 1 ms per division (each square = 1 ms wide)</li>
+<li><strong>Voltage gain</strong>: 2 V per division (each square = 2 V tall)</li>
+</ul>
+<p>Four traces W, X, Y and Z are displayed (each on a 6 × 4 grid of 1-cm squares):</p>
+<p><strong>Trace W</strong> — 1 complete wave every 4 divisions wide; amplitude 1 division tall.</p>
+<p><strong>Trace X</strong> — 1 complete wave every 2 divisions wide; amplitude 1 division tall.</p>
+<p><strong>Trace Y</strong> — 1 complete wave every 4 divisions wide; amplitude 2 divisions tall.</p>
+<p><strong>Trace Z</strong> — same period as Trace W but irregular, non-sinusoidal waveform.</p>
+<p><strong>(a)</strong> Calculate the time period and frequency of Trace W. [3]</p>
+<p>Working:</p>
+<p>$T = $ _________ ms $=$ _________ s</p>
+<p>$f = $ _________ Hz</p>
+<p><strong>(b)</strong> Calculate the time period and frequency of Trace X. [2]</p>
+<p>$T =$ _________ s &nbsp;&nbsp;&nbsp; $f =$ _________ Hz</p>
+<p><strong>(c)</strong> Compare the <strong>pitch</strong> and <strong>loudness</strong> of Trace W and Trace X. Justify your answer by referring to the features of the traces. [3]</p>
+<p>Pitch: __________________________________________________________________________</p>
+<p>_________________________________________________________________________________</p>
+<p>Loudness: ______________________________________________________________________</p>
+<p>_________________________________________________________________________________</p>
+<p><strong>(d)</strong> Compare the <strong>pitch</strong> and <strong>loudness</strong> of Trace W and Trace Y. [2]</p>
+<p>Pitch: __________________________________________________________________________</p>
+<p>Loudness: ______________________________________________________________________</p>
+<p><strong>(e)</strong> Trace Z has the same fundamental frequency as Trace W but a different waveform shape. Name the property of sound that Trace Z differs from Trace W in, and state what physical difference in the sound source causes this. [2]</p>
+<p>Property: _______________________________________________________________________</p>
+<p>Cause: __________________________________________________________________________</p>
+<p><strong>(f)</strong> The time-base is changed to 0.5 ms per division. All other settings and the sound source remain the same as Trace W. Describe <strong>two</strong> changes you would observe on the screen. [2]</p>
+<ol>
+<li>
+<p>_____________________________________________________________________________</p>
+</li>
+<li>
+<p>_____________________________________________________________________________</p>
+</li>
+</ol>
+<hr />
+<h2>Question 5 — Hearing and the Human Ear (10 marks)</h2>
+<p><strong>(a)</strong> State the approximate range of frequencies that a healthy young human can hear. [1]</p>
+<p>From _________ Hz to _________ Hz</p>
+<p><strong>(b)</strong> Define the term <strong>ultrasound</strong> and state the frequency boundary between audible sound and ultrasound. [2]</p>
+<p>_________________________________________________________________________________</p>
+<p>Boundary: _________ Hz</p>
+<p><strong>(c)</strong> The pitch of a sound is related to its frequency. Two notes are played: Note A has frequency 440 Hz and Note B has frequency 880 Hz.</p>
+<p><strong>(c)(i)</strong> Compare the pitch of Note A and Note B. [1]</p>
+<p>_________________________________________________________________________________</p>
+<p><strong>(c)(ii)</strong> Calculate the wavelength of Note A in air. [2]</p>
+<p>$v = f\lambda$, $v = 340 \text{ m s}^{-1}$</p>
+<p>Working:</p>
+<p>_________________________________________________________________________________</p>
+<p>$\lambda_A =$ _________ m</p>
+<p><strong>(c)(iii)</strong> Without further calculation, state the wavelength of Note B in air and explain your reasoning. [2]</p>
+<p>$\lambda_B =$ _________ m</p>
+<p>Reasoning: _____________________________________________________________________</p>
+<p>_________________________________________________________________________________</p>
+<p><strong>(d)</strong> As people age, the upper limit of their hearing range typically decreases. A 60-year-old can no longer hear sounds above 12 000 Hz. Explain whether the 60-year-old would be able to hear Note B (880 Hz) and Note A (440 Hz), and state one other consequence of this reduced hearing range in everyday life. [2]</p>
+<p>_________________________________________________________________________________</p>
+<p>_________________________________________________________________________________</p>
+<hr />
+<h2>Question 6 — Ultrasound and its Applications (14 marks)</h2>
+<p><strong>(a)</strong> An ultrasound scanner used in a hospital emits pulses at a frequency of 5.0 MHz (5.0 × 10$^6$ Hz). The speed of ultrasound in soft tissue is approximately 1540 m s$^{-1}$.</p>
+<p><strong>(a)(i)</strong> Calculate the wavelength of the ultrasound in soft tissue. [2]</p>
+<p>$v = f\lambda$</p>
+<p>Working:</p>
+<p>_________________________________________________________________________________</p>
+<p>$\lambda =$ _________ m (give your answer in standard form or to 3 significant figures)</p>
+<p><strong>(a)(ii)</strong> A pulse is emitted and the reflected echo from a boundary inside the body returns after $1.3 \times 10^{-4}$ s. Calculate the depth of the boundary below the skin surface. Use the speed of sound in soft tissue given above. [3]</p>
+<p>$d = \dfrac{v \times t}{2}$</p>
+<p>Working:</p>
+<p>_________________________________________________________________________________</p>
+<p>_________________________________________________________________________________</p>
+<p>$d =$ _________ m</p>
+<p><strong>(b)</strong> Give <strong>two</strong> medical uses of ultrasound. [2]</p>
+<ol>
+<li>
+<p>_____________________________________________________________________________</p>
+</li>
+<li>
+<p>_____________________________________________________________________________</p>
+</li>
+</ol>
+<p><strong>(c)</strong> Give <strong>one</strong> industrial (non-medical) use of ultrasound. [1]</p>
+<p>_________________________________________________________________________________</p>
+<p><strong>(d)</strong> State <strong>two</strong> reasons why ultrasound is preferred over X-rays for certain medical imaging applications (for example, scanning a developing foetus). [2]</p>
+<ol>
+<li>
+<p>_____________________________________________________________________________</p>
+</li>
+<li>
+<p>_____________________________________________________________________________</p>
+</li>
+</ol>
+<p><strong>(e)</strong> A higher-frequency ultrasound gives better resolution (finer detail) in medical images, but is less effective for imaging deep structures. Explain this trade-off in terms of wavelength and the ability of the wave to penetrate tissue. [4]</p>
+<p>_________________________________________________________________________________</p>
+<p>_________________________________________________________________________________</p>
+<p>_________________________________________________________________________________</p>
+<p>_________________________________________________________________________________</p>
+<hr />
+<h2>Question 7 — Wave Calculations and Multi-step Problems (12 marks)</h2>
+<p><strong>(a)</strong> A bat emits an ultrasound pulse at 80 000 Hz. The speed of sound in air is 340 m s$^{-1}$.</p>
+<p><strong>(a)(i)</strong> Show that the wavelength of the bat's ultrasound pulse is approximately 4.3 × 10$^{-3}$ m. [2]</p>
+<p>Working:</p>
+<p>_________________________________________________________________________________</p>
+<p>_________________________________________________________________________________</p>
+<p><strong>(a)(ii)</strong> The bat emits the pulse and detects the echo from an insect after $5.2 \times 10^{-3}$ s. Calculate the distance of the insect from the bat. [3]</p>
+<p>Working:</p>
+<p>_________________________________________________________________________________</p>
+<p>_________________________________________________________________________________</p>
+<p>Distance $=$ _________ m</p>
+<p><strong>(b)</strong> A vibrating tuning fork of frequency 512 Hz is held above a hollow tube that is closed at one end. The tube is gradually lengthened until resonance (maximum loudness) first occurs. The speed of sound in air is 340 m s$^{-1}$.</p>
+<p><strong>(b)(i)</strong> Calculate the wavelength of the sound produced by the tuning fork. [2]</p>
+<p>Working:</p>
+<p>_________________________________________________________________________________</p>
+<p>$\lambda =$ _________ m</p>
+<p><strong>(b)(ii)</strong> For a closed-end tube, resonance first occurs when the tube length equals one quarter of the wavelength ($L = \lambda / 4$). Calculate the length of the tube at first resonance. [1]</p>
+<p>$L =$ _________ m</p>
+<p><strong>(b)(iii)</strong> Resonance occurs because a <strong>standing wave</strong> forms inside the tube. State what a standing wave is and describe one difference between a standing wave and a progressive (travelling) wave. [2]</p>
+<p>Standing wave: __________________________________________________________________</p>
+<p>_________________________________________________________________________________</p>
+<p>Difference: _____________________________________________________________________</p>
+<p>_________________________________________________________________________________</p>
+<p><strong>(c)</strong> A wave in a ripple tank has a wavelength of 3.0 cm and a frequency of 8.0 Hz. Calculate the speed of this water wave. [2]</p>
+<p>Working:</p>
+<p>_________________________________________________________________________________</p>
+<p>$v =$ _________ m s$^{-1}$</p>
+<hr />
+<h2>Question 8 — Extended Response: Wave Behaviour and Applications (10 marks)</h2>
+<p><strong>(a)</strong> Sound can undergo <strong>diffraction</strong> when it passes through a gap or around an obstacle.</p>
+<p><strong>(a)(i)</strong> State the condition under which diffraction is greatest. [1]</p>
+<p>_________________________________________________________________________________</p>
+<p><strong>(a)(ii)</strong> A sound source produces a low-pitched note (frequency 100 Hz) and a high-pitched note (frequency 4000 Hz) simultaneously. Both sounds pass through an open doorway (width approximately 1 m). Explain which note you would hear more clearly around the corner in the corridor outside, and why. [3]</p>
+<p>_________________________________________________________________________________</p>
+<p>_________________________________________________________________________________</p>
+<p>_________________________________________________________________________________</p>
+<p><strong>(b)</strong> Describe an experiment a student could carry out in the laboratory to measure the speed of sound in air using a <strong>double-microphone and oscilloscope</strong> method. Your answer should include:</p>
+<ul>
+<li>the equipment used and how it is set up</li>
+<li>the measurements taken</li>
+<li>how the speed of sound is calculated from the measurements</li>
+<li>one source of error and how it could be reduced</li>
+</ul>
+<p>[6]</p>
+<p>_________________________________________________________________________________</p>
+<p>_________________________________________________________________________________</p>
+<p>_________________________________________________________________________________</p>
+<p>_________________________________________________________________________________</p>
+<p>_________________________________________________________________________________</p>
+<p>_________________________________________________________________________________</p>
+<p>_________________________________________________________________________________</p>
+<p>_________________________________________________________________________________</p>
+<hr />
+<p><strong>END OF QUESTION PAPER</strong></p>
+<p><em>Total: 90 marks</em></p>
+<hr />
+<p><em>Haberdashers Boys School — Year 9 Physics — Sound &amp; Waves — 8 May 2026</em></p>
+</body>
+</html>

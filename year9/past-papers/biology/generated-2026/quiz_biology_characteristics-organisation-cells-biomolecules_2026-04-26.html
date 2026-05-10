@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biology — Cells, Biomolecules &amp; Living Characteristics Quiz</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <style>
+    [x-cloak] { display: none !important; }
+    .flip-card { perspective: 1000px; }
+    .flip-inner { transition: transform 0.5s; transform-style: preserve-3d; position: relative; }
+    .flipped .flip-inner { transform: rotateY(180deg); }
+    .flip-front, .flip-back { backface-visibility: hidden; -webkit-backface-visibility: hidden; position: absolute; inset: 0; }
+    .flip-back { transform: rotateY(180deg); }
+  </style>
+</head>
+<body class="bg-slate-900 min-h-screen text-white" x-data="quiz()" x-cloak>
+
+  <header class="bg-slate-800 border-b border-slate-700 px-6 py-4 flex items-center justify-between">
+    <div>
+      <h1 class="text-xl font-bold text-white">Biology Flashcards</h1>
+      <p class="text-sm text-slate-400">Characteristics · Organisation · Cells · Biomolecules &amp; Enzymes · Medium · <span x-text="cards.length"></span> cards</p>
+    </div>
+    <div class="flex items-center gap-4 text-sm text-slate-400">
+      <span>Card <span x-text="current + 1"></span> of <span x-text="cards.length"></span></span>
+      <span class="text-green-400">&#10003; <span x-text="correct"></span></span>
+      <span class="text-red-400">&#10007; <span x-text="incorrect"></span></span>
+    </div>
+  </header>
+
+  <div class="h-1 bg-slate-700">
+    <div class="h-1 bg-indigo-500 transition-all duration-300" :style="`width: ${((current + 1) / cards.length) * 100}%`"></div>
+  </div>
+
+  <main class="flex flex-col items-center justify-center px-4 py-12 gap-8">
+
+    <div class="flip-card w-full max-w-2xl cursor-pointer" :class="{ flipped: revealed }" @click="reveal()">
+      <div class="flip-inner" style="min-height: 340px;">
+
+        <div class="flip-front bg-slate-800 rounded-2xl border border-slate-700 p-8 flex flex-col justify-between shadow-xl">
+          <div class="flex items-start gap-3">
+            <span class="shrink-0 w-8 h-8 rounded-full bg-indigo-600 flex items-center justify-center text-sm font-bold" x-text="current + 1"></span>
+            <div class="flex-1">
+              <p class="text-xs uppercase tracking-widest text-indigo-400 mb-2 font-semibold" x-text="cards[current].topic"></p>
+              <p class="text-lg leading-relaxed text-white" x-html="cards[current].q"></p>
+            </div>
+          </div>
+          <div x-show="cards[current].img" class="mt-4 flex justify-center">
+            <img :src="cards[current].img" :alt="cards[current].imgAlt || 'Diagram'"
+                 class="rounded-lg max-h-44 object-contain border border-slate-600" @error="$el.style.display='none'">
+          </div>
+          <p class="text-slate-500 text-sm text-center mt-4">Click card or button to reveal answer</p>
+        </div>
+
+        <div class="flip-back bg-indigo-900 rounded-2xl border border-indigo-700 p-8 flex flex-col justify-between shadow-xl">
+          <div>
+            <p class="text-xs uppercase tracking-widest text-indigo-400 mb-3 font-semibold">Answer</p>
+            <p class="text-lg leading-relaxed text-white" x-html="cards[current].a"></p>
+          </div>
+          <p class="text-slate-400 text-sm text-center mt-4">Mark yourself below</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div x-show="revealed" x-transition class="flex gap-4">
+      <button @click="mark(false)" class="flex items-center gap-2 px-6 py-3 rounded-xl bg-red-600 hover:bg-red-500 transition font-semibold">&#10007; Got it wrong</button>
+      <button @click="mark(true)" class="flex items-center gap-2 px-6 py-3 rounded-xl bg-green-600 hover:bg-green-500 transition font-semibold">&#10003; Got it right</button>
+    </div>
+
+    <div x-show="!revealed" x-transition>
+      <button @click="reveal()" class="px-8 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 transition font-semibold">Show Answer</button>
+    </div>
+
+  </main>
+
+  <div x-show="done" x-transition class="fixed inset-0 bg-slate-900/95 flex flex-col items-center justify-center gap-6 p-8">
+    <h2 class="text-3xl font-bold">Quiz Complete!</h2>
+    <div class="flex gap-8 text-2xl">
+      <div class="text-center"><p class="text-green-400 font-bold" x-text="correct"></p><p class="text-slate-400 text-sm">Correct</p></div>
+      <div class="text-center"><p class="text-red-400 font-bold" x-text="incorrect"></p><p class="text-slate-400 text-sm">Incorrect</p></div>
+      <div class="text-center"><p class="text-yellow-400 font-bold" x-text="Math.round((correct/cards.length)*100) + '%'"></p><p class="text-slate-400 text-sm">Score</p></div>
+    </div>
+    <div class="flex gap-4">
+      <button @click="restart(false)" class="px-6 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 transition font-semibold">Restart All</button>
+      <button @click="restart(true)" x-show="incorrect > 0" class="px-6 py-3 rounded-xl bg-red-700 hover:bg-red-600 transition font-semibold">Retry Wrong Cards</button>
+    </div>
+  </div>
+
+  <script>
+    function quiz() {
+      return {
+        cards: CARDS,
+        current: 0,
+        revealed: false,
+        correct: 0,
+        incorrect: 0,
+        done: false,
+        wrongCards: [],
+        reveal() { this.revealed = true; },
+        mark(isCorrect) {
+          if (isCorrect) this.correct++;
+          else { this.incorrect++; this.wrongCards.push(this.cards[this.current]); }
+          this.next();
+        },
+        next() {
+          if (this.current < this.cards.length - 1) { this.current++; this.revealed = false; }
+          else { this.done = true; }
+        },
+        restart(wrongOnly) {
+          this.cards = wrongOnly ? [...this.wrongCards] : CARDS;
+          this.current = 0; this.revealed = false; this.correct = 0; this.incorrect = 0; this.done = false; this.wrongCards = [];
+        }
+      }
+    }
+
+    const CARDS = [
+
+      // ── TOPIC 1: Characteristics of Living Things (5 cards) ──────────────────
+
+      {
+        topic: "Characteristics of Living Things",
+        q: "State what each letter of <strong>MRS GREN</strong> stands for and write one sentence explaining what <em>excretion</em> means in this context.",
+        a: "<strong>M</strong>ovement · <strong>R</strong>espiration · <strong>S</strong>ensitivity · <strong>G</strong>rowth · <strong>R</strong>eproduction · <strong>E</strong>xcretion · <strong>N</strong>utrition<br><br><strong>Excretion</strong> is the removal of <strong>metabolic waste products</strong> (e.g. CO&#8322; from respiration, urea from protein breakdown) from the body — it does <em>not</em> include egestion of undigested food."
+      },
+
+      {
+        topic: "Characteristics of Living Things",
+        q: "A student argues that a flame is alive because it moves, grows, and needs oxygen. Identify <strong>two</strong> characteristics of living organisms that a flame does <em>not</em> show, and explain why each one rules it out.",
+        a: "<strong>1. Reproduction</strong> — a flame cannot produce offspring that are independent copies of itself; it can only spread if there is more fuel.<br><br><strong>2. Excretion</strong> — a flame produces CO&#8322; as a by-product of combustion but does not carry out <em>metabolic</em> processes and cannot remove waste through a regulated biological mechanism.<br><br>(Accept also: no <em>sensitivity/response</em> to stimuli; no <em>nutrition</em> via biological molecules.)"
+      },
+
+      {
+        topic: "Characteristics of Living Things",
+        q: "Viruses are <em>not</em> classified as living organisms even though they contain DNA or RNA. Give <strong>three</strong> reasons that justify this classification decision.",
+        a: "<br>&#8226; Viruses are <strong>not made of cells</strong> — they consist only of a protein coat surrounding nucleic acid.<br>&#8226; They <strong>cannot carry out respiration, nutrition, or excretion</strong> on their own — they have no metabolic processes.<br>&#8226; They can <strong>only reproduce inside a living host cell</strong>; outside a host they are inert particles and show none of the other seven characteristics."
+      },
+
+      {
+        topic: "Characteristics of Living Things",
+        q: "Distinguish between <strong>autotrophic</strong> and <strong>heterotrophic</strong> nutrition. Give one example of each, and state which characteristic of life (from MRS GREN) this relates to.",
+        a: "This relates to <strong>Nutrition</strong>.<br><br>&#8226; <strong>Autotrophic</strong>: the organism makes its own organic food from simple inorganic substances using an external energy source (e.g. light). Example: a <strong>green plant</strong> using photosynthesis.<br><br>&#8226; <strong>Heterotrophic</strong>: the organism obtains energy and nutrients by consuming other organisms or their products. Example: a <strong>human</strong> eating food."
+      },
+
+      {
+        topic: "Characteristics of Living Things",
+        q: "Explain the difference between <strong>sexual</strong> and <strong>asexual</strong> reproduction. State one advantage of each type for the survival of a species.",
+        a: "<strong>Sexual reproduction</strong> involves the <strong>fusion of two gametes</strong> (fertilisation), producing offspring with <em>genetic variation</em>. Advantage: variation allows natural selection — the population can adapt to changing environments.<br><br><strong>Asexual reproduction</strong> involves a <strong>single parent</strong> and no gametes; offspring are genetically identical (clones). Advantage: offspring can be produced rapidly without a mate, which is useful in stable, favourable environments."
+      },
+
+      // ── TOPIC 2: Levels of Organisation (5 cards) ────────────────────────────
+
+      {
+        topic: "Levels of Organisation",
+        q: "Place these levels of biological organisation in the correct order from smallest to largest, and give one specific example for <em>each</em> level in a human: <strong>organ system · cell · organism · tissue · organ</strong>.",
+        a: "<strong>Cell</strong> (e.g. muscle cell) &rarr; <strong>Tissue</strong> (e.g. muscle tissue) &rarr; <strong>Organ</strong> (e.g. heart) &rarr; <strong>Organ system</strong> (e.g. circulatory system) &rarr; <strong>Organism</strong> (e.g. human)<br><br>A <em>tissue</em> is a group of similar cells with a shared function; an <em>organ</em> is made of two or more different tissues working together."
+      },
+
+      {
+        topic: "Levels of Organisation",
+        q: "The heart is an organ. <strong>Explain</strong> — using the concept of levels of organisation — how the heart fits into the wider organisation of the human body, naming the organ system it belongs to and two tissues it contains.",
+        a: "The heart is an <strong>organ</strong> made of different tissues:<br>&#8226; <strong>Cardiac muscle tissue</strong> — contracts rhythmically to pump blood.<br>&#8226; <strong>Epithelial tissue</strong> (endothelium) — lines the inner chambers.<br><br>The heart is part of the <strong>circulatory (cardiovascular) system</strong>, which is an organ system. The circulatory system itself is part of the complete <strong>organism</strong> (the human body), which is the highest level of organisation."
+      },
+
+      {
+        topic: "Levels of Organisation",
+        q: "What is a <strong>specialised cell</strong>? Give <strong>two</strong> named examples and, for each, state one structural feature and explain how it relates to the cell's function.",
+        a: "A specialised cell is a cell that has a <strong>specific structure adapted for a particular function</strong>, different from a generalised cell.<br><br>&#8226; <strong>Red blood cell</strong>: biconcave disc shape &rarr; <em>large surface area</em> for O&#8322; absorption; no nucleus &rarr; more space for <strong>haemoglobin</strong>.<br><br>&#8226; <strong>Root hair cell</strong>: long, thin hair-like extension &rarr; greatly <em>increased surface area</em> for water and mineral ion absorption from the soil."
+      },
+
+      {
+        topic: "Levels of Organisation",
+        q: "Give <strong>two</strong> differences between plant and animal tissues at a cellular level (not whole-organ differences).",
+        a: "<br>&#8226; Plant cells in tissues (e.g. palisade mesophyll) have a <strong>cellulose cell wall</strong>; animal cells do not.<br><br>&#8226; Plant cells may contain <strong>chloroplasts</strong> (in photosynthetic tissues) and a large permanent <strong>vacuole</strong>; animal cells lack both of these structures.<br><br>(Accept also: plant cells may be more regular in shape; animal cells store glycogen, plant cells store starch.)"
+      },
+
+      {
+        topic: "Levels of Organisation",
+        q: "Explain why multicellular organisms <em>need</em> specialised organ systems, whereas a single-celled organism such as <em>Amoeba</em> does not.",
+        a: "In a <strong>unicellular organism</strong> (e.g. Amoeba), the single cell carries out <em>all</em> life processes (nutrition, respiration, excretion, etc.) — every part of the cell is close to the external environment, so diffusion distances are short and no transport system is needed.<br><br>In a <strong>multicellular organism</strong>, most cells are deep inside the body, far from the surface. They cannot exchange gases or nutrients directly with the environment, so <strong>organ systems</strong> (e.g. circulatory, respiratory) are needed to transport substances to and from every cell."
+      },
+
+      // ── TOPIC 3: Cell Structure & Functions (5 cards) ────────────────────────
+
+      {
+        topic: "Cell Structure & Functions",
+        q: "State <strong>three</strong> structures found in a plant cell but <em>not</em> in a typical animal cell, and give the function of each.",
+        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Plant_cell_structure_svg.svg/640px-Plant_cell_structure_svg.svg.png",
+        imgAlt: "Labelled plant cell diagram showing cell wall, chloroplast, and large vacuole",
+        a: "<br>&#8226; <strong>Cell wall</strong> (cellulose) — provides <em>rigidity and support</em>; prevents the cell from bursting under osmotic pressure (turgor).<br><br>&#8226; <strong>Chloroplasts</strong> — contain <strong>chlorophyll</strong>; absorb light energy for <em>photosynthesis</em>.<br><br>&#8226; <strong>Large permanent vacuole</strong> — filled with cell sap; maintains <em>turgor pressure</em>, helping to support the plant."
+      },
+
+      {
+        topic: "Cell Structure & Functions",
+        q: "For each organelle, state its function: <strong>(a)</strong> nucleus &nbsp; <strong>(b)</strong> mitochondria &nbsp; <strong>(c)</strong> ribosomes &nbsp; <strong>(d)</strong> cell membrane.",
+        a: "<strong>(a) Nucleus</strong> — contains <strong>DNA</strong>; controls all cell activities and protein synthesis.<br><br><strong>(b) Mitochondria</strong> — site of <strong>aerobic respiration</strong>; releases ATP energy for cellular processes.<br><br><strong>(c) Ribosomes</strong> — site of <strong>protein synthesis</strong> (translation of mRNA).<br><br><strong>(d) Cell membrane</strong> — <strong>selectively permeable</strong>; controls which substances enter and leave the cell."
+      },
+
+      {
+        topic: "Cell Structure & Functions",
+        q: "State <strong>three key differences</strong> between <strong>prokaryotic</strong> and <strong>eukaryotic</strong> cells.",
+        a: "<table style='font-size:0.95em; border-collapse:collapse; width:100%;'><tr><th style='text-align:left; padding:4px 8px; border-bottom:1px solid #6366f1;'>Feature</th><th style='text-align:left; padding:4px 8px; border-bottom:1px solid #6366f1;'>Prokaryotic</th><th style='text-align:left; padding:4px 8px; border-bottom:1px solid #6366f1;'>Eukaryotic</th></tr><tr><td style='padding:4px 8px;'>Nucleus</td><td style='padding:4px 8px;'>Absent — DNA floats in cytoplasm as a circular chromosome</td><td style='padding:4px 8px;'>Present — DNA enclosed in nuclear envelope</td></tr><tr><td style='padding:4px 8px;'>Size</td><td style='padding:4px 8px;'>Generally smaller (1–10 &mu;m)</td><td style='padding:4px 8px;'>Generally larger (10–100 &mu;m)</td></tr><tr><td style='padding:4px 8px;'>Membrane-bound organelles</td><td style='padding:4px 8px;'>Absent (no mitochondria, ER, etc.)</td><td style='padding:4px 8px;'>Present</td></tr></table><br>Examples: bacteria are prokaryotic; plants, animals, fungi are eukaryotic."
+      },
+
+      {
+        topic: "Cell Structure & Functions",
+        q: "A red blood cell is highly specialised. Describe <strong>two structural adaptations</strong> of a red blood cell and explain how each adaptation relates to its function of transporting oxygen.",
+        a: "<br>&#8226; <strong>Biconcave disc shape</strong> — gives a large <em>surface area to volume ratio</em>, allowing O&#8322; to diffuse in and out rapidly.<br><br>&#8226; <strong>No nucleus</strong> — removes the nucleus so the cell is packed with more <strong>haemoglobin</strong>, maximising oxygen-carrying capacity.<br><br>(Bonus: small size and flexibility allow red blood cells to squeeze through narrow capillaries.)"
+      },
+
+      {
+        topic: "Cell Structure & Functions",
+        q: "A student looks at a cell under a microscope. She sees: a cell wall, a large central vacuole, chloroplasts, a nucleus, and mitochondria. She then looks at a second cell that has: no cell wall, no chloroplasts, a nucleus, mitochondria, and ribosomes. Identify each cell type and justify your answer.",
+        a: "<strong>Cell 1 = Plant cell</strong>: the presence of a <strong>cellulose cell wall</strong>, <strong>chloroplasts</strong>, and a <strong>large permanent vacuole</strong> are all features exclusive to plant cells.<br><br><strong>Cell 2 = Animal cell</strong>: it has a nucleus, mitochondria, and ribosomes (features shared with plant cells) but lacks a cell wall, chloroplasts, and a large vacuole — which rules out a plant cell. It is therefore an animal cell."
+      },
+
+      // ── TOPIC 4: Biomolecules & Enzymes (5 cards) ────────────────────────────
+
+      {
+        topic: "Biomolecules & Enzymes",
+        q: "Complete the table for the three main biological molecules:<br><br><em>Molecule / Monomer (building block) / One function in the body</em><br><br>Fill in for: <strong>Carbohydrates · Proteins · Lipids</strong>",
+        a: "<table style='font-size:0.95em; border-collapse:collapse; width:100%;'><tr><th style='padding:4px 8px; border-bottom:1px solid #6366f1; text-align:left;'>Molecule</th><th style='padding:4px 8px; border-bottom:1px solid #6366f1; text-align:left;'>Monomer</th><th style='padding:4px 8px; border-bottom:1px solid #6366f1; text-align:left;'>Function</th></tr><tr><td style='padding:4px 8px;'><strong>Carbohydrates</strong></td><td style='padding:4px 8px;'>Glucose (simple sugars)</td><td style='padding:4px 8px;'>Energy source; energy storage (as starch/glycogen)</td></tr><tr><td style='padding:4px 8px;'><strong>Proteins</strong></td><td style='padding:4px 8px;'>Amino acids</td><td style='padding:4px 8px;'>Growth and repair; enzymes; hormones</td></tr><tr><td style='padding:4px 8px;'><strong>Lipids</strong></td><td style='padding:4px 8px;'>Fatty acids + glycerol</td><td style='padding:4px 8px;'>Long-term energy storage; insulation; cell membranes</td></tr></table>"
+      },
+
+      {
+        topic: "Biomolecules & Enzymes",
+        q: "Explain how enzymes work using the <strong>lock-and-key model</strong>. Include the terms: <em>active site, substrate, enzyme-substrate complex, complementary shape</em>.",
+        a: "&#8226; Each enzyme has a uniquely shaped region called the <strong>active site</strong>.<br>&#8226; The active site has a shape <strong>complementary</strong> to one specific <strong>substrate</strong> molecule — like a lock fitting only one key.<br>&#8226; The substrate binds to the active site to form an <strong>enzyme-substrate complex</strong>.<br>&#8226; The enzyme catalyses the reaction (breaking or joining bonds), then the <strong>products</strong> are released.<br>&#8226; The enzyme is <strong>unchanged</strong> and its active site is free to bind another substrate molecule."
+      },
+
+      {
+        topic: "Biomolecules & Enzymes",
+        q: "Using <strong>collision theory</strong> and the concept of <strong>denaturation</strong>, explain why enzyme activity first increases then decreases as temperature rises from 10 °C to 70 °C.",
+        a: "<strong>Rising from 10 °C to optimum (~37 °C):</strong><br>Higher temperature gives molecules more <strong>kinetic energy</strong>; enzyme and substrate molecules <strong>collide more frequently</strong> and with greater force &rarr; more enzyme-substrate complexes form per second &rarr; <em>rate increases</em>.<br><br><strong>Above optimum (e.g. 50–70 °C):</strong><br>Excess heat energy breaks the <strong>hydrogen bonds</strong> holding the enzyme's tertiary structure in shape. The <strong>active site changes shape permanently</strong> — this is <strong>denaturation</strong>. The substrate can no longer fit, so the rate falls to zero. This change is <em>irreversible</em>."
+      },
+
+      {
+        topic: "Biomolecules & Enzymes",
+        q: "Explain why changing the <strong>pH</strong> away from an enzyme's optimum reduces its activity. Use the words <em>active site, hydrogen bonds, denaturation</em> in your answer.",
+        a: "Each enzyme has an <strong>optimum pH</strong> at which its active site has the correct shape.<br><br>At extreme pH values, excess H&#8314; or OH&#8315; ions <strong>disrupt the hydrogen bonds</strong> (and ionic interactions) that maintain the enzyme's three-dimensional shape. This alters the shape of the <strong>active site</strong>, so it is no longer <strong>complementary</strong> to the substrate — the substrate cannot bind.<br><br>At very extreme pH, this change is irreversible (<strong>denaturation</strong>) and the enzyme is permanently inactive."
+      },
+
+      {
+        topic: "Biomolecules & Enzymes",
+        q: "An enzyme has an optimum temperature of 37 °C. A student heats the enzyme to 80 °C for 5 minutes, then cools it back to 37 °C and adds substrate. <strong>Predict and explain</strong> the result.",
+        a: "<strong>Prediction</strong>: little or no reaction will occur, even at 37 °C.<br><br><strong>Explanation</strong>: Heating to 80 °C caused <strong>denaturation</strong> — the high temperature broke the <strong>hydrogen bonds</strong> holding the enzyme's tertiary structure in shape, permanently altering the <strong>active site</strong>. Cooling to 37 °C does <em>not</em> restore the original shape because denaturation is <strong>irreversible</strong>. The active site remains the wrong shape, so the substrate cannot form an enzyme-substrate complex and the reaction rate stays near zero."
+      }
+
+    ];
+  </script>
+</body>
+</html>

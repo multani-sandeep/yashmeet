@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spanish — All Topics Quiz</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <style>
+    [x-cloak] { display: none !important; }
+    .flip-card { perspective: 1000px; }
+    .flip-inner { transition: transform 0.5s; transform-style: preserve-3d; }
+    .flipped .flip-inner { transform: rotateY(180deg); }
+    .flip-front, .flip-back { backface-visibility: hidden; -webkit-backface-visibility: hidden; }
+    .flip-back { transform: rotateY(180deg); }
+  </style>
+</head>
+<body class="bg-slate-900 min-h-screen text-white" x-data="quiz()" x-cloak>
+
+  <!-- Header -->
+  <header class="bg-slate-800 border-b border-slate-700 px-6 py-4 flex items-center justify-between">
+    <div>
+      <h1 class="text-xl font-bold text-white">Spanish Flashcards</h1>
+      <p class="text-sm text-slate-400">All Topics · Hard · <span x-text="cards.length"></span> cards</p>
+    </div>
+    <div class="flex items-center gap-4 text-sm text-slate-400">
+      <span>Card <span x-text="current + 1"></span> of <span x-text="cards.length"></span></span>
+      <span class="text-green-400">&#10003; <span x-text="correct"></span></span>
+      <span class="text-red-400">&#10007; <span x-text="incorrect"></span></span>
+    </div>
+  </header>
+
+  <!-- Progress bar -->
+  <div class="h-1 bg-slate-700">
+    <div class="h-1 bg-indigo-500 transition-all duration-300"
+         :style="`width: ${((current + 1) / cards.length) * 100}%`"></div>
+  </div>
+
+  <!-- Topic badge -->
+  <div class="flex justify-center pt-6">
+    <span class="px-3 py-1 rounded-full text-xs font-semibold tracking-wide uppercase"
+          :class="{
+            'bg-blue-700 text-blue-200':    cards[current].topic === 'Preterite AR',
+            'bg-purple-700 text-purple-200': cards[current].topic === 'Preterite ER/IR',
+            'bg-pink-700 text-pink-200':    cards[current].topic === 'Irregular Preterite',
+            'bg-yellow-700 text-yellow-200': cards[current].topic === 'Future Tense',
+            'bg-green-700 text-green-200':  cards[current].topic === 'Reflexive Verbs',
+            'bg-orange-700 text-orange-200': cards[current].topic === 'Food Vocabulary',
+            'bg-red-700 text-red-200':      cards[current].topic === 'Spelling Changes',
+            'bg-teal-700 text-teal-200':    cards[current].topic === 'Present Tense',
+            'bg-cyan-700 text-cyan-200':    cards[current].topic === 'Irregular Present',
+            'bg-lime-700 text-lime-200':    cards[current].topic === 'Radical-Changing',
+            'bg-violet-700 text-violet-200': cards[current].topic === 'Connectors &amp; Opinions',
+            'bg-amber-700 text-amber-200':  cards[current].topic === 'Hobbies &amp; Work'
+          }"
+          x-text="cards[current].topic"></span>
+  </div>
+
+  <!-- Card area -->
+  <main class="flex flex-col items-center justify-center px-4 py-8 gap-8">
+
+    <!-- Flashcard -->
+    <div class="flip-card w-full max-w-2xl cursor-pointer" :class="{ flipped: revealed }" @click="reveal()">
+      <div class="flip-inner relative" style="min-height: 340px;">
+
+        <!-- Front (Question) -->
+        <div class="flip-front absolute inset-0 bg-slate-800 rounded-2xl border border-slate-700 p-8 flex flex-col justify-between shadow-xl">
+          <div class="flex items-start gap-3">
+            <span class="shrink-0 w-8 h-8 rounded-full bg-indigo-600 flex items-center justify-center text-sm font-bold"
+                  x-text="current + 1"></span>
+            <p class="text-lg leading-relaxed text-white" x-html="cards[current].q"></p>
+          </div>
+          <div x-show="cards[current].img" class="mt-4">
+            <img :src="cards[current].img" :alt="cards[current].imgAlt || 'Diagram'"
+                 class="rounded-lg max-h-40 mx-auto object-contain border border-slate-600">
+          </div>
+          <p class="text-slate-500 text-sm text-center mt-4">Click to reveal answer</p>
+        </div>
+
+        <!-- Back (Answer) -->
+        <div class="flip-back absolute inset-0 bg-indigo-900 rounded-2xl border border-indigo-700 p-8 flex flex-col justify-between shadow-xl">
+          <div>
+            <p class="text-xs uppercase tracking-widest text-indigo-400 mb-3 font-semibold">Answer</p>
+            <p class="text-lg leading-relaxed text-white" x-html="cards[current].a"></p>
+          </div>
+          <p class="text-slate-400 text-sm text-center mt-4">Mark yourself below</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Controls — hidden until revealed -->
+    <div x-show="revealed" x-transition class="flex gap-4">
+      <button @click="mark(false)"
+              class="flex items-center gap-2 px-6 py-3 rounded-xl bg-red-600 hover:bg-red-500 transition font-semibold">
+        &#10007; Got it wrong
+      </button>
+      <button @click="mark(true)"
+              class="flex items-center gap-2 px-6 py-3 rounded-xl bg-green-600 hover:bg-green-500 transition font-semibold">
+        &#10003; Got it right
+      </button>
+    </div>
+
+    <!-- Reveal button when not yet flipped -->
+    <div x-show="!revealed" x-transition>
+      <button @click="reveal()"
+              class="px-8 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 transition font-semibold">
+        Show Answer
+      </button>
+    </div>
+
+  </main>
+
+  <!-- Completion screen -->
+  <div x-show="done" x-transition
+       class="fixed inset-0 bg-slate-900/95 flex flex-col items-center justify-center gap-6 p-8">
+    <h2 class="text-3xl font-bold">Quiz Complete!</h2>
+    <div class="flex gap-8 text-2xl">
+      <div class="text-center"><p class="text-green-400 font-bold" x-text="correct"></p><p class="text-slate-400 text-sm">Correct</p></div>
+      <div class="text-center"><p class="text-red-400 font-bold" x-text="incorrect"></p><p class="text-slate-400 text-sm">Incorrect</p></div>
+      <div class="text-center"><p class="text-yellow-400 font-bold" x-text="Math.round((correct/cards.length)*100) + '%'"></p><p class="text-slate-400 text-sm">Score</p></div>
+    </div>
+    <div class="flex gap-4">
+      <button @click="restart(false)"
+              class="px-6 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 transition font-semibold">
+        Restart All
+      </button>
+      <button @click="restart(true)" x-show="incorrect > 0"
+              class="px-6 py-3 rounded-xl bg-red-700 hover:bg-red-600 transition font-semibold">
+        Retry Wrong Cards
+      </button>
+    </div>
+  </div>
+
+  <script>
+    function quiz() {
+      return {
+        cards: CARDS,
+        current: 0,
+        revealed: false,
+        correct: 0,
+        incorrect: 0,
+        done: false,
+        wrongCards: [],
+
+        reveal() {
+          this.revealed = true;
+        },
+        mark(isCorrect) {
+          if (isCorrect) this.correct++;
+          else { this.incorrect++; this.wrongCards.push(this.cards[this.current]); }
+          this.next();
+        },
+        next() {
+          if (this.current < this.cards.length - 1) {
+            this.current++;
+            this.revealed = false;
+          } else {
+            this.done = true;
+          }
+        },
+        restart(wrongOnly) {
+          this.cards = wrongOnly ? [...this.wrongCards] : CARDS;
+          this.current = 0;
+          this.revealed = false;
+          this.correct = 0;
+          this.incorrect = 0;
+          this.done = false;
+          this.wrongCards = [];
+        }
+      }
+    }
+
+    const CARDS = [
+
+      // ─── TOPIC 1: Preterite AR Verbs (4 cards) ───────────────────────────────
+
+      {
+        topic: "Preterite AR",
+        q: "Conjugate <strong>hablar</strong> in the preterite tense for all six persons.<br><br><em>(yo, t&uacute;, &eacute;l/ella, nosotros, vosotros, ellos/ellas)</em>",
+        a: "<strong>yo</strong> habl&eacute;<br><strong>t&uacute;</strong> hablaste<br><strong>&eacute;l/ella</strong> habl&oacute;<br><strong>nosotros</strong> hablamos<br><strong>vosotros</strong> hablasteis<br><strong>ellos/ellas</strong> hablaron",
+        img: "../images/spanish/preterite_ar_verbs.jpg",
+        imgAlt: "Preterite AR verb conjugation table"
+      },
+      {
+        topic: "Preterite AR",
+        q: "Translate into Spanish using the <strong>preterite tense</strong>:<br><br><em>&ldquo;Last Saturday we bought fresh tomatoes and rice at the market.&rdquo;</em>",
+        a: "<strong>El s&aacute;bado pasado compramos tomates frescos y arroz en el mercado.</strong><br><br>Key points: <em>compramos</em> (nosotros preterite of <em>comprar</em>); <em>el s&aacute;bado pasado</em> = last Saturday."
+      },
+      {
+        topic: "Preterite AR",
+        q: "Error correction — find and fix the <strong>one</strong> mistake:<br><br><em>&ldquo;Ayer yo habl&oacute; con mi madre por tel&eacute;fono.&rdquo;</em>",
+        a: "Error: <strong>habl&oacute;</strong> &rarr; should be <strong>habl&eacute;</strong><br><br><em>habl&oacute;</em> is the &eacute;l/ella form. With <em>yo</em>, the preterite of <em>hablar</em> is <em>habl&eacute;</em> (note the accent on the final &eacute;).<br><br>Correct sentence: <em>Ayer yo habl&eacute; con mi madre por tel&eacute;fono.</em>"
+      },
+      {
+        topic: "Preterite AR",
+        q: "Fill in the gap with the correct preterite form of the verb in brackets:<br><br><em>&ldquo;La semana pasada, mis amigos ________ (escuchar) m&uacute;sica en el parque.&rdquo;</em>",
+        a: "<strong>escucharon</strong><br><br>Subject is <em>mis amigos</em> = ellos/ellas &rarr; <em>-aron</em> ending for preterite -AR verbs.<br><br>Full sentence: <em>La semana pasada, mis amigos escucharon m&uacute;sica en el parque.</em>"
+      },
+
+      // ─── TOPIC 2: Preterite ER & IR Verbs (4 cards) ──────────────────────────
+
+      {
+        topic: "Preterite ER/IR",
+        q: "Give the full preterite conjugation of <strong>comer</strong> (to eat) for all six persons.<br><br><em>Note: ER and IR verbs share identical preterite endings.</em>",
+        a: "<strong>yo</strong> com&iacute;<br><strong>t&uacute;</strong> comiste<br><strong>&eacute;l/ella</strong> comi&oacute;<br><strong>nosotros</strong> comimos<br><strong>vosotros</strong> comisteis<br><strong>ellos/ellas</strong> comieron",
+        img: "../images/spanish/preterite_er_ir_verbs.jpg",
+        imgAlt: "Preterite ER and IR verb conjugation table"
+      },
+      {
+        topic: "Preterite ER/IR",
+        q: "Translate into Spanish using the <strong>preterite tense</strong>:<br><br><em>&ldquo;She ate a Spanish omelette and drank a glass of water for lunch.&rdquo;</em>",
+        a: "<strong>Ella comi&oacute; una tortilla espa&ntilde;ola y bebi&oacute; un vaso de agua para comer.</strong><br><br>Key points: <em>comi&oacute;</em> (preterite of <em>comer</em>); <em>bebi&oacute;</em> (preterite of <em>beber</em>); <em>para comer</em> = for lunch."
+      },
+      {
+        topic: "Preterite ER/IR",
+        q: "Error correction — find and fix the <strong>one</strong> mistake:<br><br><em>&ldquo;El a&ntilde;o pasado, ellos viv&iacute; en Barcelona.&rdquo;</em>",
+        a: "Error: <strong>viv&iacute;</strong> &rarr; should be <strong>vivieron</strong><br><br><em>viv&iacute;</em> is the <em>yo</em> preterite form. The subject is <em>ellos</em>, so the correct ending is <em>-ieron</em>.<br><br>Correct sentence: <em>El a&ntilde;o pasado, ellos vivieron en Barcelona.</em>"
+      },
+      {
+        topic: "Preterite ER/IR",
+        q: "Translate this Spanish sentence into <strong>English</strong>:<br><br><em>&ldquo;Ayer por la tarde, nosotros comimos paella valenciana en un restaurante cerca del centro.&rdquo;</em>",
+        a: "<strong>&ldquo;Yesterday afternoon, we ate Valencian paella in a restaurant near the centre.&rdquo;</strong><br><br>Key vocab: <em>ayer por la tarde</em> = yesterday afternoon; <em>cerca del centro</em> = near the centre/town centre."
+      },
+
+      // ─── TOPIC 3: Irregular Verbs in the Preterite (4 cards) ─────────────────
+
+      {
+        topic: "Irregular Preterite",
+        q: "Give the full preterite conjugation of <strong>ir / ser</strong> (to go / to be) for all six persons.<br><br><em>Hint: they share the same forms in the preterite.</em>",
+        a: "<strong>yo</strong> fui<br><strong>t&uacute;</strong> fuiste<br><strong>&eacute;l/ella</strong> fue<br><strong>nosotros</strong> fuimos<br><strong>vosotros</strong> fuisteis<br><strong>ellos/ellas</strong> fueron<br><br>Context makes it clear which verb is meant: <em>Fui al mercado</em> = I went to the market; <em>Fue muy dif&iacute;cil</em> = It was very difficult.",
+        img: "../images/spanish/preterite_irregular_verbs.jpg",
+        imgAlt: "Irregular preterite verb conjugation table"
+      },
+      {
+        topic: "Irregular Preterite",
+        q: "Translate into Spanish using the <strong>preterite tense</strong>:<br><br><em>&ldquo;Last week my sister went to the market and bought ingredients for a seafood paella.&rdquo;</em>",
+        a: "<strong>La semana pasada, mi hermana fue al mercado y compr&oacute; ingredientes para una paella de marisco.</strong><br><br>Key points: <em>fue</em> (preterite of <em>ir</em>); <em>compr&oacute;</em> (preterite of <em>comprar</em>); <em>de marisco</em> = with seafood."
+      },
+      {
+        topic: "Irregular Preterite",
+        q: "Fill in the gap with the correct preterite form of <strong>hacer</strong> (to do / make):<br><br><em>&ldquo;El s&aacute;bado pasado, mi madre ________ una paella deliciosa para toda la familia.&rdquo;</em>",
+        a: "<strong>hizo</strong><br><br>Subject is <em>mi madre</em> = &eacute;l/ella &rarr; preterite of <em>hacer</em> is <em>hizo</em> (irregular stem <em>hic-</em> with spelling change z &rarr; c before o).<br><br>Full sentence: <em>El s&aacute;bado pasado, mi madre hizo una paella deliciosa para toda la familia.</em>"
+      },
+      {
+        topic: "Irregular Preterite",
+        q: "These two sentences both use irregular preterites. Translate them into English:<br><br>1. <em>Ayer tuve mucha tarea y no pude salir.</em><br>2. <em>El fin de semana pasado, ellos fueron al cine y lo pasaron muy bien.</em>",
+        a: "1. <strong>&ldquo;Yesterday I had a lot of homework and I could not go out.&rdquo;</strong><br>&nbsp;&nbsp;&nbsp;(<em>tuve</em> = I had [tener]; <em>pude</em> = I was able to [poder])<br><br>2. <strong>&ldquo;Last weekend, they went to the cinema and had a great time.&rdquo;</strong><br>&nbsp;&nbsp;&nbsp;(<em>fueron</em> = they went [ir]; <em>lo pasaron muy bien</em> = they had a great time)"
+      },
+
+      // ─── TOPIC 4: Future Tense (4 cards) ─────────────────────────────────────
+
+      {
+        topic: "Future Tense",
+        q: "Explain the structure of the <strong>near future</strong> in Spanish and give three example sentences using different subjects.<br><br><em>(Use voy a / vas a / va a + infinitive)</em>",
+        a: "Structure: <strong>[present tense of <em>ir</em>] + a + infinitive</strong><br><br>Examples:<br>&bull; <em>Voy a comer una paella ma&ntilde;ana.</em> (I am going to eat a paella tomorrow.)<br>&bull; <em>Va a comprar huevos en el mercado.</em> (He/She is going to buy eggs at the market.)<br>&bull; <em>Vamos a visitar Madrid el verano que viene.</em> (We are going to visit Madrid next summer.)"
+      },
+      {
+        topic: "Future Tense",
+        q: "Translate into Spanish using the <strong>near future tense</strong>:<br><br><em>&ldquo;Next Saturday I am going to wake up early, eat scrambled eggs for breakfast, and go to the market with my family.&rdquo;</em>",
+        a: "<strong>El s&aacute;bado que viene voy a despertarme temprano, voy a comer huevos revueltos para desayunar y voy a ir al mercado con mi familia.</strong><br><br>Key points: <em>despertarme</em> (reflexive infinitive); <em>huevos revueltos</em> = scrambled eggs; <em>el s&aacute;bado que viene</em> = next Saturday."
+      },
+      {
+        topic: "Future Tense",
+        q: "Error correction — find and fix the <strong>one</strong> mistake:<br><br><em>&ldquo;Ma&ntilde;ana, nosotros vamos a compramos frutas en el supermercado.&rdquo;</em>",
+        a: "Error: <strong>compramos</strong> &rarr; should be <strong>comprar</strong><br><br>After <em>ir a</em>, you must use the <strong>infinitive</strong>, not a conjugated form.<br><br>Correct sentence: <em>Ma&ntilde;ana, nosotros vamos a comprar frutas en el supermercado.</em>"
+      },
+      {
+        topic: "Future Tense",
+        q: "Write a sentence that uses <strong>both the preterite and the near future</strong> tense to contrast past and future actions.<br><br><em>Hint: use a time marker like <em>ayer</em> and <em>ma&ntilde;ana</em>.</em>",
+        a: "Model answer: <strong><em>Ayer com&iacute; arroz, pero ma&ntilde;ana voy a comer una paella de marisco.</em></strong><br>(Yesterday I ate rice, but tomorrow I am going to eat a seafood paella.)<br><br>Other valid answers use any preterite form + <em>ir a</em> + infinitive with appropriate time markers."
+      },
+
+      // ─── TOPIC 5: Reflexive Verbs (5 cards) ──────────────────────────────────
+
+      {
+        topic: "Reflexive Verbs",
+        q: "Give the full present tense conjugation of <strong>lavarse</strong> (to wash oneself) for all six persons, including the reflexive pronoun each time.",
+        a: "<strong>yo</strong> me lavo<br><strong>t&uacute;</strong> te lavas<br><strong>&eacute;l/ella</strong> se lava<br><strong>nosotros</strong> nos lavamos<br><strong>vosotros</strong> os lav&aacute;is<br><strong>ellos/ellas</strong> se lavan<br><br>The reflexive pronoun always matches the subject and precedes the conjugated verb."
+      },
+      {
+        topic: "Reflexive Verbs",
+        q: "Fill in the gap with the correct reflexive pronoun and verb form of <strong>despertarse</strong> (stem-changing: e &rarr; ie):<br><br><em>&ldquo;Normalmente, mis padres ________ ________ a las seis de la ma&ntilde;ana.&rdquo;</em>",
+        a: "<strong>se despiertan</strong><br><br>Subject is <em>mis padres</em> = ellos/ellas &rarr; reflexive pronoun <em>se</em> + stem-changing form <em>despiertan</em> (e &rarr; ie in all forms except nosotros/vosotros).<br><br>Full sentence: <em>Normalmente, mis padres se despiertan a las seis de la ma&ntilde;ana.</em>"
+      },
+      {
+        topic: "Reflexive Verbs",
+        q: "Error correction — find and fix the <strong>one</strong> mistake:<br><br><em>&ldquo;Nosotros me levantamos a las siete todos los d&iacute;as.&rdquo;</em>",
+        a: "Error: <strong>me</strong> &rarr; should be <strong>nos</strong><br><br>The reflexive pronoun must agree with the subject. Subject is <em>nosotros</em> &rarr; pronoun is <em>nos</em>.<br><br>Correct sentence: <em>Nosotros nos levantamos a las siete todos los d&iacute;as.</em>"
+      },
+      {
+        topic: "Reflexive Verbs",
+        q: "Translate into Spanish, using the correct reflexive verbs:<br><br><em>&ldquo;On school days I wake up at seven, get dressed quickly, and go to bed at ten thirty at night.&rdquo;</em>",
+        a: "<strong>Los d&iacute;as de colegio me despierto a las siete, me visto r&aacute;pidamente y me acuesto a las diez y media de la noche.</strong><br><br>Key verbs: <em>despertarse</em> &rarr; <em>me despierto</em>; <em>vestirse</em> &rarr; <em>me visto</em>; <em>acostarse</em> &rarr; <em>me acuesto</em> (all stem-changing)."
+      },
+      {
+        topic: "Reflexive Verbs",
+        q: "Pedro says: <em>&ldquo;El s&aacute;bado pasado me levanté a las ocho, me duché y desayuné.&rdquo;</em><br><br>Rewrite the three verbs in the <strong>nosotros</strong> form (as if Pedro and his friend did it together), keeping the preterite tense.",
+        a: "<strong>nos levantamos, nos duchamos, desayunamos</strong><br><br>Full sentence: <em>El s&aacute;bado pasado nos levantamos a las ocho, nos duchamos y desayunamos.</em><br><br>Note: <em>levantarse</em> and <em>ducharse</em> are reflexive (pronoun changes to <em>nos</em>); <em>desayunar</em> is not reflexive (no pronoun needed). The nosotros preterite of -AR verbs is the same as the present tense: <em>-amos</em>."
+      },
+
+      // ─── TOPIC 6: Food Vocabulary (4 cards) ──────────────────────────────────
+
+      {
+        topic: "Food Vocabulary",
+        q: "Name the <strong>four ways to prepare eggs</strong> in Spanish (with their English meanings), as studied in class.",
+        a: "&bull; <strong>Fritos</strong> — fried<br>&bull; <strong>Pasados por agua</strong> — soft boiled<br>&bull; <strong>Revueltos</strong> — scrambled<br>&bull; <strong>Al horno</strong> — baked",
+        img: "../images/spanish/food_vocab.png",
+        imgAlt: "Spanish food vocabulary diagram"
+      },
+      {
+        topic: "Food Vocabulary",
+        q: "Name the <strong>four types of paella</strong> in Spanish (with their English meanings), as studied in class.",
+        a: "&bull; <strong>De marisco</strong> — with seafood<br>&bull; <strong>Negra</strong> — black (coloured with squid ink)<br>&bull; <strong>Valenciana</strong> — from Valencia (traditional, with chicken and rabbit)<br>&bull; <strong>Vegetariana</strong> — vegetarian"
+      },
+      {
+        topic: "Food Vocabulary",
+        q: "Translate into Spanish, using precise food vocabulary:<br><br><em>&ldquo;For breakfast yesterday I ate two fried eggs with toast, but next week I am going to try scrambled eggs.&rdquo;</em>",
+        a: "<strong>Ayer para desayunar com&iacute; dos huevos fritos con tostadas, pero la semana que viene voy a probar los huevos revueltos.</strong><br><br>Key vocab: <em>huevos fritos</em> = fried eggs; <em>huevos revueltos</em> = scrambled eggs; <em>la semana que viene</em> = next week; <em>probar</em> = to try (taste)."
+      },
+      {
+        topic: "Food Vocabulary",
+        q: "Translate this Spanish sentence into <strong>English</strong>, identifying all food and cooking vocabulary:<br><br><em>&ldquo;En el restaurante pedi&oacute; una paella negra, pero yo prefer&iacute; los huevos pasados por agua con pan.&rdquo;</em>",
+        a: "<strong>&ldquo;In the restaurant he/she ordered a black paella, but I preferred the soft-boiled eggs with bread.&rdquo;</strong><br><br>Food vocabulary: <em>paella negra</em> = black paella (squid ink); <em>huevos pasados por agua</em> = soft-boiled eggs; <em>pan</em> = bread.<br>Grammar: <em>pidi&oacute;</em> = preterite of <em>pedir</em> (irregular stem change e &rarr; i); <em>prefer&iacute;</em> = preterite of <em>preferir</em>."
+      },
+
+      // ─── TOPIC 7: Spelling Changes in the Preterite Yo-form (4 cards) ─────────
+
+      {
+        topic: "Spelling Changes",
+        q: "Why does the verb <strong>buscar</strong> change spelling in the <em>yo</em> preterite form? Write the correct <em>yo</em> preterite and explain the rule.<br><br><em>Context: &ldquo;I searched online for tickets last night.&rdquo;</em>",
+        a: "<strong>buqué</strong> &rarr; WRONG. Correct form: <strong>busqu&eacute;</strong><br><br>Rule: verbs ending in <strong>-CAR</strong> change <em>c &rarr; qu</em> before &eacute; to preserve the hard /k/ sound (writing <em>buscé</em> would be pronounced /s/).<br><br>Sentence: <em>Anoche busqu&eacute; entradas por internet.</em>"
+      },
+      {
+        topic: "Spelling Changes",
+        q: "Error correction — find and fix the <strong>one</strong> mistake:<br><br><em>&ldquo;Ayer llegé tarde al colegio porque perdí el autobús.&rdquo;</em>",
+        a: "Error: <strong>lleg&eacute;</strong> &rarr; should be <strong>llegu&eacute;</strong><br><br><em>llegar</em> ends in <strong>-GAR</strong> &rarr; <em>g &rarr; gu</em> before &eacute; in the <em>yo</em> preterite, to preserve the hard /g/ sound.<br><br>Correct sentence: <em>Ayer llegu&eacute; tarde al colegio porque perd&iacute; el autob&uacute;s.</em>"
+      },
+      {
+        topic: "Spelling Changes",
+        q: "Fill in the gap with the correct <em>yo</em> preterite form of <strong>empezar</strong>:<br><br><em>&ldquo;________ a tocar la guitarra cuando ten&iacute;a diez a&ntilde;os.&rdquo;</em><br><br>Explain the spelling rule that applies.",
+        a: "<strong>Empec&eacute;</strong><br><br>Rule: verbs ending in <strong>-ZAR</strong> change <em>z &rarr; c</em> before &eacute; in the <em>yo</em> preterite. Writing <em>empez&eacute;</em> would violate the Spanish spelling rule that <em>z</em> does not appear before <em>e</em> or <em>i</em>.<br><br>Full sentence: <em>Empec&eacute; a tocar la guitarra cuando ten&iacute;a diez a&ntilde;os.</em>"
+      },
+      {
+        topic: "Spelling Changes",
+        q: "Three verbs are listed: <strong>tocar, pagar, almorzar</strong>. Give the <em>yo</em> preterite of each, name the spelling rule that applies, and confirm that <strong>all other persons</strong> of these verbs are fully regular.",
+        a: "&bull; <em>tocar</em> &rarr; <strong>toqu&eacute;</strong> &nbsp;(-CAR: c &rarr; qu)<br>&bull; <em>pagar</em> &rarr; <strong>pagu&eacute;</strong> &nbsp;(-GAR: g &rarr; gu)<br>&bull; <em>almorzar</em> &rarr; <strong>almorcé</strong> &nbsp;(-ZAR: z &rarr; c)<br><br>The spelling change <strong>only affects the <em>yo</em> form</strong>. All other preterite endings (-aste, -&oacute;, -amos, -asteis, -aron) are written normally."
+      },
+
+      // ─── TOPIC 8: Regular Present Tense — AR, ER, IR (3 cards) ──────────────
+
+      {
+        topic: "Present Tense",
+        q: "Translate the following sentence into Spanish, selecting the correct present tense ending for each verb:<br><br><em>&ldquo;My friends speak Spanish at school, eat lunch at one o&apos;clock, and live near the city centre.&rdquo;</em>",
+        a: "<strong>Mis amigos hablan espa&ntilde;ol en el colegio, comen a la una y viven cerca del centro de la ciudad.</strong><br><br>Endings used: <em>hablan</em> (-AR, ellos &rarr; -an); <em>comen</em> (-ER, ellos &rarr; -en); <em>viven</em> (-IR, ellos &rarr; -en). Note: -ER and -IR share the same endings except for nosotros/vosotros."
+      },
+      {
+        topic: "Present Tense",
+        q: "Error correction — find and fix the <strong>one</strong> mistake:<br><br><em>&ldquo;Vosotros com&eacute;is mucho pero nosotros vivamos muy lejos y no podemos quedar.&rdquo;</em>",
+        a: "Error: <strong>vivamos</strong> &rarr; should be <strong>vivimos</strong><br><br><em>vivamos</em> is the present subjunctive of <em>vivir</em>. The <strong>nosotros present indicative</strong> of -IR verbs ends in <em>-imos</em>, not <em>-amos</em>.<br><br>Correct sentence: <em>Vosotros com&eacute;is mucho pero nosotros vivimos muy lejos y no podemos quedar.</em>"
+      },
+      {
+        topic: "Present Tense",
+        q: "Give the full present tense conjugation of <strong>vivir</strong> (to live) and highlight where -IR differs from -ER verbs (use <em>comer</em> as the comparison).",
+        a: "<strong>yo</strong> vivo &nbsp;|&nbsp; como<br><strong>t&uacute;</strong> vives &nbsp;|&nbsp; comes<br><strong>&eacute;l/ella</strong> vive &nbsp;|&nbsp; come<br><strong>nosotros</strong> <u>vivimos</u> &nbsp;|&nbsp; <u>comemos</u><br><strong>vosotros</strong> <u>viv&iacute;s</u> &nbsp;|&nbsp; <u>com&eacute;is</u><br><strong>ellos/ellas</strong> viven &nbsp;|&nbsp; comen<br><br>The <strong>only differences</strong> are in the nosotros (<em>-imos</em> vs <em>-emos</em>) and vosotros (<em>-&iacute;s</em> vs <em>-&eacute;is</em>) forms."
+      },
+
+      // ─── TOPIC 9: Irregular Present — IR, SER, HACER (3 cards) ──────────────
+
+      {
+        topic: "Irregular Present",
+        q: "Fill in all three gaps with the correct present tense forms of <strong>ir, ser, hacer</strong>:<br><br><em>&ldquo;Yo ________ (ir) al gimnasio porque ________ (ser) deportista y me gusta ________ (hacer) ejercicio.&rdquo;</em>",
+        a: "<strong>voy &mdash; soy &mdash; hacer</strong><br><br>Full sentence: <em>Yo voy al gimnasio porque soy deportista y me gusta hacer ejercicio.</em><br><br>Note: after <em>me gusta</em> the verb stays as an <strong>infinitive</strong> — <em>hacer</em>, not a conjugated form."
+      },
+      {
+        topic: "Irregular Present",
+        q: "Error correction — find and fix the <strong>one</strong> mistake:<br><br><em>&ldquo;Mi hermano haces los deberes cada noche y después va al cine los viernes.&rdquo;</em>",
+        a: "Error: <strong>haces</strong> &rarr; should be <strong>hace</strong><br><br><em>haces</em> is the <em>t&uacute;</em> form of <em>hacer</em>. The subject is <em>mi hermano</em> = &eacute;l &rarr; <strong>hace</strong>.<br><br>Correct sentence: <em>Mi hermano hace los deberes cada noche y despu&eacute;s va al cine los viernes.</em>"
+      },
+      {
+        topic: "Irregular Present",
+        q: "Translate into Spanish, using <strong>ir, ser</strong> and <strong>hacer</strong> in the present tense:<br><br><em>&ldquo;We are students and we go to school every day. In the evenings we do sport or we go to the cinema.&rdquo;</em>",
+        a: "<strong>Somos estudiantes y vamos al colegio todos los d&iacute;as. Por las tardes hacemos deporte o vamos al cine.</strong><br><br>Key forms: <em>somos</em> (nosotros ser); <em>vamos</em> (nosotros ir — appears twice); <em>hacemos</em> (nosotros hacer)."
+      },
+
+      // ─── TOPIC 10: Radical-Changing Verbs — JUGAR & PREFERIR (2 cards) ───────
+
+      {
+        topic: "Radical-Changing",
+        q: "Error correction — find and fix the <strong>one</strong> mistake, then explain the radical-changing rule that applies:<br><br><em>&ldquo;Los fines de semana ellos jugán al f&uacute;tbol en el estadio.&rdquo;</em>",
+        a: "Error: <strong>jug&aacute;n</strong> &rarr; should be <strong>juegan</strong><br><br>Rule: <em>jugar</em> is a <strong>u &rarr; ue</strong> radical-changing verb. The stem vowel changes in all forms <em>except</em> nosotros and vosotros.<br><br>&bull; yo juego, t&uacute; juegas, &eacute;l juega, <strong>nosotros jugamos</strong>, <strong>vosotros jug&aacute;is</strong>, ellos <strong>juegan</strong><br><br>Correct sentence: <em>Los fines de semana ellos juegan al f&uacute;tbol en el estadio.</em>"
+      },
+      {
+        topic: "Radical-Changing",
+        q: "Give the correct present tense form of <strong>preferir</strong> (e &rarr; ie) for each pronoun below, then use the <em>yo</em> and <em>ellos</em> forms in two separate sentences about hobbies.<br><br><em>Pronouns: yo, t&uacute;, &eacute;l/ella, nosotros, vosotros, ellos/ellas</em>",
+        a: "<strong>yo</strong> prefiero &nbsp;|&nbsp; <strong>t&uacute;</strong> prefieres &nbsp;|&nbsp; <strong>&eacute;l/ella</strong> prefiere<br><strong>nosotros</strong> preferimos *(no change)* &nbsp;|&nbsp; <strong>vosotros</strong> prefer&iacute;s *(no change)*<br><strong>ellos/ellas</strong> prefieren<br><br>Example sentences:<br>&bull; <em>Prefiero escuchar m&uacute;sica en vez de ver la tele.</em> (I prefer listening to music instead of watching TV.)<br>&bull; <em>Mis amigos prefieren jugar al tenis los s&aacute;bados.</em> (My friends prefer playing tennis on Saturdays.)"
+      },
+
+      // ─── TOPIC 11: Connectors & Opinion Phrases — Application (3 cards) ────────
+
+      {
+        topic: "Connectors &amp; Opinions",
+        q: "Translate this paragraph opening into Spanish, using at least <strong>three connectors or opinion phrases</strong> from the Module 1 list:<br><br><em>&ldquo;In my opinion, sport is very important. I love playing football; however, I also enjoy going to the cinema. Moreover, I think that doing exercise every day is beneficial.&rdquo;</em>",
+        a: "<strong>En mi opini&oacute;n, el deporte es muy importante. Me encanta jugar al f&uacute;tbol; sin embargo, tambi&eacute;n me gusta ir al cine. Adem&aacute;s, creo que hacer ejercicio todos los d&iacute;as es beneficioso.</strong><br><br>Connectors used: <em>en mi opini&oacute;n</em>, <em>sin embargo</em>, <em>tambi&eacute;n</em>, <em>adem&aacute;s</em>, <em>creo que</em>."
+      },
+      {
+        topic: "Connectors &amp; Opinions",
+        q: "Complete the sentence in Spanish using an appropriate <strong>past-tense opinion phrase</strong> and a <strong>contrast connector</strong>:<br><br><em>&ldquo;The concert last Saturday was incredible. [I thought that] it was the best show of the year. [However,] the tickets were very expensive.&rdquo;</em>",
+        a: "<strong>El concierto del s&aacute;bado pasado fue incre&iacute;ble. Pens&eacute; que fue el mejor espect&aacute;culo del a&ntilde;o. Sin embargo, las entradas fueron muy caras.</strong><br><br>Key phrases: <em>pens&eacute; que</em> (past opinion — I thought that); <em>sin embargo</em> (however/nevertheless); <em>fue</em> (preterite of ser/ir)."
+      },
+      {
+        topic: "Connectors &amp; Opinions",
+        q: "Rewrite the following weak sentence into a <strong>complex, extended sentence</strong> using at least two connectors and one opinion phrase:<br><br><em>Weak version: &ldquo;I like music. I go to concerts sometimes.&rdquo;</em>",
+        a: "Model answer: <strong><em>Me encanta la m&uacute;sica porque es muy emocionante; por eso, a veces voy a conciertos con mis amigos. Adem&aacute;s, pienso que la m&uacute;sica en directo es mucho mejor que escucharla en casa.</em></strong><br><br>(I love music because it is very exciting; that&apos;s why I sometimes go to concerts with my friends. Moreover, I think that live music is much better than listening to it at home.)<br><br>Connectors used: <em>porque, por eso, a veces, adem&aacute;s, pienso que</em>."
+      },
+
+      // ─── TOPIC 12: Module 1 Vocabulary in Context (3 cards) ──────────────────
+
+      {
+        topic: "Hobbies &amp; Work",
+        q: "Translate into Spanish, using precise Module 1 vocabulary for hobbies and entertainment:<br><br><em>&ldquo;Last year my favourite singer gave a concert at the stadium. The show was impressive and I had a great time, although the tickets were very expensive.&rdquo;</em>",
+        a: "<strong>El a&ntilde;o pasado mi cantante favorito/a dio un concierto en el estadio. El espect&aacute;culo fue impresionante y me lo pas&eacute; muy bien, aunque las entradas fueron muy caras.</strong><br><br>Key vocab: <em>cantante</em> = singer; <em>el estadio</em> = stadium; <em>el espect&aacute;culo</em> = show; <em>impresionante</em> = impressive; <em>las entradas</em> = tickets (for an event); <em>aunque</em> = although."
+      },
+      {
+        topic: "Hobbies &amp; Work",
+        q: "Translate into Spanish, using the correct vocabulary for work and professions:<br><br><em>&ldquo;My mother is a doctor and she works full-time. She earns a good salary but she works very hard every day.&rdquo;</em>",
+        a: "<strong>Mi madre es m&eacute;dica y trabaja a tiempo completo. Gana un buen salario pero trabaja muy duro todos los d&iacute;as.</strong><br><br>Key vocab: <em>m&eacute;dica</em> = doctor (female); <em>a tiempo completo</em> = full-time; <em>gana</em> = she earns (present of <em>ganar</em>); <em>el salario</em> = salary; <em>trabajar duro</em> = to work hard."
+      },
+      {
+        topic: "Hobbies &amp; Work",
+        q: "Translate into Spanish, using birthday/celebration vocabulary and at least one connector:<br><br><em>&ldquo;Last weekend we organised a party to celebrate my friend&apos;s birthday. First we blew out the candles, then we ate cake and danced. It was very fun.&rdquo;</em>",
+        a: "<strong>El fin de semana pasado organizamos una fiesta para celebrar el cumplea&ntilde;os de mi amigo. Primero soplamos las velas, despu&eacute;s comimos tarta y bailamos. Fue muy divertido.</strong><br><br>Key vocab: <em>organizar una fiesta</em> = to organise a party; <em>celebrar</em> = to celebrate; <em>el cumplea&ntilde;os</em> = birthday; <em>soplar las velas</em> = to blow out the candles; <em>la tarta</em> = cake.<br>Connectors: <em>primero</em>, <em>despu&eacute;s</em>."
+      }
+
+    ];
+  </script>
+</body>
+</html>
