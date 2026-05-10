@@ -146,26 +146,36 @@ Think of an electrical circuit like a water pipe system:
 
 #### Gravity
 - What is weight; formula for calculating weight ($W = mg$); gravitational field strength varies on different planets.
+- **Gravitational field strength** ($g$): the force of gravity per kilogram of mass. On Earth, $g \approx 10$ N/kg; smaller on the Moon, larger on Jupiter.
+- Units: mass in **kg**, weight in **N**, $g$ in **N/kg**.
+- Always convert grams to kilograms before substituting into $W = mg$ (divide by 1000).
 
 #### Springs and Hooke's Law
 - Formula ($F = ke$); measuring the spring constant of a single spring.
 
 #### Types of Energy
 - Concept of Potential Energy; formula for G.P.E. ($E_p = mgh$).
+- When an object is **lifted**, energy transfers from the person's chemical store to the object's GPE store.
+- When an object **falls**, GPE transfers to kinetic energy (and some to heat/sound due to air resistance).
 
 #### Work Done & Kinetic Energy
 - Formulae: $W = Fd$; $E_k = \frac{1}{2}mv^2$.
+- Work is done only when the force and the distance moved are **in the same direction**. If force acts perpendicular to motion, no work is done.
+- KE depends on the **square** of speed: doubling speed quadruples KE.
 
 #### Conservation of Energy
-- The principle of conservation of energy.
+- The principle of conservation of energy: energy cannot be created or destroyed, only transferred between stores.
 - Examples: pendulum, objects falling, throwing objects upward.
+- In real systems, some energy is always **dissipated** (wasted) — transferred as heat to the surroundings due to friction or air resistance.
+- **Energy flow (Sankey) diagrams**: arrow width is proportional to the amount of energy; shows useful output and wasted energy at a glance.
 
 #### Stopping Distances
 - Energy transfers involved in braking.
 - Stopping distance = thinking distance + braking distance.
 
 #### Power
-- Definition of power ($P = W/t$).
+- Power is the **rate of energy transfer** — the energy transferred per second.
+- Formula: $P = W/t$; unit: **Watt (W)**, where 1 W = 1 J/s.
 
 ---
 
@@ -181,13 +191,19 @@ Think of an electrical circuit like a water pipe system:
 
 #### Refraction
 - Description of refraction; reason for refraction; real and apparent depth.
+- When light enters a **denser** (optically slower) medium it bends **towards** the normal; when entering a less dense medium it bends **away** from the normal.
+- Ray diagrams must show: incident ray, refracted ray, normal at the point of incidence, and the angles of incidence and refraction.
 
 #### Triangular Prisms
 - Dispersion of white light; formation of the visible spectrum (ROYGBIV).
 - Different colours travel at **different speeds** in glass → different refractive indices → different angles of refraction. Violet bends most, red bends least.
+- Draw a labelled dispersion diagram: white light enters one face of the prism and exits as a spread spectrum with red at one edge and violet at the other.
 
 #### Total Internal Reflection (TIR)
-- What TIR means; the two conditions for TIR; applications of TIR (e.g. optical fibres, periscopes).
+- **Critical angle** ($c$): the angle of incidence (inside the denser medium) at which the refracted ray travels exactly along the boundary (angle of refraction = 90°). Any angle above this causes TIR.
+- The two conditions for TIR: (1) light must travel from a **denser to a less dense** medium; (2) the angle of incidence must exceed the **critical angle**.
+- Applications: optical fibres (communications, endoscopes), prism periscopes/binoculars, diamond facets, retroreflectors.
+- Draw ray diagrams for three cases: (a) angle < critical angle → refraction + weak internal reflection; (b) angle = critical angle → refracted ray along the boundary; (c) angle > critical angle → TIR.
 
 ---
 
@@ -209,9 +225,13 @@ Think of an electrical circuit like a water pipe system:
 - Diagrams of reflection, refraction, and diffraction.
 - **Diffraction**: Waves spread out as they pass through a gap or around an obstacle. Greatest when gap size ≈ wavelength. Longer wavelength → more diffraction; shorter wavelength → less.
 - **Waves transfer energy, not matter** — the medium vibrates but does not travel with the wave.
+- **Wavefront diagrams**: represent waves as parallel straight lines (plane waves) or concentric arcs (point source). Draw wavefronts before and after a boundary or gap to show reflection, refraction, or diffraction.
 
 #### Sound
-- Production and transmission; how to measure the speed of sound; limits of human hearing (20 Hz – 20,000 Hz).
+- Production and transmission; limits of human hearing (20 Hz – 20,000 Hz).
+- **Measuring the speed of sound**:
+    - *Direct method*: Two observers stand a large measured distance apart (e.g. 200 m). Observer B starts a stopwatch on seeing a flash from Observer A's starting pistol, stops it on hearing the bang. $v = d/t$.
+    - *Echo method*: Stand a known distance $d$ from a large wall, clap, and time the returning echo. $v = 2d/t$.
 - **Loud sounds and hearing damage**: Very loud sounds cause large vibrations in the ear. The hair cells in the cochlea can be permanently damaged, leading to hearing loss.
 
 #### Cathode Ray Oscilloscope
@@ -226,13 +246,18 @@ Think of an electrical circuit like a water pipe system:
 - Recognise and recall standard GCSE symbols.
 
 #### Current
-- Definition; how to measure current; current in series and parallel circuits.
+- Definition; how to measure current (ammeter connected in **series**); current in series and parallel circuits.
+- Use correct language: **"current through"** a component; **"voltage/potential difference across"** a component.
+- **Short circuit**: a low-resistance path that bypasses a component. Current takes the path of least resistance, so an extremely large current flows through the short, which can overheat wires or blow a fuse.
 
 #### Potential Difference
 - Definition; how to measure p.d.; p.d. in series and parallel circuits; what provides chemical potential energy to circuits.
 
 #### Electrical Resistance
-- Definition; how to measure resistance (ohmmeter, or ammeter + voltmeter); rules for resistors in series and parallel; Ohm's Law ($V = IR$).
+- Definition; how to measure resistance (ohmmeter, or ammeter + voltmeter); Ohm's Law ($V = IR$).
+- **Microscopic model**: resistance arises because moving electrons **collide with the fixed ions** in the conductor. More collisions → higher resistance → lower current for the same voltage.
+- **Series**: $R_{\text{total}} = R_1 + R_2 + \ldots$ — total is greater than any individual resistor.
+- **Parallel**: $\dfrac{1}{R_{\text{total}}} = \dfrac{1}{R_1} + \dfrac{1}{R_2} + \ldots$ — total is **less** than the smallest individual resistor (current has more paths to flow through).
 
 #### Circuit Investigations
 - IV characteristics for fixed resistors (straight line through origin → constant resistance).
@@ -242,7 +267,9 @@ Think of an electrical circuit like a water pipe system:
 - > **Not in Year 9 exam**: LDRs and thermistors are not assessed this year.
 
 #### Electrical Power & Energy
-- Definition of electrical power ($P = IV$); how to calculate power; definition of electrical energy ($E = Pt$); measuring energy with ammeter, voltmeter, and stop clock.
+- Definition of electrical power: $P = IV$; also $P = I^2R$ and $P = V^2/R$ (derived from Ohm's Law).
+- Definition of electrical energy: $E = Pt$; measure using ammeter, voltmeter, and stop clock.
+- Always convert time to **seconds** before substituting (1 min = 60 s; 1 hour = 3600 s).
 
 #### Mains Electricity
 - Wires: **Live** (brown, carries voltage), **Neutral** (blue, completes circuit), **Earth** (green/yellow, safety).
