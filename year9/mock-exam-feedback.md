@@ -28,6 +28,42 @@ Haberdashers Boys · Year 9 · 2025–26
   - 2–3 × 4-mark short subjective questions (e.g. *"Education rates vary across the world — give 3 reasons"*)
 - **Performance**: Comfortable throughout
 
+### French
+- **Preparation**: Very little revision done beforehand
+- **Content**: Confusing words with Spanish — cross-language interference
+- **Note**: Not taking French GCSE — lower priority subject
+
+### Theology & Philosophy (T&P)
+- **Preparation**: No revision done
+- **Performance**: Wrote essays as felt best on the day; referenced philosophers and their sayings but couldn't name them
+- **Retrospective**: Would benefit from revising key philosophers and the school of thought each one promoted — naming them specifically in essays would strengthen answers
+
+### Physics
+- **Time**: Longer paper — time management was manageable
+- **Content gaps**:
+  - *Pepper's ghost* illusion trick — appeared in exam, not previously encountered
+  - Wave front diagrams: waves travelling from deep water into shallow water and back into deep water
+- **Style**: Questions felt quite different to what had been revised and to the past papers that were generated — format/phrasing was unexpected
+- **General feel**: Day 1 nerves were noticeable; settled by Day 2 and Day 3
+
+### Biology
+- **Score**: 52/58 (89.6%) — top marks in set group
+- **Paper format**:
+  - Lots of diagram labelling questions
+  - "Discuss" style questions — 5 marks each
+  - "Give x number of reasons" style questions
+  - Fewer MCQs than expected (not the 80% MCQ ratio assumed for revision papers)
+- **Note**: Future practice papers should weight diagram labelling and extended writing more heavily than MCQs
+
+### English
+- **Paper format**:
+  - Inference questions as MCQs — 15 marks total
+  - 1 analytical writing piece — 20 marks
+  - Creative writing — 20 marks
+  - Punctuation, grammar & spelling — 5 marks
+  - **Total**: ~60 marks
+- **Note**: Analysis and creative writing together account for two-thirds of the paper
+
 ---
 
 ## Key Takeaways (Mock 1)
@@ -37,6 +73,11 @@ Haberdashers Boys · Year 9 · 2025–26
 | Spanish | Vocab gaps → slow essay | Revise Module 1 vocab; timed essay practice (20 min limit) |
 | Maths | Pacing, not knowledge | Timed past paper drills |
 | Geography | None — comfortable | Practise 8-mark essay structure to maximise marks |
+| Biology | 52/58 — top of set; paper had more diagrams and less MCQ than expected | Prioritise diagram labelling and extended answers in future practice papers |
+| English | Analysis + creative writing = 40/60 marks | Practise timed analytical and creative writing responses |
+| French | Low revision, Spanish interference | Not taking GCSE — low priority |
+| T&P | No revision; philosophers unnamed in essays | Revise key philosophers and their school of thought; practise naming them |
+| Physics | Unexpected question style; Pepper's ghost + wave fronts unknown | Add optics (Pepper's ghost) and wave behaviour (shallow/deep water) to notes; request revised past papers |
 
 ---
 
