@@ -54,7 +54,7 @@ Important supporting subjects and skills.
 | 2 | 18 Jul – 2 Aug | Australia | Mornings (working UK evenings from Sydney) |
 | 3 | 4–24 Aug | India | Mornings + Fri/Mon off |
 
-*Travel days (3 Aug, 25 Aug) are excluded.*
+*Travel days (3 Aug, 25 Aug) and the day after each are rest days — not included in the plan.*
 
 ---
 
@@ -252,3 +252,57 @@ Use ✓ for completed, ~ for partially done, blank for not yet started.
 - Biology resources: BBC Bitesize Edexcel IGCSE + Cognito (cognitoedu.org)
 - Past papers: available at school or via exam board websites
 - Computing: browser-based tools
+
+---
+
+## Daily Log
+
+Fill in after each session. Use ✓ done · ~ partial · — skipped.  
+★ = extended session (1 hr each + afternoon past paper) — Sandeep's days off in India.  
+Reading (30 min) is daily — tick in Notes if done.
+
+### Phase 1 — Australia (10–17 Jul) · 1.5 hrs/day
+*8 Jul — travel day · 9 Jul — rest day (travel +1)*
+
+| Date | Session 1 (45 min) | Session 2 (45 min) | Secondary (30 min) | Notes |
+|------|--------------------|--------------------|---------------------|-------|
+| Fri 10 Jul | English — PEA+ analysis | Physics — electricity recap | Computing | |
+| Mon 13 Jul | English — PEA+ analysis | Chemistry — bonding recap | History | |
+| Tue 14 Jul | Maths — quadratics recap | Physics — electricity recap | Spanish | |
+| Wed 15 Jul | English — PEA+ analysis | Biology — cells/enzymes recap | Geography | |
+| Thu 16 Jul | Maths — quadratics/trig | Chemistry — bonding recap | History | |
+| Fri 17 Jul | English — PEA+ framework review | Biology — cells/enzymes recap | Computing | |
+
+### Phase 2 — Australia (20 Jul – 31 Jul) · 2 hrs/day
+
+| Date | Session 1 (45 min) | Session 2 (45 min) | Secondary (30 min) | Notes |
+|------|--------------------|--------------------|---------------------|-------|
+| Mon 20 Jul | English — Lang Paper 1 technique | Chemistry — moles/quantitative | History — extended writing (12-mark) | |
+| Tue 21 Jul | Maths — quadratics (expand/factorise/solve) | Physics — forces & motion preview | Spanish | |
+| Wed 22 Jul | English — Lang Paper 1 technique | Biology | Geography | |
+| Thu 23 Jul | Maths — circle theorems | Chemistry — moles/quantitative | History — extended writing (20-mark) | |
+| Fri 24 Jul | English — Lang Paper 1 technique | Physics — forces & motion preview | Computing | |
+| Mon 27 Jul | English — Lang Paper 2 technique | Chemistry — rates of reaction preview | History — source utility practice | |
+| Tue 28 Jul | Maths — trigonometry (all three ratios) | Physics — graphs | Spanish | |
+| Wed 29 Jul | English — Lang Paper 2 technique | Biology — respiration/excretion preview | Geography | |
+| Thu 30 Jul | Maths — simultaneous equations + graphs | Chemistry — rates of reaction preview | History — source utility practice | |
+| Fri 31 Jul | English — Lang Paper 2 technique | Physics — graphs | Computing | |
+
+### Phase 3 — India (5–24 Aug) · 2 hrs/day
+
+| Date | Session 1 (45 min) | Session 2 (45 min) | Secondary (30 min) | Notes |
+|------|--------------------|--------------------|---------------------|-------|
+| Wed 5 Aug | English — timed Paper 1 practice | Biology — genetics/evolution preview | Geography | |
+| Thu 6 Aug | Maths — probability | Physics — thermal physics/magnetism preview | History — full timed question | |
+| Fri 7 Aug ★ | English — timed Paper 1 (extended) | Physics — thermal physics/magnetism preview | Computing | |
+| Mon 10 Aug ★ | English — Literature/set texts (extended) | Chemistry — organic chemistry preview | History — full essay timed | |
+| Tue 11 Aug | Maths — vectors | Biology — ecology/homeostasis | Spanish | |
+| Wed 12 Aug | English — Literature analysis | Biology — ecology/homeostasis | Geography | |
+| Thu 13 Aug | Maths — further algebra | Chemistry — organic chemistry preview | History — full essay timed | |
+| Fri 14 Aug ★ | English — Literature (extended) | Biology — genetics/evolution review | Computing | |
+| Mon 17 Aug ★ | English — past paper (extended) | Chemistry — full review | History — past paper | |
+| Tue 18 Aug | Maths — past paper | Physics — past paper | Spanish | |
+| Wed 19 Aug | English — past paper | Biology — past paper | Geography | |
+| Thu 20 Aug | Maths — past paper | Chemistry — past paper | History — gap review | |
+| Fri 21 Aug ★ | English — past paper (extended) | Physics — past paper | Computing | |
+| Mon 24 Aug ★ | Mixed revision across all subjects (extended) | Gap topics — flag for teachers | Spanish — final review | |
