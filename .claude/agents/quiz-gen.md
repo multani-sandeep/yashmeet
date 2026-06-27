@@ -40,6 +40,8 @@ Some topics require diagrams (cell biology, circuit diagrams, geological maps, g
 3. **Embed the image URL** directly in the HTML `<img src="...">` — do not download
 4. Add `alt` text describing the diagram for accessibility
 5. If no suitable image is found, describe the diagram in text using a styled `<pre>` block instead
+6. Ensure tex components are used to represent chemical formulas and mathematical expressions (e.g. CO₂ should be written as $\mathrm{CO}_2$ and $\mathrm{H}_2\mathrm{O}$ for water) in an HTML component that can support proper tex rendering
+7. Ensure the question and answer cards are sized (height) to flex as the content becomes longer and can support tex formatted elements
 
 ## HTML Template
 
@@ -54,12 +56,17 @@ Use this Alpine.js + Tailwind structure for every quiz:
   <title>[Subject] — [Topics] Quiz</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <!-- KaTeX for TeX/math and chemical formula rendering (bullet 6) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
   <style>
     [x-cloak] { display: none !important; }
     .flip-card { perspective: 1000px; }
-    .flip-inner { transition: transform 0.5s; transform-style: preserve-3d; }
+    /* Grid layout allows card height to flex with content (bullet 7) */
+    .flip-inner { transition: transform 0.5s; transform-style: preserve-3d; display: grid; }
     .flipped .flip-inner { transform: rotateY(180deg); }
-    .flip-front, .flip-back { backface-visibility: hidden; -webkit-backface-visibility: hidden; }
+    .flip-front, .flip-back { backface-visibility: hidden; -webkit-backface-visibility: hidden; grid-area: 1 / 1; }
     .flip-back { transform: rotateY(180deg); }
   </style>
 </head>
@@ -89,10 +96,10 @@ Use this Alpine.js + Tailwind structure for every quiz:
 
     <!-- Flashcard -->
     <div class="flip-card w-full max-w-2xl cursor-pointer" :class="{ flipped: revealed }" @click="reveal()">
-      <div class="flip-inner relative" style="min-height: 320px;">
+      <div class="flip-inner">
 
         <!-- Front (Question) -->
-        <div class="flip-front absolute inset-0 bg-slate-800 rounded-2xl border border-slate-700 p-8 flex flex-col justify-between shadow-xl">
+        <div class="flip-front bg-slate-800 rounded-2xl border border-slate-700 p-8 flex flex-col justify-between shadow-xl">
           <div class="flex items-start gap-3">
             <span class="shrink-0 w-8 h-8 rounded-full bg-indigo-600 flex items-center justify-center text-sm font-bold"
                   x-text="current + 1"></span>
@@ -106,7 +113,7 @@ Use this Alpine.js + Tailwind structure for every quiz:
         </div>
 
         <!-- Back (Answer) -->
-        <div class="flip-back absolute inset-0 bg-indigo-900 rounded-2xl border border-indigo-700 p-8 flex flex-col justify-between shadow-xl">
+        <div class="flip-back bg-indigo-900 rounded-2xl border border-indigo-700 p-8 flex flex-col justify-between shadow-xl">
           <div>
             <p class="text-xs uppercase tracking-widest text-indigo-400 mb-3 font-semibold">Answer</p>
             <p class="text-lg leading-relaxed text-white" x-html="cards[current].a"></p>
@@ -171,8 +178,24 @@ Use this Alpine.js + Tailwind structure for every quiz:
         done: false,
         wrongCards: [],
 
+        init() {
+          this.$watch('current', () => this.$nextTick(() => this.renderMath()));
+          this.$nextTick(() => this.renderMath());
+        },
+        renderMath() {
+          if (window.renderMathInElement) {
+            renderMathInElement(this.$el, {
+              delimiters: [
+                { left: '$$', right: '$$', display: true },
+                { left: '$', right: '$', display: false }
+              ],
+              throwOnError: false
+            });
+          }
+        },
         reveal() {
           this.revealed = true;
+          this.$nextTick(() => this.renderMath());
         },
         mark(isCorrect) {
           if (isCorrect) this.correct++;

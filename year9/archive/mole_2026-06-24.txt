@@ -1,0 +1,96 @@
+Chemists count atoms by mass, the same way that storekeepers count nails by mass. Atoms are so much smaller than nails, so the unit of counting is much larger. It is 600 000 000 000 000 000 000 000 (6 x 1023) atoms/ions/molecules. 
+This number is used because scientist have shown that 6x 1023 atoms of any element have a mass equal to the relative atomic mass Ar of the element in grams. 
+6x 1023 molecules of any element or compound have a mass equal to the relative molecular mass Mr in grams for covalent compounds and have a mass equal to the relative formula mass Mr in grams for an ionic compound. 
+6x 1023 ions of any element or compound ions have a mass equal to Ar or Mr in grams 
+ 
+Complete the following:  
+e.g.        6x 1023 atoms of carbon-12 have a mass of 12g 
+ 
+6x 1023 atoms of hydrogen atoms have a mass of ………………………………g 
+ 
+6x 1023 molecules of hydrogen gas have a mass of …………………………….g 
+ 
+Water has an Mr of 18 so 6x 1023 molecules of water have a mass of ………………………………………..g 
+  
+ 
+The number 6 x 1023 is called the Avogadro Constant in honour of Italian scientist Amedeo Avogadro.  
+The amount of substance that contains 6 x 1023 particles is known as one mole (mol). 
+  
+One mole of an element contains 6 x 1023 atoms with a mass equal to the relative atomic mass in grams. 
+The carbon-12 is the standard atom against which the masses of other atoms are compared. 
+The relative atomic mass Ar of an element is the weighted average mass of its atoms compared to 1/12th the mass of a carbon-12 atom. 
+e.g    One mole of magnesium, Mg,  has a mass of 24g 
+24g of magnesium contain 6 x 1023 Mg atoms 
+12g of magnesium contain 3 x 1023 Mg atoms and is is 0.5 mol of  Mg atoms 
+240g of magnesium contain 6 x 1024 Mg atoms and is is 10 mol of  Mg atoms 
+  
+You can calculate moles given mass and mass given mol. You use the Periodic Table to find Ar and calculate the Mr. 
+ 
+n
+u
+m
+b
+e
+r
+ 
+o
+f
+ 
+m
+o
+l
+e
+s
+=
+ 
+m
+a
+s
+s
+ 
+i
+n
+ 
+g
+r
+a
+m
+s
+m
+a
+s
+s
+ 
+o
+f
+ 
+1
+ 
+m
+o
+l
+e
+ 
+Mass -= Mr x mol 
+  
+(mass is Mister mole) 
+ 
+ 
+How many moles? 
+ 
+ 
+Aluminium (Ar 27) colander  
+mass 108g 
+Copper (Ar 63.5) Bracelet 
+mass 16g 
+Some iron  (Ar 56) nails 
+mass 5.58g 
+Barbecue charcoal (Ar 12) 
+mass 150g 
+Extension  
+How many atoms ? 
+ 
+ 
+ 
+ 
+ 

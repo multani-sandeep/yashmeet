@@ -106,6 +106,23 @@
     - Can form **multiple ions** with different charges (e.g., Fe²⁺ and Fe³⁺, Cu⁺ and Cu²⁺).
     - Form **coloured compounds** (e.g., copper compounds are blue, iron(III) compounds are orange/brown).
     - Good **catalysts** (e.g., Fe in Haber process, MnO₂ for H₂O₂ decomposition).
+
+### The Mole
+- **Definition**: A mole is a unit for counting particles (atoms, molecules, ions). 1 mole = 6.02 × 10²³ particles (**Avogadro's constant**, named after Amedeo Avogadro).
+- **Purpose**: Links mass to number of particles — atoms are too small to count individually.
+- **Relative atomic mass (Ar)**: Weighted average mass of atoms compared to 1/12th the mass of a carbon-12 atom.
+- **Mr** (relative formula mass) = sum of all atomic masses in the formula (from the periodic table).
+  - Covalent compounds → relative molecular mass; ionic compounds → relative formula mass.
+- **Note**: The mass of 1 mole of a substance in grams equals its Mr (or Ar for elements).
+- **Key formulae**:
+  - moles = mass (g) ÷ Mr
+  - mass (g) = Mr × mol
+- **Examples**:
+  - 18 g of H₂O → Mr = (2 × 1) + 16 = 18 → moles = 18 ÷ 18 = **1 mol**
+  - 24 g of Mg (Ar = 24) = **1 mol** → contains 6 × 10²³ Mg atoms
+  - 12 g of Mg = **0.5 mol** → contains 3 × 10²³ atoms
+  - 240 g of Mg = **10 mol** → contains 6 × 10²⁴ atoms
+
 ---
 
 ## Year 9 End of Year Review 2026
