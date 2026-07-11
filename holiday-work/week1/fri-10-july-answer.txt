@@ -1,0 +1,127 @@
+YASHMEET - ANSWER SHEET
+Fri 10 July - Week 1 Day 1
+=========================================================
+
+---------------------------------------------------------
+SESSION 1 - ENGLISH (45 min) - Structural Analysis
+---------------------------------------------------------
+
+Q: How does the writer structure this text to interest the
+reader? [8 marks]
+(Write TWO paragraphs about structure, not language.)
+
+Paragraph 1:
+
+
+
+
+Paragraph 2:
+
+
+
+
+Self-check (mark with a tick or cross):
+- Did I write about structure (not just what happens)?      [ ]
+- Did I discuss more than one part of the text?              [ ]
+- Did I explain the effect on the reader?                    [ ]
+- Did I refer to specific details to support my points?      [ ]
+
+
+---------------------------------------------------------
+SESSION 2 - PHYSICS (45 min) - Electricity Recap
+---------------------------------------------------------
+
+Part A - Circuit symbols (draw on paper, just tick when done):
+cell [ ]  battery [ ]  switch (open) [ ]  lamp [ ]  resistor [ ]
+variable resistor [ ]  ammeter [ ]  voltmeter [ ]  diode [ ]
+LED [ ]  thermistor [ ]  LDR [ ]
+
+Part B - Calculations:
+
+1. Voltage across resistor =
+
+2a. Resistance of lamp =
+2b. Power of lamp =
+
+3. Total charge transferred =
+
+4a. Total resistance (series) =
+4b. Current in circuit (series) =
+4c. Voltage across 6 ohm resistor =
+    Voltage across 10 ohm resistor =
+
+5a. Total resistance (parallel) =
+5b. Total current from supply (parallel) =
+
+Part C - Exam question:
+
+(a) Voltage across the lamp =
+
+(b) Resistance of the resistor (working):
+
+
+    Answer =
+
+(c) Power dissipated by the lamp (working):
+
+
+    Answer =
+
+(d) Effect of lower-resistance lamp on current (explain):
+
+
+
+
+---------------------------------------------------------
+SECONDARY - COMPUTING (30 min) - Binary & Data
+---------------------------------------------------------
+
+Binary Basics - Convert to denary:
+1. 0000 1010 =
+2. 0011 0101 =
+3. 1000 1111 =
+4. 1111 1111 =
+
+Convert to binary:
+5. 25  =
+6. 100 =
+7. 200 =
+
+Bytes and Units - complete:
+- 8 bits = 1 ___
+- 1,024 bytes = 1 ___
+- 1,024 KB = 1 ___
+- 1,024 MB = 1 ___
+
+Exam Question:
+
+(a) File size in bytes (show working):
+
+
+    Answer =
+
+(b) Why binary rather than denary:
+
+
+
+
+(c) Image file size in MB (show working):
+
+
+    Answer =
+
+
+---------------------------------------------------------
+READING (30 min, evening)
+---------------------------------------------------------
+
+(Only needed at the END of Week 1 - leave blank for now)
+
+Summary and prediction (2-3 sentences):
+
+
+
+
+=========================================================
+END OF DAY 1
+=========================================================
