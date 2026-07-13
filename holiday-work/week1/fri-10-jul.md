@@ -15,9 +15,19 @@ Structural techniques to know: **non-linear narrative · focus shift · withhold
 
 > *The letter had been sitting on the kitchen table for three days before she touched it. She had walked past it every morning — to the kettle, to the window, to the door — always finding some reason not to pick it up. It was a plain white envelope, her name written in handwriting she didn't recognise. That was the detail that stopped her. In all her forty years, she thought she knew every hand that might write to her. Apparently not.*
 >
-> *She sat down. She did not open it. She made a cup of tea. She drank it slowly, watching the envelope as though it might move. Then she slid her finger under the seal.*
+> *On the first morning she had almost thrown it away with the junk mail, mistaking its plainness for insignificance. On the second, she had propped it against the fruit bowl, telling herself she would deal with it after breakfast, then after work, then after the six o'clock news. By the third morning it had become a fixture of the room, the way a chipped mug or a cracked tile becomes invisible through familiarity — except this was the opposite of invisible. She noticed it constantly. She noticed herself noticing it.*
+>
+> *Outside, the street was doing what it always did. A bin lorry groaned at the far end of the road. Her neighbour's dog barked twice and then gave up. None of it seemed to belong to the same morning as the envelope. The kitchen had a stillness to it now, as though the room itself were waiting to see what she would do.*
+>
+> *She sat down. She did not open it. She made a cup of tea, measuring the leaves with more care than the occasion required, and carried it to the table as though the letter were a guest she had forgotten to seat properly. She drank it slowly, watching the envelope as though it might move, as though three days of stillness might suddenly give way to something. It did not move. Nothing in the kitchen moved except the steam curling up from her cup and, eventually, her own hand.*
+>
+> *She turned the envelope over twice before she slid her finger under the seal. The paper gave more easily than she expected, as though it, too, had been waiting. Inside was a single sheet, folded in three, the creases sharp enough to suggest it had not been touched since it was first put away. She unfolded it slowly, half expecting the words to rearrange themselves the moment she looked at them properly.*
+>
+> *They did not rearrange themselves. They simply sat there, ordinary black ink on white paper, telling her nothing she could have prepared for. She read the first line twice. Then her eyes moved, almost without her permission, to the top corner of the page, to the date printed neatly beside her own name.*
 >
 > *The letter inside was dated six months earlier.*
+>
+> *She looked up at the kitchen clock, then back down at the page, as if checking the two against each other might change one of them.*
 
 ### Task — Structural analysis (30 min)
 

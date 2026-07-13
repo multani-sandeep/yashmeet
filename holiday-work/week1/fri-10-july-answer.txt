@@ -38,37 +38,37 @@ LED [ ]  thermistor [ ]  LDR [ ]
 
 Part B - Calculations:
 
-1. Voltage across resistor =
+1. Voltage across resistor = 30V
 
-2a. Resistance of lamp =
-2b. Power of lamp =
+2a. Resistance of lamp = 24Ω
+2b. Power of lamp = 6W
 
-3. Total charge transferred =
+3. Total charge transferred = 720C
 
-4a. Total resistance (series) =
-4b. Current in circuit (series) =
-4c. Voltage across 6 ohm resistor =
-    Voltage across 10 ohm resistor =
+4a. Total resistance (series) = 16Ω
+4b. Current in circuit (series) = 1A
+4c. Voltage across 6 ohm resistor = 6V
+    Voltage across 10 ohm resistor = 10V
 
-5a. Total resistance (parallel) =
-5b. Total current from supply (parallel) =
+5a. Total resistance (parallel) = 3.75Ω
+5b. Total current from supply (parallel) = 3.2A
 
 Part C - Exam question:
 
-(a) Voltage across the lamp =
+(a) Voltage across the lamp = 3V
 
 (b) Resistance of the resistor (working):
+    V=IR, 6=0.3R, R=6/0.3=20
 
-
-    Answer =
+    Answer = 20Ω
 
 (c) Power dissipated by the lamp (working):
+    P=IV, 0.3 x 3= 0.9
 
-
-    Answer =
+    Answer = 0.9W
 
 (d) Effect of lower-resistance lamp on current (explain):
-
+lower resistance lamp means a hugher current ude to there being more free electrons flowig around the circuit
 
 
 
@@ -88,27 +88,30 @@ Convert to binary:
 7. 200 =
 
 Bytes and Units - complete:
-- 8 bits = 1 ___
-- 1,024 bytes = 1 ___
-- 1,024 KB = 1 ___
-- 1,024 MB = 1 ___
+- 8 bits = 1 _byte__
+- 1,024 bytes = 1 _kilobyte__
+- 1,024 KB = 1 _megabyte__
+- 1,024 MB = 1 _gigabyte__
 
 Exam Question:
 
 (a) File size in bytes (show working):
-
-
-    Answer =
+1 / 1024 = 0.0009765625
+2.5 / 0.0009765625 = 2560
+2560 / 0.0009765625 = 2621440
+    Answer = 2621440 bytes
 
 (b) Why binary rather than denary:
-
-
+computers can't understand denary so binary is used to represent denary.
 
 
 (c) Image file size in MB (show working):
+800 * 600 = 480000
+480000 * 3 = 1440000
+1440000 / 1024 = 1406.25
+1406.25 / 1024 = 1.373291015625
 
-
-    Answer =
+    Answer = 1.373291015625 MB
 
 
 ---------------------------------------------------------

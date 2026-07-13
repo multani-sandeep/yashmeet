@@ -12,7 +12,7 @@
 | Subject | % | Grade | Priority |
 |---|---|---|---|
 | English | 58% | Working Towards | **Highest — primary** |
-| History | 59% | Working Towards | **Highest — secondary** |
+| History | 59% | Working Towards | — |
 | Mathematics | 75% | Good | High — primary |
 | Physics | 79% | Exceeding | Medium — primary |
 | Chemistry | 80% | Exceeding | Medium — primary |
