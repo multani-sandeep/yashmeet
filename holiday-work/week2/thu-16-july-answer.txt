@@ -1,0 +1,102 @@
+YASHMEET - ANSWER SHEET
+Thu 16 July - Week 2 Day 2
+=========================================================
+
+---------------------------------------------------------
+SESSION 1 - MATHS (45 min) - Quadratics + Trigonometry
+---------------------------------------------------------
+
+Part A - Quadratics warm-up:
+1. x =
+2. x =
+3. x =
+
+Part B - SOH CAH TOA:
+1. Opposite =
+2. Hypotenuse =
+3. Angle theta =
+4. Angle theta =
+5. Opposite =
+6. Angle theta =
+
+Part C - Exam question (ladder):
+
+(a) Angle with ground (working):
+cos(angle) = 1.8 / 4.5
+
+    Answer = 66.4 degrees
+
+(b) Height reached (working):
+height = sqrt(4.5^2 - 1.8^2)
+
+    Answer = 4.1 m
+
+(c) New distance from wall at 70 degrees (working):
+distance = 4.5 x cos(70)
+
+    Answer = 1.5 m
+
+
+---------------------------------------------------------
+SESSION 2 - CHEMISTRY (45 min) - Bonding Recap
+---------------------------------------------------------
+
+Part A - Matching (write bonding type):
+1. NaCl        =
+2. H2O         =
+3. Diamond     =
+4. Copper      =
+5. CO2         =
+6. Graphite    =
+
+Part B - Explain conductivity:
+1. NaCl molten vs solid:
+
+
+2. Copper (solid):
+
+
+3. H2O (never conducts):
+
+
+4. Graphite vs diamond:
+
+
+
+Part C - Exam question:
+
+(a) Diamond structure (bonds per carbon):
+
+
+(b) Graphite structure (bonds per carbon):
+
+
+(c) Explain graphite vs diamond conductivity/hardness:
+
+
+
+
+---------------------------------------------------------
+SECONDARY - HISTORY (30 min) - Source Utility
+---------------------------------------------------------
+
+Source A - content / provenance / own knowledge:
+
+
+
+Source B - content / provenance / own knowledge:
+
+
+
+Overall judgement - which source is more useful, and why:
+
+
+
+
+---------------------------------------------------------
+READING (30 min, evening)
+---------------------------------------------------------
+
+=========================================================
+END OF DAY 2 (WEEK 2)
+=========================================================

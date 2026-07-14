@@ -1,0 +1,110 @@
+YASHMEET - ANSWER SHEET
+Mon 20 July - Week 2 Day 4
+=========================================================
+
+---------------------------------------------------------
+SESSION 1 - ENGLISH (45 min) - Q2 Language Analysis
+---------------------------------------------------------
+
+Q: How does the writer use language to describe the power
+of the storm? [8 marks]
+
+Feature 1 (name / quote / effect):
+
+
+Feature 2 (name / quote / effect):
+
+
+Feature 3 (name / quote / effect):
+
+
+Feature 4 (name / quote / effect) - optional:
+
+
+Self-check (tick or cross):
+- Named each language feature accurately?                   [ ]
+- Embedded short quotations, not block quotes?               [ ]
+- Analysed effect on reader, not just described technique?    [ ]
+- Used varied analytical vocabulary?                          [ ]
+
+
+---------------------------------------------------------
+SESSION 2 - CHEMISTRY (45 min) - Moles
+---------------------------------------------------------
+
+Part A - Mr and moles:
+1. Mr of NaOH        = 40
+2. Mr of CaCO3        = 100
+3. Mr of Mg(OH)2      = 58
+4. Mr of (NH4)2SO4    = 132
+
+5. Moles in 20g NaOH (working):
+n = 20/40
+    Answer = 0.5 mol
+
+6. Mass of 0.5 mol CaCO3 (working):
+m = 0.5 x 100
+    Answer = 50 g
+
+7. Moles in 4.4g CO2 (working):
+n = 4.4/44
+    Answer = 0.1 mol
+
+Part B - Reacting masses (Mg + 2HCl -> MgCl2 + H2):
+
+1. Moles of Mg in 6g (working):
+n = 6/24
+    Answer = 0.25 mol
+
+2. Moles of H2 produced (working):
+1:1 ratio with Mg
+    Answer = 0.25 mol
+
+3. Mass of MgCl2 produced (working):
+n(MgCl2) = 0.25 mol (1:1 with Mg)
+m = 0.25 x 95
+    Answer = 23.75 g
+
+Part C - Empirical formula (C: 2.4g, H: 0.4g, O: 3.2g):
+
+(a) Moles of each element (working):
+C: 2.4/12 = 0.2 mol
+H: 0.4/1  = 0.4 mol
+O: 3.2/16 = 0.2 mol
+
+(b) Simplest ratio (divide by smallest, 0.2):
+C : H : O = 1 : 2 : 1
+
+(c) Empirical formula:
+    Answer = CH2O
+
+
+---------------------------------------------------------
+SECONDARY - HISTORY (30 min) - 12-Mark Essay
+---------------------------------------------------------
+
+Paragraph 1 (X-rays):
+
+
+
+Paragraph 2 (blood transfusion):
+
+
+
+Paragraph 3 (own knowledge reason):
+
+
+
+Self-check (tick or cross):
+- Three separate, developed causes?                          [ ]
+- Each paragraph explains the mechanism?                      [ ]
+- Specific evidence (names, dates) used?                      [ ]
+
+
+---------------------------------------------------------
+READING (30 min, evening)
+---------------------------------------------------------
+
+=========================================================
+END OF DAY 4 (WEEK 2)
+=========================================================

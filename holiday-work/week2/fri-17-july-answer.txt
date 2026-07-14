@@ -1,0 +1,123 @@
+YASHMEET - ANSWER SHEET
+Fri 17 July - Week 2 Day 3
+=========================================================
+
+---------------------------------------------------------
+SESSION 1 - ENGLISH (45 min) - Q5 Descriptive Writing
+---------------------------------------------------------
+
+Plan (mood / sensory details / structure / opening+closing lines):
+
+
+
+
+Response:
+
+
+
+
+
+
+
+
+
+
+Self-check (tick or cross):
+- Specific, unusual sensory detail (not generic)?          [ ]
+- Varied sentence length for effect?                        [ ]
+- Structure moves somewhere (not a static list)?             [ ]
+- Ending as carefully crafted as opening?                    [ ]
+
+
+---------------------------------------------------------
+SESSION 2 - BIOLOGY (45 min) - Enzymes Recap
+---------------------------------------------------------
+
+Part A:
+1. Enzyme definition:
+
+2. Lock and key model:
+
+3. Active site / poor fit:
+
+
+Part B:
+1. Shape of rate vs temperature graph:
+
+2. Below optimum:
+
+3. Above optimum (denature):
+
+4. Pepsin (low pH) vs intestinal enzymes (higher pH):
+
+
+Part C - Exam question:
+
+(a) Independent / dependent / control variable:
+
+
+(b) 40C vs 30C prediction and explanation:
+
+
+(c) 50C prediction and explanation:
+
+
+(d) Improvement to method:
+
+
+
+---------------------------------------------------------
+SECONDARY - COMPUTING (30 min) - Algorithms
+---------------------------------------------------------
+
+Part A - Flowchart symbols:
+Start/stop        =
+Process/action    =
+Decision          =
+Input/output      =
+
+Flowchart trace - final output of total:
+
+    Answer = 10
+
+Part B - Linear vs binary search (list: 3,7,12,18,24,31,40,52):
+
+1. Linear search for 31 - number of comparisons:
+
+    Answer = 6 comparisons (checks 3,7,12,18,24,31 in order)
+
+2. Binary search for 31 - middle values checked at each step:
+
+    Answer = mid=18 (31>18, search right half) -> mid=31 (found)
+    2 comparisons
+
+3. Condition binary search requires that linear search does not:
+
+    Answer = the list must already be sorted
+
+
+Part C - Exam question:
+
+(a) Why binary search is more efficient:
+
+
+(b) What must happen first if list is unsorted:
+
+    Answer = the list must be sorted
+
+(c) Real-world situation where linear search is the only option:
+
+
+
+---------------------------------------------------------
+READING (30 min, evening)
+---------------------------------------------------------
+
+Summary and prediction (2-3 sentences):
+
+
+
+
+=========================================================
+END OF DAY 3 (WEEK 2)
+=========================================================

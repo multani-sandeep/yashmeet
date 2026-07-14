@@ -1,0 +1,123 @@
+YASHMEET - ANSWER SHEET
+Tue 21 July - Week 2 Day 5
+=========================================================
+
+---------------------------------------------------------
+SESSION 1 - MATHS (45 min) - Quadratics
+---------------------------------------------------------
+
+Part A - Expand and simplify:
+1. (x+4)(x-2)   = x^2 + 2x - 8
+2. (x-5)(x-3)   = x^2 - 8x + 15
+3. (2x+1)(x+6)  = 2x^2 + 13x + 6
+4. (x-7)^2      = x^2 - 14x + 49
+
+Part B - Factorise fully:
+1. x^2 + 7x + 12  = (x+3)(x+4)
+2. x^2 - 3x - 10  = (x-5)(x+2)
+3. x^2 - 16       = (x-4)(x+4)
+4. 2x^2 + 5x - 3  = (2x-1)(x+3)
+
+Part C - Solve:
+1. x^2 - 6x + 8 = 0   -> x = 2 or 4
+2. x^2 + x - 12 = 0   -> x = -4 or 3
+3. 3x^2 - 12 = 0      -> x = 2 or -2
+
+Exam question (rectangle, area 32 cm^2):
+
+(a) Show x^2 + 2x - 35 = 0 (working):
+(x+3)(x-1) = 32
+x^2 + 2x - 3 = 32
+x^2 + 2x - 35 = 0
+
+(b) Solve for x (working):
+(x+7)(x-5) = 0
+    Answer = x = 5 (reject x = -7, length can't be negative)
+
+(c) Dimensions:
+    Answer = length = 8 cm, width = 4 cm
+
+
+---------------------------------------------------------
+SESSION 2 - PHYSICS (45 min) - Moments and Pressure
+---------------------------------------------------------
+
+Part A - Moments:
+
+1. Moment (working):
+M = 20 x 0.5
+    Answer = 10 Nm
+
+2. Balancing distance (working):
+400 x 1.2 = 300 x d
+    Answer = 1.6 m
+
+3. Moment on nut (working):
+M = 15 x 0.2
+    Answer = 3 Nm
+
+Part B - Pressure:
+
+1. Pressure (working):
+P = 240 / 0.4
+    Answer = 600 Pa
+
+2. Pressure at 5m depth (working):
+P = 1000 x 10 x 5
+    Answer = 50,000 Pa (50 kPa)
+
+3. Why drawing pin has sharp point + flat head:
+Sharp point = small area = high pressure for a given force (pierces material).
+Flat head = large area = low pressure (comfortable to push without hurting finger).
+
+Part C - Hooke's Law:
+
+1. Force needed (working):
+F = 40 x 0.15
+    Answer = 6 N
+
+Exam question:
+
+(a) Shape of force-extension graph:
+Straight line through the origin up to the elastic limit, then curves
+(no longer proportional) beyond the elastic limit.
+
+(b) Spring constant (working):
+k = F / e = 12 / 0.06
+    Answer = 200 N/m
+
+(c) Why it returns to original length (below elastic limit) but not
+beyond it:
+Below the elastic limit, the deformation is elastic - the material's
+structure is not permanently changed, so it returns to its original
+shape. Beyond the elastic limit, the deformation becomes plastic -
+the structure is permanently altered and does not fully recover.
+
+
+---------------------------------------------------------
+SECONDARY - SPANISH (30 min) - Translation Practice
+---------------------------------------------------------
+
+1.
+2.
+3.
+4.
+5.
+6.
+7.
+8.
+9.
+10.
+
+Self-check (tick or cross):
+- Present tense verb endings correct?                        [ ]
+- Preterite tense verb endings correct (incl. irregulars)?    [ ]
+
+
+---------------------------------------------------------
+READING (30 min, evening)
+---------------------------------------------------------
+
+=========================================================
+END OF DAY 5 (WEEK 2)
+=========================================================
