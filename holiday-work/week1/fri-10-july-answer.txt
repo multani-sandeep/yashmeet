@@ -11,12 +11,19 @@ reader? [8 marks]
 (Write TWO paragraphs about structure, not language.)
 
 Paragraph 1:
+the author delays the opening and inspection of the envelope for a while, helping build suspense through the curiosity of the reader to find out what is in the envelope. 
+the author purposely skirts around the topic of the letter until he later reveals it in the middle of the passage. 
+in the first paragraph the writer leaves the detail of the envelope being unkown as a way to build more suspense into the scene. 
+the author shows what a normal day looks like, proving the detail of it and contrasting it to the envelope which stads out. 
+Contrasting in this way helps shift the focus even more onto the envelope making, building up to the apparent climax of the story at the end.
+
 
 
 
 
 Paragraph 2:
-
+the reveal of the date at the end was the climax the writer has been building up to. the letter was deliviered 3 days ago, meaning it has been lost for long. 
+this raises questions in the readers mind as to what happened. the extract ends before we can find out why this is the case, leaving the reader on a cliffhanger of suspense.
 
 
 
@@ -77,15 +84,15 @@ SECONDARY - COMPUTING (30 min) - Binary & Data
 ---------------------------------------------------------
 
 Binary Basics - Convert to denary:
-1. 0000 1010 =
-2. 0011 0101 =
-3. 1000 1111 =
-4. 1111 1111 =
+1. 0000 1010 = 10
+2. 0011 0101 = 53
+3. 1000 1111 = 143
+4. 1111 1111 = 255
 
 Convert to binary:
-5. 25  =
-6. 100 =
-7. 200 =
+5. 25  = 00011001
+6. 100 = 01100100
+7. 200 = 11001000
 
 Bytes and Units - complete:
 - 8 bits = 1 _byte__
