@@ -1,0 +1,118 @@
+YASHMEET - ANSWER SHEET
+Thu 6 August - Week of 3 Aug, Day 2
+=========================================================
+
+---------------------------------------------------------
+SESSION 1 - MATHS (45 min) - Probability
+---------------------------------------------------------
+
+Part A - Combined events (working):
+
+1. P(heads and 6) = 1/2 x 1/6
+    Answer = 1/12
+
+2. P(red or green) = 5/10 + 2/10
+    Answer = 7/10
+
+3. P(both dice same number) = 6/36
+    Answer = 1/6
+
+Part B - Tree diagram (4 red, 6 blue, no replacement):
+
+1. Branch probabilities:
+1st draw: P(Red) = 4/10,  P(Blue) = 6/10
+2nd draw if 1st was Red:  P(Red) = 3/9, P(Blue) = 6/9
+2nd draw if 1st was Blue: P(Red) = 4/9, P(Blue) = 5/9
+
+2. P(both red) (working):
+4/10 x 3/9 = 12/90
+    Answer = 2/15
+
+3. P(exactly one red) (working):
+(4/10 x 6/9) + (6/10 x 4/9) = 24/90 + 24/90 = 48/90
+    Answer = 8/15
+
+Part C - Venn diagram (30 students, Spanish=18, French=14, both=7):
+
+(a) Venn diagram values: Spanish only = 11, French only = 7, both = 7
+
+(b) Neither language (working):
+30 - (11 + 7 + 7)
+    Answer = 5 students
+
+(c) P(exactly one language) (working):
+(11 + 7) / 30 = 18/30
+    Answer = 3/5 (0.6)
+
+
+---------------------------------------------------------
+SESSION 2 - PHYSICS (45 min) - Thermal Physics
+---------------------------------------------------------
+
+Part A - Specific heat capacity:
+
+1. Energy to heat water (working):
+E = 2 x 4200 x (80-20)
+    Answer = 504,000 J (504 kJ)
+
+2. Temperature rise of aluminium (working):
+deltaT = 18000 / (0.5 x 900)
+    Answer = 40 degrees C
+
+3. Definition:
+Specific heat capacity is the energy needed to raise the
+temperature of 1 kg of a substance by 1 degree C (or 1 K).
+
+Part B - Ideal gas law:
+
+1. New pressure (constant volume) (working):
+T1 = 300 K, T2 = 400 K
+P2 = 150 x 400 / 300
+    Answer = 200 kPa
+
+2. New pressure (constant temperature) (working):
+P2 = 200 x 2 / 0.5
+    Answer = 800 kPa
+
+Part C - Exam question:
+
+(a) Energy required (working):
+E = 1.5 x 4200 x (100-20)
+    Answer = 504,000 J (504 kJ)
+
+(b) Minimum time (working):
+t = 504000 / 2000
+    Answer = 252 seconds (4.2 minutes)
+
+(c) Kinetic theory explanation:
+As temperature rises, gas molecules gain kinetic energy and move
+faster. They collide with the container walls more frequently and
+with greater force. Since pressure comes from these collisions,
+more frequent/forceful collisions increase the pressure (volume
+and amount of gas being constant).
+
+
+---------------------------------------------------------
+SECONDARY - HISTORY (30 min) - Russian Revolution
+---------------------------------------------------------
+
+Task 1 - Inference (two developed inferences):
+
+
+
+Task 2 - Utility (Source A + Source B, content/provenance/own knowledge):
+
+
+
+Task 3 - 12-mark essay plan (three PEEL point headings):
+
+
+
+
+---------------------------------------------------------
+READING (30 min, evening)
+---------------------------------------------------------
+
+=========================================================
+END OF DAY 2 (WEEK OF 3 AUG)
+=========================================================
