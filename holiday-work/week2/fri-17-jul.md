@@ -100,7 +100,7 @@ Given the sorted list: `[3, 7, 12, 18, 24, 31, 40, 52]`
 ### Part C — Exam Question (10 min)
 
 > A list of 1,000 sorted student ID numbers is searched to find a specific ID.
->
+> 
 > (a) Explain why binary search is more efficient than linear search for this list. [2]
 > (b) State what would need to happen to the list before binary search could be used, if it were not already sorted. [1]
 > (c) Give one real-world situation where linear search would be the only option, even though it's slower. [1]

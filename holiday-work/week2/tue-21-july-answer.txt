@@ -88,10 +88,7 @@ k = F / e = 12 / 0.06
 
 (c) Why it returns to original length (below elastic limit) but not
 beyond it:
-Below the elastic limit, the deformation is elastic - the material's
-structure is not permanently changed, so it returns to its original
-shape. Beyond the elastic limit, the deformation becomes plastic -
-the structure is permanently altered and does not fully recover.
+undernearth the elastic limit the structure remains of it remains the same. beyond the limit the structure has been permanently altered and can no longer return to the same length
 
 
 ---------------------------------------------------------

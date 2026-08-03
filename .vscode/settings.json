@@ -1,0 +1,5 @@
+{
+  "git.autofetch": true,
+  "git.pullRebase": false,
+  "git.autofetchPeriod": 300
+}

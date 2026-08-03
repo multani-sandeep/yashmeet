@@ -35,35 +35,39 @@ SESSION 2 - BIOLOGY (45 min) - Enzymes Recap
 
 Part A:
 1. Enzyme definition:
+Enzymes attack to a substrate and break it down, helping speed up the breaking down of chemicals into products 
+There is less movement so the substrate is broken down slower 
 
 2. Lock and key model:
-
+the lock is the shape of the active site in the substrate is the key, the lock an key makes it so the substrate can only bind to one type of enzyme
 3. Active site / poor fit:
-
+the active site is an area of the enzyme where the substrate binds to the enzyme and breaks it down into its products 
 
 Part B:
 1. Shape of rate vs temperature graph:
-
+the rate of reaction initially increases as the temperature increases until the optimum temperature has been reached. after the optimum temperature, the rate of reaction slows down until it reaches 0 where the nezyme has fully been denatured
 2. Below optimum:
-
+there is lesser kinetic energy compared to the optimum temperature, so there are fewer particle collisions between molecules, causin the substrate to be broken down slower
 3. Above optimum (denature):
-
+the bonds holding the enzymes together break, causing the enzyme to denature. this means the shape of the active site has changed so the substrate can't bind to the enzyme enemy and the lock and key mechanism fails, the enzyme no longer works
 4. Pepsin (low pH) vs intestinal enzymes (higher pH):
-
+the enviroment in the stomach is of a low pH, so pepsin works best in this enviroment. in the small intestine, the environment has a higher pH, so the enzymes in the small intestine work best in a higher pH
 
 Part C - Exam question:
 
 (a) Independent / dependent / control variable:
-
+independent - temperature
+dependent - volume of oxygen gas produced in 60 seconds
+control - concentration of hydrogen peroxide. 
 
 (b) 40C vs 30C prediction and explanation:
 
 
 (c) 50C prediction and explanation:
-
+there will be no oxygen produced because the enzyme will have denatured, causing the enzyme to fail and no oxygen will be made. 
 
 (d) Improvement to method:
-
+increase the temperature in smaller intervals e.g. 5C to more accurately find the optimum temperature.
 
 
 ---------------------------------------------------------

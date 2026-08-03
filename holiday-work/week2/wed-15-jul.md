@@ -55,33 +55,38 @@ Match each organelle to its function:
 
 | Organelle | Function |
 |---|---|
-| Nucleus | |
-| Mitochondria | |
-| Chloroplast | |
-| Ribosome | |
-| Cell wall | |
-| Vacuole | |
-| Cell membrane | |
+| Nucleus |controls the activity of the cell |
+| Mitochondria |site of respiration in the cell |
+| Chloroplast |produces chlorophyll for photosynthesis |
+| Ribosome |site of protein synthesis |
+| Cell wall |provides sturcture to the cell |
+| Vacuole |stores sap and exctra water in the cell |
+| Cell membrane |controls the substances moving in and out of the cell|
 
 Function bank (write the letter next to each organelle above): (a) controls entry/exit of substances (b) site of protein synthesis (c) contains genetic material, controls cell activities (d) site of aerobic respiration, releases energy (e) site of photosynthesis (f) provides structural support, freely permeable (g) stores cell sap, maintains turgor pressure
 
 ### Part B — Eukaryotic vs Prokaryotic, and Cell Specialisation (15 min)
 
 1. State **two** differences between eukaryotic and prokaryotic cells.
+the dna of eukaryotic cell is bound in a nucleus whereas the dna of prokaryotic cell is free in the cytoplasm 
+
 2. Name a eukaryotic organism and a prokaryotic organism.
+human bacterium
 3. For each specialised cell, state **one** adaptation and how it helps the cell's function:
-   - Red blood cell
-   - Sperm cell
+   - Red blood cell - no nucleus so there is more space to hold oxygen 
    - Root hair cell
-   - Neurone
+   - Neurone - the cell is long to transport signals more efficiently as fewer cells are needed to travel a distance than if the cell was shorter
 
 ### Part C — Exam Question (15 min)
 
 > A student uses a light microscope to view a sample of onion cells. The image is magnified ×400.
 >
 > (a) State two structures visible in a plant cell but not an animal cell. [2]
+Chloroplasts cell wall
 > (b) The actual width of one onion cell is 0.05 mm. Calculate the width of the cell as it appears under the microscope, in mm. [2]
+0.05 x 400 = 20mm
 > (c) Explain why root hair cells but not palisade cells have long, thin extensions. [2]
+to increase the surface area to volume ratio to allow for area coverage while not using lots of resources to build those connections
 
 <div style="page-break-after: always;"></div>
 
@@ -93,19 +98,20 @@ Function bank (write the letter next to each organelle above): (a) controls entr
 
 Define each term in your own words, then classify these strategies as **Mitigation (M)** or **Adaptation (A)**:
 
-- Building sea walls [ ]
-- Switching to renewable energy [ ]
-- Planting drought-resistant crops [ ]
-- Reforestation [ ]
-- Early warning systems for storms [ ]
-- Carbon taxes [ ]
+- Building sea walls [A ]
+- Switching to renewable energy [M ]
+- Planting drought-resistant crops [A ]
+- Reforestation [ M]
+- Early warning systems for storms [A ]
+- Carbon taxes [ M]
 
 ### Part B — Case Study Application (10 min)
 
 Using the **Maldives** (sea level rise) or the **Sahel region** (drought/desertification):
 1. Describe **two** impacts of climate change on this location.
+sea level rise from melting icebergs causes part of the coastlines to go underwater. the increases temperature and sea level rise could also change rainfall patterns and make some areas much drier thab others
 2. Describe **one** mitigation and **one** adaptation strategy being used there.
-
+sea walls to protect the land from the sea rise or planting crops more resistant to drought so famines do not occur
 ### Part C — Exam-style Question (10 min)
 
 > "Adaptation strategies are more effective than mitigation strategies for managing climate change." To what extent do you agree with this statement? Use a named case study. [8 marks]

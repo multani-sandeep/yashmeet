@@ -41,32 +41,35 @@ Identify **3–4 language features** (imagery, word choice, personification, sen
 n = m / Mr (moles = mass ÷ relative formula mass)
 
 Calculate the relative formula mass (Mr) of:
-1. NaOH
-2. CaCO₃
-3. Mg(OH)₂
-4. (NH₄)₂SO₄
+1. NaOH  40
+2. CaCO₃ 100
+3. Mg(OH)₂ 58
+4. (NH₄)₂SO₄ 132
 
 Then calculate:
-5. Moles in 20 g of NaOH
-6. Mass of 0.5 mol of CaCO₃
-7. Moles in 4.4 g of CO₂
+5. Moles in 20 g of NaOH 0.5
+6. Mass of 0.5 mol of CaCO₃ 50
+7. Moles in 4.4 g of CO₂ 0.1
 
 ### Part B — Reacting Masses (15 min)
 
 > Magnesium reacts with hydrochloric acid: Mg + 2HCl → MgCl₂ + H₂
 >
-> 1. Calculate the number of moles in 6 g of magnesium (Ar of Mg = 24).
-> 2. Using the equation, calculate the moles of H₂ produced.
-> 3. Calculate the mass of MgCl₂ produced (Mr of MgCl₂ = 95).
+> 1. Calculate the number of moles in 6 g of magnesium (Ar of Mg = 24). 0.25
+> 2. Using the equation, calculate the moles of H₂ produced. 0.5
+> 3. Calculate the mass of MgCl₂ produced (Mr of MgCl₂ = 95). 23.75g
 
 ### Part C — Exam Question: Empirical Formula (15 min)
 
 > A compound contains 2.4 g of carbon, 0.4 g of hydrogen, and 3.2 g of oxygen.
->
+> 
 > (a) Calculate the number of moles of each element. (Ar: C = 12, H = 1, O = 16) [2]
-> (b) Divide by the smallest number of moles to find the simplest ratio. [2]
-> (c) State the empirical formula of the compound. [1]
 
+0.2 0.4 0.2
+> (b) Divide by the smallest number of moles to find the simplest ratio. [2]
+1:2:1
+> (c) State the empirical formula of the compound. [1]
+CH2O
 <div style="page-break-after: always;"></div>
 
 ---
