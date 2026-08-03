@@ -1,0 +1,106 @@
+YASHMEET - ANSWER SHEET
+Wed 5 August - Week of 3 Aug, Day 1
+=========================================================
+
+---------------------------------------------------------
+SESSION 1 - ENGLISH (45 min) - Timed Q2 + Q3
+---------------------------------------------------------
+
+Task 1 - Q2 Language analysis (feature/quote/effect x2-3):
+
+
+
+
+Task 2 - Q3 Structural analysis:
+
+
+
+
+Self-check (tick or cross):
+- Q2: named features accurately, analysed effect?            [ ]
+- Q2: stayed within time?                                     [ ]
+- Q3: addressed structure, not language?                      [ ]
+- Q3: mentioned more than one part of the text?               [ ]
+
+
+---------------------------------------------------------
+SESSION 2 - BIOLOGY (45 min) - Genetics & Evolution
+---------------------------------------------------------
+
+Part A - Definitions:
+gene:
+allele:
+genotype:
+phenotype:
+dominant allele:
+recessive allele:
+
+Two differences (mitosis vs meiosis):
+
+
+Part B - Punnett squares:
+
+1. Bb x Bb -> phenotype ratio:
+    Answer = 3 brown : 1 blue (1 BB : 2 Bb : 1 bb)
+
+2. bb x Bb -> phenotype ratio:
+    Answer = 1 brown : 1 blue (2 Bb : 2 bb)
+
+3. Two blue-eyed parents (bb x bb) - probability of brown-eyed child:
+    Answer = 0% - both parents can only pass on the recessive b
+    allele, so all offspring must be bb (blue-eyed)
+
+Part C - Exam question (antibiotic resistance):
+
+(a) Why some bacteria survived:
+Variation existed in the population - a small number of bacteria
+already had a mutation giving resistance; these survived the
+antibiotic treatment while non-resistant bacteria died.
+
+(b) Why population became almost entirely resistant:
+Surviving resistant bacteria reproduced, passing the resistance
+allele to offspring. Over generations, the resistant bacteria
+out-competed non-resistant ones, so the resistance allele became
+much more frequent in the population.
+
+(c) Why overuse makes it worse:
+More frequent/widespread antibiotic use increases the selection
+pressure and the number of opportunities for resistant strains to
+be selected for and spread (and incomplete courses can leave
+partially-resistant bacteria alive to reproduce).
+
+
+---------------------------------------------------------
+SECONDARY - GEOGRAPHY (30 min) - Population
+---------------------------------------------------------
+
+Part A:
+1. Stage 2 pyramid shape:
+Wide base (high birth rate), sides narrow quickly going up (high
+death rate) - a triangular shape. Example: Niger / Mali.
+
+2. Stage 4/5 pyramid shape:
+Narrower base (low birth rate), roughly even column shape with a
+narrowing only near the very top (low death rate, people live to
+old age). Example: UK / Japan.
+
+Part B - Migration:
+Push factors:                          Pull factors:
+
+
+Economic migrant vs refugee:
+Economic migrant moves voluntarily for better opportunities;
+refugee is forced to flee due to war, persecution, or danger.
+
+Part C - Exam question (8 marks):
+
+
+
+
+---------------------------------------------------------
+READING (30 min, evening)
+---------------------------------------------------------
+
+=========================================================
+END OF DAY 1 (WEEK OF 3 AUG)
+=========================================================

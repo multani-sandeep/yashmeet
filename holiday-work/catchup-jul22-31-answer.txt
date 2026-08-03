@@ -1,0 +1,187 @@
+YASHMEET - ANSWER SHEET
+Catch-up: Missed Content (22-31 Jul)
+=========================================================
+
+---------------------------------------------------------
+ENGLISH - Language Paper 2 Technique
+---------------------------------------------------------
+
+Task 1 - Q2 Summary (4 points of difference):
+
+
+
+
+Task 2 - Q3 Language analysis (3 devices - name/quote/effect):
+
+
+
+
+Task 3 - Q4 Comparison of perspectives:
+
+
+
+
+Task 4 - Q5 Viewpoint writing (letter, timed 30 min):
+
+
+
+
+
+
+---------------------------------------------------------
+MATHS - Circle Theorems, Sine/Cosine Rule, Simultaneous Eqns
+---------------------------------------------------------
+
+Circle theorems:
+1. Angle opposite diameter = 90 degrees (angle in a semicircle)
+2. PB = 7 cm (two tangents from an external point are equal in length)
+
+Sine/cosine rule (working):
+1. b = a x sin(B) / sin(A) = 8 x sin(65) / sin(40)
+    Answer = 11.3 cm
+
+2. a^2 = b^2 + c^2 - 2bc cos(A) = 36 + 81 - (2 x 6 x 9 x cos55)
+    Answer = a = 7.4 cm
+
+Simultaneous equations:
+1. 2x + y = 11, x - y = 1
+    Answer = x = 4, y = 3
+
+2. 3x + 2y = 16, x + 2y = 8
+    Answer = x = 4, y = 2
+
+3. Graphical method: plot both lines; the intersection point is the
+(x,y) pair that satisfies both equations at once - the solution.
+
+
+---------------------------------------------------------
+CHEMISTRY - Rates of Reaction
+---------------------------------------------------------
+
+Four factors + collision theory explanation:
+
+
+
+Exam question:
+(a) Graph shape: steep at first, curve gradually flattens, then
+levels off completely (plateau) once the reaction finishes.
+
+(b) Powdered marble (greater surface area) reacts faster - the
+curve rises more steeply and reaches the plateau sooner. The FINAL
+volume of gas is the same as with chips, because the mass (and
+therefore moles) of marble is unchanged.
+
+(c) Answer = measure the loss in mass of the reaction flask over
+time, using a balance (since CO2 gas escapes).
+
+
+---------------------------------------------------------
+PHYSICS - Motion Graphs
+---------------------------------------------------------
+
+(a) Velocity-time graph: straight line rising from 0 to 20 m/s over
+0-8s, horizontal flat line at 20 m/s from 8-23s, then straight line
+falling from 20 m/s to 0 over 23-28s.
+
+(b) Acceleration (working):
+a = (20 - 0) / 8
+    Answer = 2.5 m/s^2
+
+(c) Total distance (working) - area under graph:
+Triangle 1 (0-8s):   0.5 x 8 x 20  = 80 m
+Rectangle (8-23s):   15 x 20       = 300 m
+Triangle 2 (23-28s): 0.5 x 5 x 20  = 50 m
+Total = 80 + 300 + 50
+    Answer = 430 m
+
+
+---------------------------------------------------------
+BIOLOGY - Respiration and Excretion
+---------------------------------------------------------
+
+1. Two differences (aerobic vs anaerobic):
+Aerobic needs oxygen; anaerobic does not.
+Aerobic produces much more ATP/energy than anaerobic.
+
+2. Why lactic acid builds up and heavy breathing continues:
+During intense exercise, oxygen supply cannot meet demand, so
+muscles respire anaerobically, producing lactic acid (oxygen debt).
+After exercise, extra oxygen is needed to break down (oxidise) the
+lactic acid that built up - this is why breathing stays heavy.
+
+3. Nephron sequence:
+Filtration (in the glomerulus, under pressure - small molecules:
+water, glucose, urea, ions pass into the tubule) -> selective
+reabsorption (all glucose, most water, some ions reabsorbed back
+into the blood) -> remaining fluid (urea, excess water/ions)
+continues as urine.
+
+
+---------------------------------------------------------
+GEOGRAPHY - Social Development and Superpowers
+---------------------------------------------------------
+
+Task 1:
+Three measures (other than GDP): HDI, Gender Inequality Index (GII),
+infant mortality rate.
+Limitation of GDP per capita: it's an average, so it hides
+inequality/distribution of wealth within a country, and ignores
+health, education, and wellbeing.
+
+Task 2:
+Four superpower factors: military power, economic strength,
+technological capacity, political influence (soft power).
+Example (China): qualifies through economic strength (2nd largest
+economy, largest population) and political influence (Belt and Road
+Initiative extends influence across Asia and Africa).
+
+
+---------------------------------------------------------
+HISTORY - 20-Mark Essay Technique
+---------------------------------------------------------
+
+Plan (intro line + one point per paragraph):
+
+
+
+
+(No single correct answer - this is a plan only; full timed version
+comes in the Week of 3 Aug worksheets.)
+
+
+---------------------------------------------------------
+SPANISH - Future Tense
+---------------------------------------------------------
+
+hablar: hablare / hablaras / hablara
+comer:  comere / comeras / comera
+vivir:  vivire / viviras / vivira
+tener:  tendre / tendras / tendra
+hacer:  hare / haras / hara
+poder:  podre / podras / podra
+ir:     ire / iras / ira
+ser:    sere / seras / sera
+(accents omitted here - check the accented forms in spanish.md)
+
+5 sentences about the Australia trip (example):
+"El proximo mes voy a visitar Australia con mi familia."
+
+
+
+---------------------------------------------------------
+COMPUTING - Sorting Algorithms and Programming Concepts
+---------------------------------------------------------
+
+Bubble sort trace [5, 2, 9, 1, 6]:
+Pass 1: [2, 5, 1, 6, 9]
+Pass 2: [2, 1, 5, 6, 9]
+Pass 3: [1, 2, 5, 6, 9]  (sorted - one more pass confirms no swaps)
+    Answer = [1, 2, 5, 6, 9]
+
+Pseudocode trace - final output of total:
+i=2: total=2, i=4: total=6 (odd i values skipped)
+    Answer = 6
+
+=========================================================
+END OF CATCH-UP
+=========================================================

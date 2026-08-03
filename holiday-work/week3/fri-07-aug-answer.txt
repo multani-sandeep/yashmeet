@@ -1,0 +1,136 @@
+YASHMEET - ANSWER SHEET
+Fri 7 August - Week of 3 Aug, Day 3
+=========================================================
+
+---------------------------------------------------------
+SESSION 1 - ENGLISH (45 min) - Q5 Narrative Writing
+---------------------------------------------------------
+
+Plan (arc / complication / final line):
+
+
+
+
+Response:
+
+
+
+
+
+
+
+
+
+
+Self-check (tick or cross):
+- Clear arc, not just a sequence of events?                  [ ]
+- Character shown through action/dialogue?                    [ ]
+- Pace controlled (slow for key moments, fast for action)?     [ ]
+- Ending deliberate, not rushed?                                [ ]
+
+
+---------------------------------------------------------
+SESSION 2 - PHYSICS (45 min) - Magnetism and Electromagnetism
+---------------------------------------------------------
+
+Part A:
+1. Field line direction rule:
+Field lines run from the North pole to the South pole outside the
+magnet.
+
+2. Solenoid:
+A coil of wire; when current flows through it, it produces a
+magnetic field similar in shape to a bar magnet's, so it behaves
+as an electromagnet.
+
+3. Advantage of electromagnet over permanent magnet:
+Its magnetic field can be turned on/off and its strength varied
+(by changing the current), unlike a permanent magnet.
+
+Part B - Motor effect:
+
+1. Force (working):
+F = B x I x L = 0.5 x 3 x 0.4
+    Answer = 0.6 N
+
+2. Current (working):
+I = F / (B x L) = 0.6 / (0.8 x 0.5)
+    Answer = 1.5 A
+
+3. Fleming's Left-Hand Rule:
+Thumb = Force (motion), First finger = Field, Second finger =
+Current. Point first finger along the field direction and second
+finger along the current direction; the thumb then points in the
+direction of the force.
+
+Part C - Exam question (transformer, 200:1000 turns, Vp = 24V):
+
+(a) Secondary voltage (working):
+Vs = Vp x (Ns/Np) = 24 x (1000/200)
+    Answer = 120 V
+
+(b) Step-up or step-down:
+    Answer = Step-up transformer, because the secondary coil has
+    more turns (1000) than the primary coil (200), so the voltage
+    is increased.
+
+(c) How energy transfers (electromagnetic induction):
+The alternating current in the primary coil creates a changing
+magnetic field. This changing field passes through the iron core
+to the secondary coil, and the changing magnetic field induces an
+alternating voltage in the secondary coil - transferring energy via
+the magnetic field rather than a direct electrical connection.
+
+
+---------------------------------------------------------
+SECONDARY - COMPUTING (30 min) - Networks
+---------------------------------------------------------
+
+Part A:
+1. LAN vs WAN:
+LAN covers a small area (e.g. one building/site); WAN covers a
+large geographic area and connects multiple LANs (the internet is
+the largest WAN).
+
+2. Matching:
+Router = directs data packets between different networks
+Switch  = connects devices within a single LAN
+NIC     = allows a device to connect to a network
+
+Part B - Topologies:
+Star  - advantage:                       disadvantage:
+Ring  - advantage:                       disadvantage:
+
+(Suggested answers: Star - advantage: one device failing doesn't
+affect others; disadvantage: if the central switch fails, the whole
+network goes down. Ring - advantage: organised, controlled data
+flow; disadvantage: one broken connection/device can disrupt the
+whole network.)
+
+Part C - Exam question:
+
+(a) Role of DNS server:
+Translates the human-readable domain name typed into the browser
+into the numerical IP address needed to locate and connect to the
+correct server.
+
+(b) Packet switching:
+Data is broken into small packets, each sent independently (often
+via different routes) across the network, then reassembled in the
+correct order at the destination. It is used because it makes
+efficient use of network capacity, allows many users to share the
+network at once, and is resilient if one route fails.
+
+
+---------------------------------------------------------
+READING (30 min, evening) - end of week summary
+---------------------------------------------------------
+
+Summary and prediction (2-3 sentences):
+
+
+
+
+=========================================================
+END OF DAY 3 (WEEK OF 3 AUG)
+=========================================================
