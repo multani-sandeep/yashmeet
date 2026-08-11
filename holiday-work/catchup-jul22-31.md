@@ -51,8 +51,8 @@ Sine Rule: a/sin A = b/sin B = c/sin C · Cosine Rule: a² = b² + c² − 2bc c
 
 ### Simultaneous Equations (algebraic + graphical)
 **Practice:**
-1. Solve algebraically: 2x + y = 11, x − y = 1
-2. Solve algebraically: 3x + 2y = 16, x + 2y = 8
+1. Solve algebraically: 2x + y = 11, x − y = 1 y = 3. x = 4
+2. Solve algebraically: 3x + 2y = 16, x + 2y = 8. x = 8 y = -4
 3. Describe how you would solve these graphically instead, and what the solution represents.
 
 ---
