@@ -81,7 +81,7 @@ the graph increases linearly as the spring has not yet been stretched past the e
 
 Use a mix of present and preterite tense:
 
-1. I normally eat breakfast at seven o'clock.
+1. I normally eat breakfast at seven o'clock. normalmente desayuno a las siete 
 2. Yesterday I went to the beach with my family.
 3. My sister plays tennis every Saturday.
 4. Last year we visited India for the first time.

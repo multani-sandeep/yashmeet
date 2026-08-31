@@ -39,19 +39,21 @@ Paper 1 (fiction) has been well covered. Paper 2 (non-fiction) has not been touc
 8. Perpendicular from centre to chord bisects the chord
 
 **Practice** (name the theorem you use for each):
-1. A triangle is drawn with all three vertices on a circle, and one side is the diameter. Find the angle opposite the diameter.
-2. Two tangents are drawn from an external point P to a circle, touching at A and B. If PA = 7 cm, state the length of PB and name the theorem used.
+1. A triangle is drawn with all three vertices on a circle, and one side is the diameter. Find the angle opposite the diameter. 90 degrees
+2. Two tangents are drawn from an external point P to a circle, touching at A and B. If PA = 7 cm, state the length of PB and name the theorem used.  7cm
 
 ### Sine and Cosine Rule (Y10 preview)
 Sine Rule: a/sin A = b/sin B = c/sin C · Cosine Rule: a² = b² + c² − 2bc cos A
 
 **Practice:**
 1. Triangle with a = 8 cm, angle A = 40°, angle B = 65°. Find side b.
+3.73cm
 2. Triangle with sides b = 6 cm, c = 9 cm, and included angle A = 55°. Find side a.
+8.56cm
 
 ### Simultaneous Equations (algebraic + graphical)
 **Practice:**
-1. Solve algebraically: 2x + y = 11, x − y = 1 y = 3. x = 4
+1. Solve algebraically: 2x + y = 11, x − y = 1 y = 3. x = 4 
 2. Solve algebraically: 3x + 2y = 16, x + 2y = 8. x = 8 y = -4
 3. Describe how you would solve these graphically instead, and what the solution represents.
 
@@ -67,8 +69,10 @@ Rate = amount of product formed (or reactant used) ÷ time.
 > A student reacts marble chips with dilute hydrochloric acid and measures the volume of CO₂ gas produced every 10 seconds.
 >
 > (a) Sketch (describe in words) the shape of a graph of volume of gas vs time for this reaction. [2]
+the graph initally goes up in a straight line as the reaction occurs, but as more of the marble chips get reacted the line slowly plateaus until becoming fully flat. the graph plateauing shows the reaction slowing down due to the lack of marble chips and eventually goes fully flat because all of the marble chips have reacted and no more CO2 is produced
 > (b) The experiment is repeated with powdered marble (same mass) instead of chips. Describe and explain the difference in the graph. [3]
 > (c) State one way to measure the rate other than gas volume. [1]
+
 
 ---
 
